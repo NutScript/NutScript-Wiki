@@ -20,7 +20,7 @@ There are 2 ways to create a plugin in NutScript:
 
 In your plugin/```sh_plugin.lua``` file, include the following:
 
-```lua
+```lua linenums="1"
 PLUGIN.name = "Plugin Name"
 PLUGIN.author = "You, the Creator"
 PLUGIN.desc = "A simple plugin that does something."
@@ -31,7 +31,7 @@ Here you'll need to set your plugin's name, the author, and a short description 
 ## **Hooking**
 
 Normally, to hook a function, you'll need to use the following syntax:
-```lua
+```lua linenums="1"
 hook.Add("Think", "myUniqueFunction", function()
     -- Do stuff
 end)
@@ -39,7 +39,7 @@ end)
 
 However, NutScript has a special syntax for hooking functions within plugins.
 
-```lua
+```lua linenums="1"
 function PLUGIN:Think()
     -- Do stuff
 end
@@ -54,7 +54,9 @@ Advantages of using PLUGIN:
 1. It gives the hooked code priority when executed. Meaning that code added via PLUGIN will run before most code added by addons.
 
 2. It allows you to use code defined by PLUGIN to be run elsewhere in the gamemode.
-    - For example, if you have a plugin ```permadeath.lua``` that defines a function called ```PLUGIN:PlayerDeath(client, inflictor, attacker)```, and another plugin called ```medical```, you can have a function in the ```medical``` plugin call the ```permadeath``` PlayerDeath hook without running any other code that has been hooked to PlayerDeath, via ```nut.plugin.list.permadeath:PlayerDeath(client, inflictor, attacker)```.
+
+    !!! example
+        If you have a plugin ```permadeath.lua``` that defines a function called ```PLUGIN:PlayerDeath(client, inflictor, attacker)```, and another plugin called ```medical```, you can have a function in the ```medical``` plugin call the ```permadeath``` PlayerDeath hook without running any other code that has been hooked to PlayerDeath, via ```nut.plugin.list.permadeath:PlayerDeath(client, inflictor, attacker)```.
 
 3. It allows to store variables specific to the plugin.
     - For example
@@ -74,6 +76,7 @@ Advantages of using PLUGIN:
     is a table that is available (within the respective realm) to all files/scopes within the plugin, as well as accessible from other plugins (```nut.plugin.list.permadeath.curEnts```).
 ## **Example**
 
-An example of a plugin creation can be found [here](../development%20examples/Plugin%20Example.md).
+An example of a plugin creation can be found [here](plugin_example.md).
 
-_**It is recommended that you use plugins as puzzle pieces that fit into your gamemode. Creating plugins not only makes it easier to develop and enhance sections of your gamemode, your schema will remain organized as it gets larger.**_
+!!! tip
+    It is recommended that you use plugins as puzzle pieces that fit into your gamemode. Creating plugins not only makes it easier to develop and enhance sections of your gamemode, your schema will remain organized as it gets larger.

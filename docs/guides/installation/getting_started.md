@@ -13,7 +13,9 @@ There are currently 3 versions of the NutScript framework available:
 3. [NutScript 1.0](https://github.com/Chessnut/NutScript/tree/1.0)
     - Legacy, original version of NutScript. It is not recommended to use this version.
 
-There also exists the [NutScript 1.1-beta](https://github.com/rebel1324/NutScript/tree/1.1-beta) version, however, it is simply Version 1.2 in early stages of development. As such, any plugin that is made for 1.1-beta is fully compatible with 1.2 (but not 1.1 or 1.0).
+
+??? note "NutScript 1.2 vs NutScript 1.1-beta"
+    There also exists the [NutScript 1.1-beta](https://github.com/rebel1324/NutScript/tree/1.1-beta) version, however, it is simply Version 1.2 in early stages of development. As such, any plugin that is made for 1.1-beta is fully compatible with 1.2 (but not 1.1 or 1.0).
 
 ### Schemas
 

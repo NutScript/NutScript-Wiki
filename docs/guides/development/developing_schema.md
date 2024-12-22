@@ -4,7 +4,7 @@
 
 Make sure that you have the [Nutscript framework](https://github.com/NutScript/NutScript) already installed in the gamemodes folder (rename it to ```nutscript```).
 In the same gamemodes plugin, place/create your schema folder, and name it as the name of your schema (hl2rp/cityrp/scprp)
-![Example](https://i.imgur.com/bKgG8L0.png)
+![Example](/assets/develop_schema_img.png)
 
 ## **The Main Schema Folder**
 
@@ -16,7 +16,9 @@ Within the Schema folder, you must have 3 additional folders:
 
     and one .txt file named identically to your schema name (that is, if your schema is called hl2rp, the txt must also be called hl2rp.txt)
 
-_**As a Rule of Thumb, you should not modify the gamemode folder at any point. Please look at [pre-existing schemas](installation/Getting_Started.md#Schemas) and copy the gamemode folder from there.**_
+!!! warning
+
+    _**As a Rule of Thumb, you should not modify the gamemode folder at any point. Please look at [pre-existing schemas](installation/Getting_Started.md#Schemas) and copy the gamemode folder from there.**_
 
 * The ```plugins``` folder is used to install additional plugins to the schema.
 
@@ -30,17 +32,19 @@ Within the ```schema``` folder, you must have 2 crucial folders: ```items``` and
 
 The ```factions``` folder is used to create new factions playable on your gamemode. Each faction is represented by their individual file.
 
-For example, if you want to have 3 factions called "Citizen", "Police" and "Insurgents", you would have 3 files within the factions folder
 
-```
-sh_citizen.lua
-sh_police.lua
-sh_insurgents.lua
-```
+!!! example
+
+    For example, if you want to have 3 factions called "Citizen", "Police" and "Insurgents", you would have 3 files within the factions folder
+    ```
+    sh_citizen.lua
+    sh_police.lua
+    sh_insurgents.lua
+    ```
 
 Each file must contain the following code:
 
-```lua
+```lua linenums="1"
 FACTION.name = "Custom Faction" -- the name of your faction as it appears in-game
 FACTION.desc = "Custom faction for only some people to use." -- the faction's description, as seen in the character creation screen
 FACTION.color = Color(255, 0, 0) -- the faction's color, as it appears in the scoreboard
@@ -61,7 +65,9 @@ FACTION.models = { -- default models available to the faction. The larger the li
 FACTION_CUSTOM = FACTION.index -- mandatory, this allows the faction to be indexed in code elsewhere. Replace FACTION_CUSTOM with FACTION_#### where #### is a unique string for your faction.
 ```
 
-[More information and options available for factions is available here.](development/Factions.md)
+!!! note
+
+    [More information and options available for factions is available here.](factions.md)
 
 ## **The Items Folder**
 
@@ -73,9 +79,9 @@ There are 2 methods to adding items to your schema: single file items or via a b
 
 You can add an item as a single file by creating one in the ```items``` folder directly. For example, if you want to create a potato item, you would create a new file called ```sh_potato.lua```
 
-Inside the file, you must have this code
+Inside the file, you must have this code:
 
-```lua
+```lua linenums="1"
 ITEM.name = "A Potato" -- item name
 ITEM.desc = "Boil em, Mash em, Stick em in a stew." -- item description
 ITEM.price = 0 -- the default price, used by vendors and business tabs, for instance
@@ -86,9 +92,9 @@ ITEM.uniqueID = "potato" -- optional field, used for ease of reference in code
 ITEM.health = 10
 ```
 
-If you want your items to have functionality, you may add functions via ```ITEM.functions.<name>```. For example
+If you want your items to have functionality, you may add functions via ```ITEM.functions.<name>```. For example:
 
-```lua
+```lua linenums="1"
 ITEM.functions.use = {
     name = "Consume", --Name of the function, if this doesn't exist it'll use "use"
     tip = "Consume the item.", --Tip when hovering over the function
@@ -113,13 +119,17 @@ base
 food
 ```
 
-Inside the base folder, create a lua file called the same as the target base folder (for instance if I am creating a food item base, I would create a file called ```sh_food.lua```)
+Inside the base folder, create a lua file called the same as the target base folder
+
+!!! example
+
+    For instance, if I am creating a food item base, I would create a file called ```sh_food.lua```
 
 Inside this new file goes the default information of the item. Items defined within the target base folder will inherit all the values and functions from this base file.
 
 Let's create a food base
 
-```lua
+```lua linenums="1"
 ITEM.name = "Food Base"
 ITEM.model = "models/Gibs/HGIBS.mdl"
 ITEM.desc = "Tasty food, or tasy drink."
@@ -149,7 +159,7 @@ Now, in the food folder, we can create as many different food items as we please
 
 In the food folder, I will create a milk item. Call it ```sh_milk.lua```
 
-```lua
+```lua linenums="1"
 ITEM.name = "Milk"
 ITEM.model = "models/Gibs/HGIBS.mdl"
 ITEM.desc = "Full fat cow's milk."
@@ -167,7 +177,7 @@ If you want multiple bases, create individual files in the base folder, and a ne
 
 The sh_schema.lua file is a crucial part of the schema. Upon creating it, enter the following code:
 
-```lua
+```lua linenums="1"
 SCHEMA.name = "Cool Schema" -- the Name of your Schema, as it appears in-game
 SCHEMA.author = "You" -- the Author of the schema
 SCHEMA.desc = "A schema for the people to learn from." -- A brief description of what the gamemode is about
@@ -183,10 +193,14 @@ nut.util.include("sh_commands.lua") -- this allows code within the sh_commands.l
 nut.util.includeDir("hooks") -- this allows all files within the hooks folder in the schema folder to be readable by the schema
 ```
 
-**Keep in mind that if you try to use functions or variables defined in these external files before they are included in the schema, they will not be available.**
+!!! warning
 
-Keep in mind that if you want to add folders that are default to nutscript, such as ```classes, meta``` or ```libs```, it is not necessary to include them.
+    Keep in mind that if you try to use functions or variables defined in these external files before they are included in the schema, they will not be available.
+
+!!! note
+
+    Keep in mind that if you want to add folders that are default to nutscript, such as ```classes, meta``` or ```libs```, it is not necessary to include them.
 
 ## **Developing Plugins**
 
-If you wish to create your own plugins, in order to keep the schema modular and organized, head over to [Developing Plugins](Developing%20Plugins.md).
+If you wish to create your own plugins, in order to keep the schema modular and organized, head over to [Developing Plugins](developing_plugins.md).
