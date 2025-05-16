@@ -4,9 +4,9 @@ The character stores information that is relevant to the gameplay, but not speci
 
 All characters that a player owns are loaded into server memory upon the client connecting.
 
-## Functions
-???+ realm-server "<a id=CHAR:save></a>CHAR:save (callback)"
-    ##### sv_CHAR:save {#charsave}
+## Methods
+???+ realm-server "<a id=character:save></a>character:save (callback)"
+    ##### sv_character:save {#charactersave}
     Saves the character to the database and calls the callback if provided.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">function</span></span>
@@ -15,8 +15,8 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 
-???+ realm-server "<a id=CHAR:sync></a>CHAR:sync (receiver)"
-    ##### sv_CHAR:sync {#charsync}
+???+ realm-server "<a id=character:sync></a>character:sync (receiver)"
+    ##### sv_character:sync {#charactersync}
     Sends character information to the receiver.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="../Client#">Client</a></span>
@@ -26,8 +26,8 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 
-???+ realm-server "<a id=CHAR:setup></a>CHAR:setup (noNetworking)"
-    ##### sv_CHAR:setup {#charsetup}
+???+ realm-server "<a id=character:setup></a>character:setup (noNetworking)"
+    ##### sv_character:setup {#charactersetup}
     Sets up the "appearance" related information for the character.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">boolean</span></span>
@@ -36,12 +36,12 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 
-???+ realm-server "<a id=CHAR:kick></a>CHAR:kick ()"
-    ##### sv_CHAR:kick {#charkick}
+???+ realm-server "<a id=character:kick></a>character:kick ()"
+    ##### sv_character:kick {#characterkick}
     Forces the player to choose a character.
 
-???+ realm-server "<a id=CHAR:ban></a>CHAR:ban (time)"
-    ##### sv_CHAR:ban {#charban}
+???+ realm-server "<a id=character:ban></a>character:ban (time)"
+    ##### sv_character:ban {#characterban}
     Prevents the use of this character permanently or for a certain amount of time.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">integer</span></span>
@@ -57,18 +57,18 @@ All characters that a player owns are loaded into server memory upon the client 
 
         ```
     </ul>
-???+ realm-server "<a id=CHAR:delete></a>CHAR:delete ()"
-    ##### sv_CHAR:delete {#chardelete}
+???+ realm-server "<a id=character:delete></a>character:delete ()"
+    ##### sv_character:delete {#characterdelete}
     Deletes this character from existence along with its associated data.
 
-???+ realm-server "<a id=CHAR:destroy></a>CHAR:destroy ()"
-    ##### sv_CHAR:destroy {#chardestroy}
+???+ realm-server "<a id=character:destroy></a>character:destroy ()"
+    ##### sv_character:destroy {#characterdestroy}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Deletes this character from memory.
 
-???+ realm-shared "<a id=CHAR:getPlayer></a>CHAR:getPlayer ()"
-    ##### sh_CHAR:getPlayer {#chargetplayer}
+???+ realm-shared "<a id=character:getPlayer></a>character:getPlayer ()"
+    ##### sh_character:getPlayer {#charactergetplayer}
     Returns which player owns this character.
     <h3>Returns:</h3>
     <span class="types"><span class="type">player</span></span>

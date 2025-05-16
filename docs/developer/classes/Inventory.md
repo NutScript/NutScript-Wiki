@@ -2,11 +2,6 @@ Base inventory class.
  The inventory object stores items, typically in a grid via the GridInv plugin. Alternatively, a simple inventory, without a grid system, is available with the SimpleInv plugin.
 Typically, each Character has their own inventory, however an inventory can also be tied to a world object/prop (such as with the storage plugin), or an item (such as bags).
 
-## Functions
-???+ realm-shared "<a id=inv:dummy3></a>inv:dummy3 ()"
-    ##### sh_inv:dummy3 {#invdummy3}
-    dummy func3
-
 ## Methods
 ???+ realm-shared "<a id=inventory:getData></a>inventory:getData (key, default)"
     ##### sh_inventory:getData {#inventorygetdata}
