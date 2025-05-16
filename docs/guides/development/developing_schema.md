@@ -4,7 +4,7 @@
 
 Make sure that you have the [Nutscript framework](https://github.com/NutScript/NutScript) already installed in the gamemodes folder (rename it to ```nutscript```).
 In the same gamemodes plugin, place/create your schema folder, and name it as the name of your schema (hl2rp/cityrp/scprp)
-![Example](/assets/develop_schema_img.png)
+![Example](../../assets/develop_schema_img.png)
 
 ## **The Main Schema Folder**
 
@@ -18,7 +18,7 @@ Within the Schema folder, you must have 3 additional folders:
 
 !!! warning
 
-    _**As a Rule of Thumb, you should not modify the gamemode folder at any point. Please look at [pre-existing schemas](installation/Getting_Started.md#Schemas) and copy the gamemode folder from there.**_
+    _**As a Rule of Thumb, you should not modify the gamemode folder at any point. Please look at [pre-existing schemas](../installation/getting_started.md#schemas) and copy the gamemode folder from there.**_
 
 * The ```plugins``` folder is used to install additional plugins to the schema.
 

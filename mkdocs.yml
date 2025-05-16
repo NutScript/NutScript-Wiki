@@ -2,12 +2,17 @@ site_name: NutScript Wiki
 site_url: https://nutscript.github.io
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/favicon.ico
   features:
     - navigation.footer
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - toc.integrate
   font:
-    text: Noto Sans
+    text: Arimo
     code: Roboto Mono
   palette:
     # Dark Mode
@@ -40,6 +45,13 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   social:
@@ -47,5 +59,6 @@ extra:
       link: https://github.com/NutScript/NutScript
 
 plugins:
-  - search
-  - awesome-pages
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])'
+  - awesome-nav

@@ -1,0 +1,27 @@
+<li class="md-nav__item">
+  <a href="{{ toc_item.url }}" class="md-nav__link">
+    <span class="md-ellipsis">
+      {% if toc_item.title[:3] == "cl_" %}
+      <span class="icon_client"></span>
+      {{ toc_item.title[3:] }}
+      {% elif toc_item.title[:3] == "sh_" %}
+      <span class="icon_shared"></span>
+      {{ toc_item.title[3:] }}
+      {% elif toc_item.title[:3] == "sv_" %}
+      <span class="icon_server"></span>
+      {{ toc_item.title[3:] }}
+      {% else %}
+      {{ toc_item.title }}
+      {% endif %}
+    </span>
+  </a>
+  {% if toc_item.children %}
+  <nav class="md-nav" aria-label="{{ toc_item.title | striptags | e }}">
+    <ul class="md-nav__list">
+      {% for toc_item in toc_item.children %}
+      {% include "partials/toc-item.html" %}
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+</li>

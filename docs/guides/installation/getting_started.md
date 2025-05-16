@@ -25,6 +25,7 @@ However, there are also numerous premade schemas that publicly exist, and you ca
 
 1. [Respite by Chancerawr](https://github.com/Chancerawr/respite)
 2. [Metro 2033 by ts-co/Pilot](https://github.com/ts-co/Metro-2033)
+3. [HL2RP by Chessnut](https://github.com/Chessnut/hl2rp)
 
 ### Editors
 

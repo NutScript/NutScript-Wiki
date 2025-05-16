@@ -1,4 +1,4 @@
-arrange:
+nav:
   - developing_schema.md
   - developing_plugins.md
   - plugin_example.md

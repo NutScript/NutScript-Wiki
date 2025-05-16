@@ -1,0 +1,141 @@
+>local iter = ldoc.modules.iter
+>local M = ldoc.markup
+>local lev = ldoc.level or 2
+>local lev1, lev2 = ('#'):rep(lev), ('#'):rep(lev + 1)
+>local styleTitle = function(text) return "<h3>"..text..":</h3>" end
+>local abbc, abbsh, abbs = "???+ realm-client", "???+ realm-shared", "???+ realm-server"
+>local realms= {client = abbc, shared = abbsh, server = abbs}
+>local hiddenanchor = function(text, realm) return "##### "..ldoc.realm_anchor_format(text, realm) end
+>local indexorder = {"Libraries", "Classes", "Hooks", "Plugins"}
+>local show_return = not ldoc.no_return_or_parms
+>local show_parms = show_return
+>local no_spaces = ldoc.no_spaces
+>if module and not ldoc.no_summary and #module.items > 0 then
+$(module.summary)
+$(module.description)
+>for kind, items in module.kinds() do
+$(lev1) $(kind)
+>local kitem = module.kinds:get_item(kind)
+>if kitem then
+$(ldoc.descript(kitem))
+>end -- if kitem
+>for item in items() do
+>local realmtype = abbsh
+> if item.tags and item.tags.realm then
+> for val in iter(item.tags.realm) do realmtype = realms[val] break end
+> end -- if
+$(realmtype) $("\"<a id="..item.name.."></a>"..ldoc.display_name(item).."\"")
+    $(hiddenanchor(item.name, realmtype))
+>   if item.tags and item.tags.internal then
+    !!! warning "Internal"
+        This is used internally - although you're able to use it you probably shouldn't.
+>   end -- if internal
+>   if item.tags and item.tags.pluginwarning then
+>   local plugin_name
+>   for val in iter(item.tags.pluginwarning) do plugin_name = val break end
+    ??? info "Plugin function"
+        This is defined and used within the [$(plugin_name)](/developer/plugins/$(plugin_name)) plugin. As such, its functionality might differ in different schemas, or be unavailable.
+>   end -- if pluginwarning
+    $(ldoc.usage_format(ldoc.descript(item), 1))
+>    if show_parms and item.params and #item.params > 0 then
+>    local subnames = module.kinds:type_of(item).subnames
+>    if subnames then
+    $(styleTitle(subnames))
+>    end -- if
+>   for parm in iter(item.params) do
+>     local param,sublist = item:subparam(parm)
+>     if sublist then
+    <span class="parameter">$(sublist)</span>$(M(item.params.map[sublist],item))
+>     end -- if
+>     for p in iter(param) do
+>        local name,tp,def = item:display_name_of(p), ldoc.typename(item:type_of_param(p)), item:default_of_param(p)
+>     if tp == '' then tp = "vararg" end
+    <span class="types">$(tp)</span>
+    <span class="parameter">$(name)</span>
+>       if def == true then
+    $("<em><ins>optional</ins></em>")
+>      elseif def then
+    $("<em><ins>optional. default: ")$(def)$("</ins></em>")
+>       end -- if
+    $(M(item.params.map[p],item))
+
+>       if item:readonly(p) then
+    $("<em>readonly</em>")
+>       end -- if
+>     end -- for p
+>    end -- if params
+
+>   end -- for parm
+>  if show_return and item.retgroups then local groups = item.retgroups
+    $(styleTitle("Returns"))
+>   for i,group in ldoc.ipairs(groups) do
+>   for r in group:iter() do local type, ctypes = item:return_type(r); local rt = ldoc.typename(type)
+>     if rt ~= '' then
+    <span class="types">$(rt)</span>
+>     end
+    $(M(r.text,item))
+>    if ctypes then
+>    for c in ctypes:iter() do
+    <span class="parameter">$(c.name)</span>
+    <span class="types">$(ldoc.typename(c.type))</span>
+
+    $(M(c.comment,item))
+
+>     end
+
+>    end -- if ctypes
+>     end -- for r
+
+>   if i < #groups then
+     <h4>Or</h4>
+>   end
+>   end -- for group
+>   end -- if returns
+
+>   if show_return and item.raise then
+    <h3>Raises:</h3>
+    $(M(item.raise,item))
+>   end
+>   if item.see then
+    <h3>See also:</h3>
+    <ul>
+>     for see in iter(item.see) do
+        <li><a href="$(ldoc.href(see))">$(see.label )</a></li>
+>    end -- for
+    </ul>
+>   end -- if see
+>   if item.usage then
+    <h3>Usage:</h3>
+    <ul>
+>     for usage in iter(item.usage) do
+        ```lua
+        $(ldoc.usage_format(usage, 2))
+        ```
+>     end -- for
+    </ul>
+>   end -- if usage
+>end -- for item
+>end -- for kind
+>else -- if module
+> if ldoc.description then
+<h2>$(M(ldoc.description,nil))</h2>
+> end
+> if ldoc.full_description then
+$(M(ldoc.full_description,nil))
+> end
+> local allmods, i = {}
+> for kind, mods in ldoc.kinds() do
+>   allmods[kind] = mods
+> end -- for kinds
+> for kind in iter(indexorder) do
+> local mods = allmods[kind]
+<h3>$(kind)</h3>
+> kind = kind:lower()
+| Name | Summary |
+|-------|------|
+> for m in mods() do
+|[$(m.name)]($(no_spaces(kind))/$(m.name).md)|$(m.summary)|
+>  end -- for modules
+
+> end -- for indexorder
+>end -- if module
