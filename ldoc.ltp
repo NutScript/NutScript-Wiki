@@ -6,11 +6,12 @@
 >local abbc, abbsh, abbs = "???+ realm-client", "???+ realm-shared", "???+ realm-server"
 >local realms= {client = abbc, shared = abbsh, server = abbs}
 >local hiddenanchor = function(text, realm) return "##### "..ldoc.realm_anchor_format(text, realm) end
->local indexorder = {"Libraries", "Classes", "Hooks", "Plugins"}
+>local indexorder = {"Globals", "Libraries", "Classes", "Hooks", "Plugins"}
 >local show_return = not ldoc.no_return_or_parms
 >local show_parms = show_return
 >local no_spaces = ldoc.no_spaces
 >if module and not ldoc.no_summary and #module.items > 0 then
+$("# "..module.fname)
 $(module.summary)
 $(module.description)
 >for kind, items in module.kinds() do
@@ -34,7 +35,7 @@ $(realmtype) $("\"<a id="..item.name.."></a>"..ldoc.display_name(item).."\"")
 >   local plugin_name
 >   for val in iter(item.tags.pluginwarning) do plugin_name = val break end
     ??? info "Plugin function"
-        This is defined and used within the [$(plugin_name)](/developer/plugins/$(plugin_name)) plugin. As such, its functionality might differ in different schemas, or be unavailable.
+        This is defined and used within the [$(plugin_name)](../../plugins/$(plugin_name)) plugin. As such, its functionality might differ in different schemas, or be unavailable.
 >   end -- if pluginwarning
     $(ldoc.usage_format(ldoc.descript(item), 1))
 >    if show_parms and item.params and #item.params > 0 then
@@ -53,9 +54,9 @@ $(realmtype) $("\"<a id="..item.name.."></a>"..ldoc.display_name(item).."\"")
     <span class="types">$(tp)</span>
     <span class="parameter">$(name)</span>
 >       if def == true then
-    $("<em><ins>optional</ins></em>")
+    $("<em><ins>`optional`</ins></em>")
 >      elseif def then
-    $("<em><ins>optional. default: ")$(def)$("</ins></em>")
+    $("<em><ins>`optional. default`: `")$(def)$("`</ins></em>")
 >       end -- if
     $(M(item.params.map[p],item))
 
@@ -74,6 +75,7 @@ $(realmtype) $("\"<a id="..item.name.."></a>"..ldoc.display_name(item).."\"")
     <span class="types">$(rt)</span>
 >     end
     $(M(r.text,item))
+
 >    if ctypes then
 >    for c in ctypes:iter() do
     <span class="parameter">$(c.name)</span>
@@ -108,7 +110,7 @@ $(realmtype) $("\"<a id="..item.name.."></a>"..ldoc.display_name(item).."\"")
     <h3>Usage:</h3>
     <ul>
 >     for usage in iter(item.usage) do
-        ```lua
+        ```lua linenums="1"
         $(ldoc.usage_format(usage, 2))
         ```
 >     end -- for

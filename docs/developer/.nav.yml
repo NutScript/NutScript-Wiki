@@ -1,5 +1,6 @@
 nav:
   - index.md
+  - globals
   - libraries
   - classes
   - hooks

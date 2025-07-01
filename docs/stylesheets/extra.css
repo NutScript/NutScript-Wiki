@@ -80,6 +80,7 @@
 
 .parameter {
     background: #3C4E84;
+    color: rgba(226, 228, 233, 0.82);
 }
 
 .types {
@@ -90,7 +91,7 @@
 .realm-client > summary,
 .realm-shared > summary,
 .realm-server > summary {
-    font-size: 125%;
+    font-size: 120%;
 
 }
 
@@ -108,7 +109,7 @@
 .realm-client > h3,
 .realm-shared > h3,
 .realm-server > h3 {
-    font-size: 150%;
+    font-size: 130%;
     border: 1px solid;
     border-image-source: linear-gradient(to left, #4b77be, #37578c);
     border-image-slice: 1;

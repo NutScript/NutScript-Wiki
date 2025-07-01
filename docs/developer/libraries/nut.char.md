@@ -1,8 +1,84 @@
-Library functions for character.
+# nut.char
+Character Management Library.
 
 
-We are a leading progressive organization, transforming the educational paradigm. Our community consists of thriving students, committed families, and an inspired team, all connected to diverse local and global networks, proud to be part of The Island School.
+This module provides core logic for character creation, storage, validation, and synchronization
+in the NutScript framework. It manages character variables, metadata, and interactions across
+the server and client, enabling features like whitelisting, model selection, faction assignment,
+and inventory linking.
 ## Functions
+???+ realm-server "<a id=nut.char.create></a>nut.char.create (data, callback)"
+    ##### sv_nut.char.create {#nut.char.create}
+    !!! warning "Internal"
+        This is used internally - although you're able to use it you probably shouldn't.
+    Creates a new character in the database with the given data.
+    <h3>Parameters:</h3>
+    <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+    <span class="parameter">data</span>
+     The character data table (name, model, faction, etc.)
+
+    <span class="types"><span class="type">function</span></span>
+    <span class="parameter">callback</span>
+    <em><ins>`optional`</ins></em>
+     Callback function triggered after creation (receives charID)
+
+
+
+???+ realm-server "<a id=nut.char.restore></a>nut.char.restore (client, callback, noCache, id)"
+    ##### sv_nut.char.restore {#nut.char.restore}
+    !!! warning "Internal"
+        This is used internally - although you're able to use it you probably shouldn't.
+    Restores a player's characters from the database.
+    <h3>Parameters:</h3>
+    <span class="types"><span class="type">Client</span></span>
+    <span class="parameter">client</span>
+     The player whose characters are being restored
+
+    <span class="types"><span class="type">function</span></span>
+    <span class="parameter">callback</span>
+     Function to call when restoration is complete
+
+    <span class="types"><span class="type">boolean</span></span>
+    <span class="parameter">noCache</span>
+    <em><ins>`optional`</ins></em>
+     If true, skips caching (unused in current implementation)
+
+    <span class="types"><span class="type">number</span></span>
+    <span class="parameter">id</span>
+    <em><ins>`optional`</ins></em>
+     Specific character ID to restore
+
+
+
+???+ realm-server "<a id=nut.char.cleanUpForPlayer></a>nut.char.cleanUpForPlayer (client)"
+    ##### sv_nut.char.cleanUpForPlayer {#nut.char.cleanupforplayer}
+    !!! warning "Internal"
+        This is used internally - although you're able to use it you probably shouldn't.
+    Cleans up all character data for a player when they disconnect.
+    <h3>Parameters:</h3>
+    <span class="types"><span class="type">Client</span></span>
+    <span class="parameter">client</span>
+     The player whose character data should be cleaned up
+
+
+
+???+ realm-server "<a id=nut.char.delete></a>nut.char.delete (id, client)"
+    ##### sv_nut.char.delete {#nut.char.delete}
+    !!! warning "Internal"
+        This is used internally - although you're able to use it you probably shouldn't.
+    Deletes a character from the database and cleans up related data.
+    <h3>Parameters:</h3>
+    <span class="types"><span class="type">number</span></span>
+    <span class="parameter">id</span>
+     The character ID to delete
+
+    <span class="types"><span class="type">Client</span></span>
+    <span class="parameter">client</span>
+    <em><ins>`optional`</ins></em>
+     Player associated with the character
+
+
+
 ???+ realm-shared "<a id=nut.char.new></a>nut.char.new (data, id, client, steamID)"
     ##### sh_nut.char.new {#nut.char.new}
     Creates a new character object with the given data and metadata.
@@ -15,13 +91,13 @@ We are a leading progressive organization, transforming the educational paradigm
     <span class="parameter">id</span>
      The ID of the character.
 
-    <span class="types"><a class="type" href="../Client#">Client</a></span>
+    <span class="types"><span class="type">Client</span></span>
     <span class="parameter">client</span>
      The player associated with the character.
 
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
     <span class="parameter">steamID</span>
-    <em><ins>optional</ins></em>
+    <em><ins>`optional`</ins></em>
      The SteamID of the player associated with the character.
 
 
@@ -29,21 +105,6 @@ We are a leading progressive organization, transforming the educational paradigm
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
     The newly created character object.
 
-
-???+ realm-shared "<a id=playerMeta:getChar></a>playerMeta:getChar ()"
-    ##### sh_playerMeta:getChar {#playermetagetchar}
-    Returns the character associated with the player.
-    <h3>Returns:</h3>
-    <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
-    The character object associated with the player, or nil if no character is associated.
-
-
-???+ realm-shared "<a id=playerMeta:Name></a>playerMeta:Name ()"
-    ##### sh_playerMeta:Name {#playermetaname}
-    Returns the name of the player's character, or the player's Steam name if the character is not available.
-    <h3>Returns:</h3>
-    <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-    The name of the player's character or the player's Steam name if no character is available.
 
 
 ???+ realm-shared "<a id=nut.char.registerVar></a>nut.char.registerVar (key, data)"
@@ -59,21 +120,4 @@ We are a leading progressive organization, transforming the educational paradigm
      Variable Data
 
 
-
-## Fields
-???+ realm-shared "<a id=playerMeta.steamName></a>playerMeta.steamName"
-    ##### sh_playerMeta.steamName {#playermeta.steamname}
-    Returns the players Steam name.
-
-???+ realm-shared "<a id=playerMeta.SteamName></a>playerMeta.SteamName"
-    ##### sh_playerMeta.SteamName {#playermeta.steamname}
-    Returns the players Steam name.  Alias to Player:steamName().
-
-???+ realm-shared "<a id=playerMeta.Nick></a>playerMeta.Nick"
-    ##### sh_playerMeta.Nick {#playermeta.nick}
-    Returns the name of the player's character, or the player's Steam name if the character is not available.  Alias to Player:Name().
-
-???+ realm-shared "<a id=playerMeta.GetName></a>playerMeta.GetName"
-    ##### sh_playerMeta.GetName {#playermeta.getname}
-    Returns the name of the player's character, or the player's Steam name if the character is not available.  Alias to Player:Name().
 

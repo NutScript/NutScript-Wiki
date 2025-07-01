@@ -4,6 +4,8 @@ Factions are just a wrapper over the normal ```team``` library. Essentially, eac
 
 ## **Creating Factions**
 
+Additional functions can be found [here](../../developer/libraries/nut.faction.md)
+
 To create a faction for your schema, first create a ```factions``` folder in your gamemode's ```schema``` folder if it does not exist. [Here](https://github.com/NutScript/skeleton-schema/tree/master/schema/factions) is an example.
 
 One faction corresponds to one file within the ```factions``` folder. The files in the factions folder should be named ```sh_<identifier>.lua``` where ```<identifier>``` is a string containing only alphanumeric characters and underscores. By convention, ```<identifier>``` should be lowercase as well.

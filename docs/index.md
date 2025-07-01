@@ -14,3 +14,7 @@ Developers can view all the code documentation in the [Developer Section](./deve
 ## Wiki Contribution
 
 Want to help improve the documentation and expand the wiki? Head over to the [Wiki Contribution Section](./wiki_contribution/documentation_guidelines.md).
+
+## So what is NutScript? A TL:DR
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fK-BjmWgfjw?si=soneBcQcPqAPvug3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

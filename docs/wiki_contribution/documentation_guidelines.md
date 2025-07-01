@@ -44,7 +44,7 @@ This is a summary.
 This is a description. The description can be as long as it needs to be, so long as its all within the comment block. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis ligula at nibh facilisis luctus. Phasellus faucibus metus at neque euismod, eget fringilla elit porta.
 Proin a neque eu augue pretium posuere. Etiam nec purus sed nibh gravida posuere.
 ]]
--- @classmod Character
+-- @classmod character
 ```
 
 ## Documenting Functions
