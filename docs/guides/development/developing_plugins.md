@@ -74,6 +74,7 @@ Advantages of using PLUGIN:
     ```
 
     is a table that is available (within the respective realm) to all files/scopes within the plugin, as well as accessible from other plugins (```nut.plugin.list.permadeath.curEnts```).
+
 ## **Example**
 
 An example of a plugin creation can be found [here](plugin_example.md).

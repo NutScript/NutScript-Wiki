@@ -3,7 +3,7 @@ Plugin Hook Documentation.
 
 Base hooks for plugins. Hooks are functions that can have code appended to, and are triggered at specific events.
 NutScript allows you to add hooks via PLUGIN, rather than hook.Add.
-See: https://wiki.facepunch.com/gmod/Hook_Library_Usage and ../../guides/development/developing_plugins.md#why-plugin
+See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](../../guides/development/developing_plugins.md#why-plugin)
 ## Character-related hooks
 
 ???+ realm-server "<a id=PLUGIN:CharacterLoaded></a>PLUGIN:CharacterLoaded (id)"
