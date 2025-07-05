@@ -4,8 +4,8 @@ Extended Chatbox Module.
 
 The NutScript chatbox is a custom implementation, rather than using the default GMOD chatbox. This allows the chatbox to contain additional features, such as multiple different chat types and categories.
 ## Functions
-???+ realm-shared "<a id=nut.chat.timestamp></a>nut.chat.timestamp (ooc)"
-    ##### sh_nut.chat.timestamp {#nut.chat.timestamp}
+??? realm-shared "<a id=nut.chat.timestamp></a>nut.chat.timestamp (ooc)"
+    ##### nut.chat.timestamp {#nut.chat.timestamp}
     Returns a formatted timestamp for chat messages.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">boolean</span></span>
@@ -19,8 +19,8 @@ The NutScript chatbox is a custom implementation, rather than using the default 
 
 
 
-???+ realm-shared "<a id=nut.chat.register></a>nut.chat.register (chatType, data)"
-    ##### sh_nut.chat.register {#nut.chat.register}
+??? realm-shared "<a id=nut.chat.register></a>nut.chat.register (chatType, data)"
+    ##### nut.chat.register {#nut.chat.register}
     Registers a new chat type with the information provided.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -48,8 +48,8 @@ The NutScript chatbox is a custom implementation, rather than using the default 
 
         ```
     </ul>
-???+ realm-shared "<a id=nut.chat.parse></a>nut.chat.parse (client, message, noSend)"
-    ##### sh_nut.chat.parse {#nut.chat.parse}
+??? realm-shared "<a id=nut.chat.parse></a>nut.chat.parse (client, message, noSend)"
+    ##### nut.chat.parse {#nut.chat.parse}
     Parses a chat message to determine its type and processes it.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -78,8 +78,8 @@ The NutScript chatbox is a custom implementation, rather than using the default 
 
 
 
-???+ realm-server "<a id=nut.chat.send></a>nut.chat.send (speaker, chatType, text, anonymous, receivers)"
-    ##### sv_nut.chat.send {#nut.chat.send}
+??? realm-server "<a id=nut.chat.send></a>nut.chat.send (speaker, chatType, text, anonymous, receivers)"
+    ##### nut.chat.send {#nut.chat.send}
     Send a chat message using the specified chat type.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -107,8 +107,8 @@ The NutScript chatbox is a custom implementation, rather than using the default 
 
 
 ## Tables
-???+ realm-shared "<a id=ChatType></a>ChatType"
-    ##### sh_ChatType {#chattype}
+??? realm-shared "<a id=ChatType></a>ChatType"
+    ##### ChatType {#chattype}
     Configuration table for registering a new chat type
     <h3>Fields:</h3>
     <span class="types">vararg</span>

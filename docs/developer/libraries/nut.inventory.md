@@ -3,8 +3,8 @@ Inventory System.
 
 Base framework for creating and managing different inventory implementations.
 ## Functions
-???+ realm-shared "<a id=nut.inventory.newType></a>nut.inventory.newType (typeID, invTypeStruct)"
-    ##### sh_nut.inventory.newType {#nut.inventory.newtype}
+??? realm-shared "<a id=nut.inventory.newType></a>nut.inventory.newType (typeID, invTypeStruct)"
+    ##### nut.inventory.newType {#nut.inventory.newtype}
     Performs type checking for new inventory types then stores them into nut.inventory.types if there are no errors.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -34,8 +34,8 @@ Base framework for creating and managing different inventory implementations.
 
         ```
     </ul>
-???+ realm-shared "<a id=nut.inventory.new></a>nut.inventory.new (typeID)"
-    ##### sh_nut.inventory.new {#nut.inventory.new}
+??? realm-shared "<a id=nut.inventory.new></a>nut.inventory.new (typeID)"
+    ##### nut.inventory.new {#nut.inventory.new}
     Creates an instance of an inventory class whose type is the given type ID.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -58,8 +58,8 @@ Base framework for creating and managing different inventory implementations.
 
         ```
     </ul>
-???+ realm-client "<a id=nut.inventory.show></a>nut.inventory.show (inventory, parent)"
-    ##### cl_nut.inventory.show {#nut.inventory.show}
+??? realm-client "<a id=nut.inventory.show></a>nut.inventory.show (inventory, parent)"
+    ##### nut.inventory.show {#nut.inventory.show}
     Displays an inventory UI panel (client-only)
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -82,8 +82,8 @@ Base framework for creating and managing different inventory implementations.
     <ul>
         <li><a href="../../classes/inventory#inventoryshow">inventory:show</a></li>
     </ul>
-???+ realm-shared "<a id=nut.inventory.loadByID></a>nut.inventory.loadByID (id, noCache)"
-    ##### sh_nut.inventory.loadByID {#nut.inventory.loadbyid}
+??? realm-shared "<a id=nut.inventory.loadByID></a>nut.inventory.loadByID (id, noCache)"
+    ##### nut.inventory.loadByID {#nut.inventory.loadbyid}
     Loads an inventory by its ID
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -102,8 +102,8 @@ Base framework for creating and managing different inventory implementations.
 
 
 
-???+ realm-shared "<a id=nut.inventory.loadFromDefaultStorage></a>nut.inventory.loadFromDefaultStorage (id, noCache)"
-    ##### sh_nut.inventory.loadFromDefaultStorage {#nut.inventory.loadfromdefaultstorage}
+??? realm-shared "<a id=nut.inventory.loadFromDefaultStorage></a>nut.inventory.loadFromDefaultStorage (id, noCache)"
+    ##### nut.inventory.loadFromDefaultStorage {#nut.inventory.loadfromdefaultstorage}
     Loads inventory from default storage
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -122,8 +122,8 @@ Base framework for creating and managing different inventory implementations.
 
 
 
-???+ realm-shared "<a id=nut.inventory.instance></a>nut.inventory.instance (typeID, initialData)"
-    ##### sh_nut.inventory.instance {#nut.inventory.instance}
+??? realm-shared "<a id=nut.inventory.instance></a>nut.inventory.instance (typeID, initialData)"
+    ##### nut.inventory.instance {#nut.inventory.instance}
     Creates a new inventory instance
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -142,8 +142,8 @@ Base framework for creating and managing different inventory implementations.
 
 
 
-???+ realm-shared "<a id=nut.inventory.loadAllFromCharID></a>nut.inventory.loadAllFromCharID (charID)"
-    ##### sh_nut.inventory.loadAllFromCharID {#nut.inventory.loadallfromcharid}
+??? realm-shared "<a id=nut.inventory.loadAllFromCharID></a>nut.inventory.loadAllFromCharID (charID)"
+    ##### nut.inventory.loadAllFromCharID {#nut.inventory.loadallfromcharid}
     Loads all inventories for a character
     <h3>Parameters:</h3>
     <span class="types"><span class="type">integer</span></span>
@@ -157,8 +157,8 @@ Base framework for creating and managing different inventory implementations.
 
 
 
-???+ realm-shared "<a id=nut.inventory.deleteByID></a>nut.inventory.deleteByID (id)"
-    ##### sh_nut.inventory.deleteByID {#nut.inventory.deletebyid}
+??? realm-shared "<a id=nut.inventory.deleteByID></a>nut.inventory.deleteByID (id)"
+    ##### nut.inventory.deleteByID {#nut.inventory.deletebyid}
     Deletes an inventory by ID
     <h3>Parameters:</h3>
     <span class="types"><span class="type">integer</span></span>
@@ -167,8 +167,8 @@ Base framework for creating and managing different inventory implementations.
 
 
 
-???+ realm-shared "<a id=nut.inventory.cleanUpForCharacter></a>nut.inventory.cleanUpForCharacter (character)"
-    ##### sh_nut.inventory.cleanUpForCharacter {#nut.inventory.cleanupforcharacter}
+??? realm-shared "<a id=nut.inventory.cleanUpForCharacter></a>nut.inventory.cleanUpForCharacter (character)"
+    ##### nut.inventory.cleanUpForCharacter {#nut.inventory.cleanupforcharacter}
     Cleans up inventories for a character
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -178,8 +178,8 @@ Base framework for creating and managing different inventory implementations.
 
 
 ## Tables
-???+ realm-shared "<a id=InventoryTypeDef></a>InventoryTypeDef"
-    ##### sh_InventoryTypeDef {#inventorytypedef}
+??? realm-shared "<a id=InventoryTypeDef></a>InventoryTypeDef"
+    ##### InventoryTypeDef {#inventorytypedef}
     Inventory Type Definition Structure
     <h3>Fields:</h3>
     <span class="types">vararg</span>
@@ -212,8 +212,8 @@ Base framework for creating and managing different inventory implementations.
 
 
 
-???+ realm-shared "<a id=InventoryInstance></a>InventoryInstance"
-    ##### sh_InventoryInstance {#inventoryinstance}
+??? realm-shared "<a id=InventoryInstance></a>InventoryInstance"
+    ##### InventoryInstance {#inventoryinstance}
     Inventory Instance Structure
     <h3>Fields:</h3>
     <span class="types">vararg</span>

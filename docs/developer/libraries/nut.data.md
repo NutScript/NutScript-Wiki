@@ -3,8 +3,8 @@ Data Persistence Utility.
 
 Handles saving, retrieving, and deleting persistent framework or schema data in the `nutscript/` folder.
 ## Functions
-???+ realm-server "<a id=nut.data.set></a>nut.data.set (key, value, global, ignoreMap)"
-    ##### sv_nut.data.set {#nut.data.set}
+??? realm-server "<a id=nut.data.set></a>nut.data.set (key, value, global, ignoreMap)"
+    ##### nut.data.set {#nut.data.set}
     Set and save data in the nutscript folder.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -32,8 +32,8 @@ Handles saving, retrieving, and deleting persistent framework or schema data in 
 
 
 
-???+ realm-server "<a id=nut.data.get></a>nut.data.get (key, default, global, ignoreMap, refresh)"
-    ##### sv_nut.data.get {#nut.data.get}
+??? realm-server "<a id=nut.data.get></a>nut.data.get (key, default, global, ignoreMap, refresh)"
+    ##### nut.data.get {#nut.data.get}
     Retrieves a saved value from the nutscript folder.
 	 Optionally returns cached value unless refreshed.
     <h3>Parameters:</h3>
@@ -72,8 +72,8 @@ Handles saving, retrieving, and deleting persistent framework or schema data in 
 
 
 
-???+ realm-server "<a id=nut.data.delete></a>nut.data.delete (key, global, ignoreMap)"
-    ##### sv_nut.data.delete {#nut.data.delete}
+??? realm-server "<a id=nut.data.delete></a>nut.data.delete (key, global, ignoreMap)"
+    ##### nut.data.delete {#nut.data.delete}
     Deletes a saved value.
 	 Removes both the file and its cache entry.
     <h3>Parameters:</h3>

@@ -4,8 +4,8 @@ Faction System.
 Handles player factions/teams including whitelists, models, and team management. Factions are just a wrapper over the normal ```team``` library. Essentially, each faction associates a table with a team. So, extra information can be stored for teams (e.g. salary, descriptions, etc...).
 See also [Faction Development](../../../guides/development/factions/)
 ## Functions
-???+ realm-shared "<a id=nut.faction.loadFromDir></a>nut.faction.loadFromDir (directory)"
-    ##### sh_nut.faction.loadFromDir {#nut.faction.loadfromdir}
+??? realm-shared "<a id=nut.faction.loadFromDir></a>nut.faction.loadFromDir (directory)"
+    ##### nut.faction.loadFromDir {#nut.faction.loadfromdir}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Loads faction definitions from a directory
@@ -16,8 +16,8 @@ See also [Faction Development](../../../guides/development/factions/)
 
 
 
-???+ realm-shared "<a id=nut.faction.get></a>nut.faction.get (identifier)"
-    ##### sh_nut.faction.get {#nut.faction.get}
+??? realm-shared "<a id=nut.faction.get></a>nut.faction.get (identifier)"
+    ##### nut.faction.get {#nut.faction.get}
     Gets a faction by index or uniqueID
     <h3>Parameters:</h3>
     <span class="types">vararg</span>
@@ -31,8 +31,8 @@ See also [Faction Development](../../../guides/development/factions/)
 
 
 
-???+ realm-shared "<a id=nut.faction.getIndex></a>nut.faction.getIndex (uniqueID)"
-    ##### sh_nut.faction.getIndex {#nut.faction.getindex}
+??? realm-shared "<a id=nut.faction.getIndex></a>nut.faction.getIndex (uniqueID)"
+    ##### nut.faction.getIndex {#nut.faction.getindex}
     Gets a faction's numeric index by uniqueID
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -46,8 +46,8 @@ See also [Faction Development](../../../guides/development/factions/)
 
 
 
-???+ realm-shared "<a id=nut.faction.formatModelData></a>nut.faction.formatModelData ()"
-    ##### sh_nut.faction.formatModelData {#nut.faction.formatmodeldata}
+??? realm-shared "<a id=nut.faction.formatModelData></a>nut.faction.formatModelData ()"
+    ##### nut.faction.formatModelData {#nut.faction.formatmodeldata}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Formats the bodygroup data into a uniform style.<br>
@@ -58,8 +58,8 @@ See also [Faction Development](../../../guides/development/factions/)
 	<li>As a table with the bodygroup name as the key `{head = 2, shoulders = 1, knees = 2, toes = 0}`</li>
 	</ol>
 
-???+ realm-client "<a id=nut.faction.hasWhitelist></a>nut.faction.hasWhitelist (faction)"
-    ##### cl_nut.faction.hasWhitelist {#nut.faction.haswhitelist}
+??? realm-client "<a id=nut.faction.hasWhitelist></a>nut.faction.hasWhitelist (faction)"
+    ##### nut.faction.hasWhitelist {#nut.faction.haswhitelist}
     Checks if local player has whitelist for a faction
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>

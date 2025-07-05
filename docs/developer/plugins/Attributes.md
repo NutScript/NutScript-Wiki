@@ -2,8 +2,8 @@
 Attributes that define various RPG stats of a character.
  Attributes allow characters to be more defined within an RPG context.
 ## Functions
-???+ realm-shared "<a id=nut.attribs.loadFromDir></a>nut.attribs.loadFromDir (directory)"
-    ##### sh_nut.attribs.loadFromDir {#nut.attribs.loadfromdir}
+??? realm-shared "<a id=nut.attribs.loadFromDir></a>nut.attribs.loadFromDir (directory)"
+    ##### nut.attribs.loadFromDir {#nut.attribs.loadfromdir}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     ??? info "Plugin function"
@@ -16,8 +16,8 @@ Attributes that define various RPG stats of a character.
 
 
 
-???+ realm-shared "<a id=nut.attribs.setup></a>nut.attribs.setup (client)"
-    ##### sh_nut.attribs.setup {#nut.attribs.setup}
+??? realm-shared "<a id=nut.attribs.setup></a>nut.attribs.setup (client)"
+    ##### nut.attribs.setup {#nut.attribs.setup}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     ??? info "Plugin function"
@@ -32,8 +32,8 @@ Attributes that define various RPG stats of a character.
 
 ## [Character methods](/developer/classes/Character/)
 
-???+ realm-server "<a id=charMeta:updateAttrib></a>charMeta:updateAttrib (key, value)"
-    ##### sv_charMeta:updateAttrib {#charmetaupdateattrib}
+??? realm-server "<a id=charMeta:updateAttrib></a>charMeta:updateAttrib (key, value)"
+    ##### charMeta:updateAttrib {#charmetaupdateattrib}
     ??? info "Plugin function"
         This is defined and used within the [Attributes](../../plugins/Attributes) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     adds a value to a character's attribute.  The new value cannot exceed the attributes maxValue or the maxAttribs config
@@ -48,8 +48,8 @@ Attributes that define various RPG stats of a character.
 
 
 
-???+ realm-server "<a id=charMeta:setAttrib></a>charMeta:setAttrib (key, value)"
-    ##### sv_charMeta:setAttrib {#charmetasetattrib}
+??? realm-server "<a id=charMeta:setAttrib></a>charMeta:setAttrib (key, value)"
+    ##### charMeta:setAttrib {#charmetasetattrib}
     ??? info "Plugin function"
         This is defined and used within the [Attributes](../../plugins/Attributes) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     sets  a character's attribute value.
@@ -64,8 +64,8 @@ Attributes that define various RPG stats of a character.
 
 
 
-???+ realm-server "<a id=charMeta:addBoost></a>charMeta:addBoost (boostID, attribID, boostAmount)"
-    ##### sv_charMeta:addBoost {#charmetaaddboost}
+??? realm-server "<a id=charMeta:addBoost></a>charMeta:addBoost (boostID, attribID, boostAmount)"
+    ##### charMeta:addBoost {#charmetaaddboost}
     ??? info "Plugin function"
         This is defined and used within the [Attributes](../../plugins/Attributes) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     adds a boost to a character's attribute.  The boost acts as a (semi-)temporary change to the attribute value without changing the base value.
@@ -84,8 +84,8 @@ Attributes that define various RPG stats of a character.
 
 
 
-???+ realm-server "<a id=charMeta:removeBoost></a>charMeta:removeBoost (boostID, attribID)"
-    ##### sv_charMeta:removeBoost {#charmetaremoveboost}
+??? realm-server "<a id=charMeta:removeBoost></a>charMeta:removeBoost (boostID, attribID)"
+    ##### charMeta:removeBoost {#charmetaremoveboost}
     ??? info "Plugin function"
         This is defined and used within the [Attributes](../../plugins/Attributes) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     removes a boost from a character's attribute.
@@ -100,8 +100,8 @@ Attributes that define various RPG stats of a character.
 
 
 
-???+ realm-shared "<a id=charMeta:getBoost></a>charMeta:getBoost (attribID)"
-    ##### sh_charMeta:getBoost {#charmetagetboost}
+??? realm-shared "<a id=charMeta:getBoost></a>charMeta:getBoost (attribID)"
+    ##### charMeta:getBoost {#charmetagetboost}
     ??? info "Plugin function"
         This is defined and used within the [Attributes](../../plugins/Attributes) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     Get all applied boosts to a character's attribute.
@@ -117,8 +117,8 @@ Attributes that define various RPG stats of a character.
 
 
 
-???+ realm-shared "<a id=charMeta:getBoosts></a>charMeta:getBoosts ()"
-    ##### sh_charMeta:getBoosts {#charmetagetboosts}
+??? realm-shared "<a id=charMeta:getBoosts></a>charMeta:getBoosts ()"
+    ##### charMeta:getBoosts {#charmetagetboosts}
     ??? info "Plugin function"
         This is defined and used within the [Attributes](../../plugins/Attributes) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     Get all boosts applied to a character, across all attributes.
@@ -128,8 +128,8 @@ Attributes that define various RPG stats of a character.
 
 
 
-???+ realm-shared "<a id=charMeta:getAttrib></a>charMeta:getAttrib (key, default)"
-    ##### sh_charMeta:getAttrib {#charmetagetattrib}
+??? realm-shared "<a id=charMeta:getAttrib></a>charMeta:getAttrib (key, default)"
+    ##### charMeta:getAttrib {#charmetagetattrib}
     ??? info "Plugin function"
         This is defined and used within the [Attributes](../../plugins/Attributes) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     Get a character's current attribute value.  Includes applied boosts.

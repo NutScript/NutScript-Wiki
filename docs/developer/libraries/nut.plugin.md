@@ -3,8 +3,8 @@ Plugin Module.
 
 Core system for loading and managing NutScript plugins and schema components.
 ## Functions
-???+ realm-shared "<a id=nut.plugin.load></a>nut.plugin.load (uniqueID, path, isSingleFile, variable)"
-    ##### sh_nut.plugin.load {#nut.plugin.load}
+??? realm-shared "<a id=nut.plugin.load></a>nut.plugin.load (uniqueID, path, isSingleFile, variable)"
+    ##### nut.plugin.load {#nut.plugin.load}
     Loads a plugin from specified path
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -34,8 +34,8 @@ Core system for loading and managing NutScript plugins and schema components.
 
         ```
     </ul>
-???+ realm-shared "<a id=nut.plugin.loadExtras></a>nut.plugin.loadExtras (path)"
-    ##### sh_nut.plugin.loadExtras {#nut.plugin.loadextras}
+??? realm-shared "<a id=nut.plugin.loadExtras></a>nut.plugin.loadExtras (path)"
+    ##### nut.plugin.loadExtras {#nut.plugin.loadextras}
     Loads additional plugin resources
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -51,8 +51,8 @@ Core system for loading and managing NutScript plugins and schema components.
 
         ```
     </ul>
-???+ realm-shared "<a id=nut.plugin.loadEntities></a>nut.plugin.loadEntities (path)"
-    ##### sh_nut.plugin.loadEntities {#nut.plugin.loadentities}
+??? realm-shared "<a id=nut.plugin.loadEntities></a>nut.plugin.loadEntities (path)"
+    ##### nut.plugin.loadEntities {#nut.plugin.loadentities}
     Loads entities from plugin directory
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -68,8 +68,8 @@ Core system for loading and managing NutScript plugins and schema components.
 
         ```
     </ul>
-???+ realm-shared "<a id=nut.plugin.initialize></a>nut.plugin.initialize ()"
-    ##### sh_nut.plugin.initialize {#nut.plugin.initialize}
+??? realm-shared "<a id=nut.plugin.initialize></a>nut.plugin.initialize ()"
+    ##### nut.plugin.initialize {#nut.plugin.initialize}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Initializes core plugin system
@@ -81,8 +81,8 @@ Core system for loading and managing NutScript plugins and schema components.
 
         ```
     </ul>
-???+ realm-shared "<a id=nut.plugin.loadFromDir></a>nut.plugin.loadFromDir (directory)"
-    ##### sh_nut.plugin.loadFromDir {#nut.plugin.loadfromdir}
+??? realm-shared "<a id=nut.plugin.loadFromDir></a>nut.plugin.loadFromDir (directory)"
+    ##### nut.plugin.loadFromDir {#nut.plugin.loadfromdir}
     Loads all plugins from directory
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -98,8 +98,8 @@ Core system for loading and managing NutScript plugins and schema components.
 
         ```
     </ul>
-???+ realm-server "<a id=nut.plugin.setDisabled></a>nut.plugin.setDisabled (uniqueID, disabled)"
-    ##### sv_nut.plugin.setDisabled {#nut.plugin.setdisabled}
+??? realm-server "<a id=nut.plugin.setDisabled></a>nut.plugin.setDisabled (uniqueID, disabled)"
+    ##### nut.plugin.setDisabled {#nut.plugin.setdisabled}
     Sets plugin disabled state
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -119,8 +119,8 @@ Core system for loading and managing NutScript plugins and schema components.
 
         ```
     </ul>
-???+ realm-shared "<a id=nut.plugin.isDisabled></a>nut.plugin.isDisabled (uniqueID)"
-    ##### sh_nut.plugin.isDisabled {#nut.plugin.isdisabled}
+??? realm-shared "<a id=nut.plugin.isDisabled></a>nut.plugin.isDisabled (uniqueID)"
+    ##### nut.plugin.isDisabled {#nut.plugin.isdisabled}
     Checks if plugin is disabled
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -142,8 +142,8 @@ Core system for loading and managing NutScript plugins and schema components.
         ```
     </ul>
 ## Tables
-???+ realm-shared "<a id=PluginDef></a>PluginDef"
-    ##### sh_PluginDef {#plugindef}
+??? realm-shared "<a id=PluginDef></a>PluginDef"
+    ##### PluginDef {#plugindef}
     Plugin Definition Structure
     <h3>Fields:</h3>
     <span class="types">vararg</span>

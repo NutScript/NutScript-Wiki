@@ -3,7 +3,7 @@
 >local lev = ldoc.level or 2
 >local lev1, lev2 = ('#'):rep(lev), ('#'):rep(lev + 1)
 >local styleTitle = function(text) return "<h3>"..text..":</h3>" end
->local abbc, abbsh, abbs = "???+ realm-client", "???+ realm-shared", "???+ realm-server"
+>local abbc, abbsh, abbs = "??? realm-client", "??? realm-shared", "??? realm-server"
 >local realms= {client = abbc, shared = abbsh, server = abbs}
 >local hiddenanchor = function(text, realm) return "##### "..ldoc.realm_anchor_format(text, realm) end
 >local indexorder = {"Globals", "Libraries", "Classes", "Hooks", "Plugins"}
