@@ -5,7 +5,7 @@ Provides animation mappings and utilities for different player models and states
 Supports model class assignments and forced animation sequences for roleplay purposes.
 ## Functions
 ??? realm-shared "<a id=nut.anim.setModelClass></a>nut.anim.setModelClass (model, class)"
-    ##### nut.anim.setModelClass {#nut.anim.setmodelclass}
+    ##### sh_nut.anim.setModelClass {#nut.anim.setmodelclass}
     Sets the animation class for a specified model.  Use this to fix models using incorrect animations or T-Posing
 
 	!!! warning "This function does not transform models"
@@ -38,7 +38,7 @@ Supports model class assignments and forced animation sequences for roleplay pur
 
 
 ??? realm-shared "<a id=nut.anim.getModelClass></a>nut.anim.getModelClass (model)"
-    ##### nut.anim.getModelClass {#nut.anim.getmodelclass}
+    ##### sh_nut.anim.getModelClass {#nut.anim.getmodelclass}
     Gets the animation class for a specified model.
 	 Falls back to default classes based on model name if not explicitly set.
     <h3>Parameters:</h3>

@@ -5,7 +5,7 @@ Base library for the player interaction menu library.
 Hehehahahoo.
 ## Functions
 ??? realm-client "<a id=nut.playerInteract.addFunc></a>nut.playerInteract.addFunc (name, data)"
-    ##### nut.playerInteract.addFunc {#nut.playerinteract.addfunc}
+    ##### cl_nut.playerInteract.addFunc {#nut.playerinteract.addfunc}
     Adds a new player interaction button to the interaction system.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -34,7 +34,7 @@ Hehehahahoo.
         ```
     </ul>
 ??? realm-client "<a id=nut.playerInteract.interact></a>nut.playerInteract.interact (entity, time)"
-    ##### nut.playerInteract.interact {#nut.playerinteract.interact}
+    ##### cl_nut.playerInteract.interact {#nut.playerinteract.interact}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Initiates interaction with a player entity.
@@ -50,7 +50,7 @@ Hehehahahoo.
 
 
 ??? realm-client "<a id=nut.playerInteract.clear></a>nut.playerInteract.clear ()"
-    ##### nut.playerInteract.clear {#nut.playerinteract.clear}
+    ##### cl_nut.playerInteract.clear {#nut.playerinteract.clear}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Clears the current player interaction.

@@ -4,7 +4,7 @@ Item Class.
 Represents an instance of an item in NutScript, including persistence, networking, inventory management, and interaction logic.
 ## Methods
 ??? realm-server "<a id=Item:removeFromInventory></a>Item:removeFromInventory (preserveItem)"
-    ##### Item:removeFromInventory {#itemremovefrominventory}
+    ##### sv_Item:removeFromInventory {#itemremovefrominventory}
     Removes the item from the inventory it is in and then itself
     <h3>Parameters:</h3>
     <span class="types"><span class="type">boolean</span></span>
@@ -20,7 +20,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:delete></a>Item:delete ()"
-    ##### Item:delete {#itemdelete}
+    ##### sv_Item:delete {#itemdelete}
     Deletes the item from memory and database.
     <h3>Returns:</h3>
     <span class="types"><span class="type">promise</span></span>
@@ -29,7 +29,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:remove></a>Item:remove ()"
-    ##### Item:remove {#itemremove}
+    ##### sv_Item:remove {#itemremove}
     Permanently deletes this item instance and from the inventory it is in.
     <h3>Returns:</h3>
     <span class="types"><span class="type">promise</span></span>
@@ -38,15 +38,15 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:destroy></a>Item:destroy ()"
-    ##### Item:destroy {#itemdestroy}
+    ##### sv_Item:destroy {#itemdestroy}
     Deletes the in-memory data for this item
 
 ??? realm-server "<a id=Item:onDisposed></a>Item:onDisposed ()"
-    ##### Item:onDisposed {#itemondisposed}
+    ##### sv_Item:onDisposed {#itemondisposed}
     Called when the item data has been cleaned up from memory.
 
 ??? realm-server "<a id=Item:getEntity></a>Item:getEntity ()"
-    ##### Item:getEntity {#itemgetentity}
+    ##### sv_Item:getEntity {#itemgetentity}
     Returns the entity representing this item, if one exists.
     <h3>Returns:</h3>
     <span class="types"><a class="type" href="../../classes/entity#">entity</a> or <span class="type">nil</span></span>
@@ -55,7 +55,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:spawn></a>Item:spawn (position, angles)"
-    ##### Item:spawn {#itemspawn}
+    ##### sv_Item:spawn {#itemspawn}
     Spawn an item entity based off the item table.
     <h3>Parameters:</h3>
     <span class="types">vararg</span>
@@ -75,7 +75,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:transfer></a>Item:transfer (newInventory, bBypass)"
-    ##### Item:transfer {#itemtransfer}
+    ##### sv_Item:transfer {#itemtransfer}
     Transfers the item to a different inventory.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Inventory</span></span>
@@ -95,7 +95,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:onInstanced></a>Item:onInstanced (id)"
-    ##### Item:onInstanced {#itemoninstanced}
+    ##### sv_Item:onInstanced {#itemoninstanced}
     Called when an instance of this item has been created.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">integer</span></span>
@@ -105,7 +105,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:onSync></a>Item:onSync (recipient)"
-    ##### Item:onSync {#itemonsync}
+    ##### sv_Item:onSync {#itemonsync}
     Called when data for this item should be replicated to the recipient.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -115,11 +115,11 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:onRemoved></a>Item:onRemoved ()"
-    ##### Item:onRemoved {#itemonremoved}
+    ##### sv_Item:onRemoved {#itemonremoved}
     Called when this item has been deleted permanently.
 
 ??? realm-server "<a id=Item:onRestored></a>Item:onRestored (inventory)"
-    ##### Item:onRestored {#itemonrestored}
+    ##### sv_Item:onRestored {#itemonrestored}
     Called when this item has been loaded from the database.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Inventory</span></span>
@@ -130,7 +130,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:sync></a>Item:sync (recipient)"
-    ##### Item:sync {#itemsync}
+    ##### sv_Item:sync {#itemsync}
     Syncs this item’s data to a recipient.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -141,7 +141,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:setData></a>Item:setData (key, value, receivers, noSave, noCheckEntity)"
-    ##### Item:setData {#itemsetdata}
+    ##### sv_Item:setData {#itemsetdata}
     Sets data on this item and optionally syncs it.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -170,7 +170,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:addQuantity></a>Item:addQuantity (quantity, receivers, noCheckEntity)"
-    ##### Item:addQuantity {#itemaddquantity}
+    ##### sv_Item:addQuantity {#itemaddquantity}
     Adds quantity to the item.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">integer</span></span>
@@ -190,7 +190,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:setQuantity></a>Item:setQuantity (quantity, receivers, noCheckEntity)"
-    ##### Item:setQuantity {#itemsetquantity}
+    ##### sv_Item:setQuantity {#itemsetquantity}
     Sets the quantity of the item.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">integer</span></span>
@@ -210,7 +210,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-server "<a id=Item:interact></a>Item:interact (action, client, entity, data)"
-    ##### Item:interact {#iteminteract}
+    ##### sv_Item:interact {#iteminteract}
     Performs an interaction on the item (e.g., use, drop).
 	 Handles all logic and hooks associated with the action.
     <h3>Parameters:</h3>
@@ -240,7 +240,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:getQuantity></a>Item:getQuantity ()"
-    ##### Item:getQuantity {#itemgetquantity}
+    ##### sh_Item:getQuantity {#itemgetquantity}
     Gets the quantity of the item.
 	 If item ID is 0, returns `maxQuantity` instead.
     <h3>Returns:</h3>
@@ -250,7 +250,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:getID></a>Item:getID ()"
-    ##### Item:getID {#itemgetid}
+    ##### sh_Item:getID {#itemgetid}
     Gets the unique item ID.
     <h3>Returns:</h3>
     <span class="types"><span class="type">int</span></span>
@@ -259,7 +259,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:getName></a>Item:getName ()"
-    ##### Item:getName {#itemgetname}
+    ##### sh_Item:getName {#itemgetname}
     Gets the item's display name.
 	 Localized on client.
     <h3>Returns:</h3>
@@ -269,7 +269,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:getDesc></a>Item:getDesc ()"
-    ##### Item:getDesc {#itemgetdesc}
+    ##### sh_Item:getDesc {#itemgetdesc}
     Gets the item's description.
 	 Localized on client.
     <h3>Returns:</h3>
@@ -279,7 +279,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:getModel></a>Item:getModel ()"
-    ##### Item:getModel {#itemgetmodel}
+    ##### sh_Item:getModel {#itemgetmodel}
     Gets the item's model path.
     <h3>Returns:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -288,7 +288,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:getSkin></a>Item:getSkin ()"
-    ##### Item:getSkin {#itemgetskin}
+    ##### sh_Item:getSkin {#itemgetskin}
     Gets the item's skin index.
     <h3>Returns:</h3>
     <span class="types"><span class="type">int</span></span>
@@ -297,7 +297,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:getPrice></a>Item:getPrice ()"
-    ##### Item:getPrice {#itemgetprice}
+    ##### sh_Item:getPrice {#itemgetprice}
     Gets the item's price.  Used in, for example, vendors.
 	 May be calculated dynamically using `calcPrice`.
     <h3>Returns:</h3>
@@ -311,7 +311,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
         <li><a href="../../classes/item#itemcalcprice">calcPrice</a></li>
     </ul>
 ??? realm-shared "<a id=Item:calcPrice></a>Item:calcPrice (price)"
-    ##### Item:calcPrice {#itemcalcprice}
+    ##### sh_Item:calcPrice {#itemcalcprice}
     Dynamically calculate the price of the item.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -330,7 +330,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
         <li><a href="../../classes/item#itemgetprice">getPrice</a></li>
     </ul>
 ??? realm-shared "<a id=Item:call></a>Item:call (method, client, entity, ...)"
-    ##### Item:call {#itemcall}
+    ##### sh_Item:call {#itemcall}
     Calls a method on the item with client/entity context.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -354,7 +354,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:getOwner></a>Item:getOwner ()"
-    ##### Item:getOwner {#itemgetowner}
+    ##### sh_Item:getOwner {#itemgetowner}
     Gets the player who owns this item.
 	 Scans known inventories and recipients.
     <h3>Returns:</h3>
@@ -369,7 +369,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:getData></a>Item:getData (key, default)"
-    ##### Item:getData {#itemgetdata}
+    ##### sh_Item:getData {#itemgetdata}
     Gets stored data from the item.
 	 If key is `true`, returns the entire data table.
     <h3>Parameters:</h3>
@@ -389,7 +389,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:hook></a>Item:hook (name, func)"
-    ##### Item:hook {#itemhook}
+    ##### sh_Item:hook {#itemhook}
     Attaches a hook function to this item.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -403,7 +403,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:postHook></a>Item:postHook (name, func)"
-    ##### Item:postHook {#itemposthook}
+    ##### sh_Item:postHook {#itemposthook}
     Attaches a post-execution hook to this item.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -417,12 +417,12 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:onRegistered></a>Item:onRegistered ()"
-    ##### Item:onRegistered {#itemonregistered}
+    ##### sh_Item:onRegistered {#itemonregistered}
     Called after NutScript has stored this item into the list of valid items.
 
 ## Metamethods
 ??? realm-shared "<a id=Item:__eq></a>Item:__eq (other)"
-    ##### Item:__eq {#item__eq}
+    ##### sh_Item:__eq {#item__eq}
     Checks if this item is equal to another item.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="../../classes/item#">item</a></span>
@@ -437,7 +437,7 @@ Represents an instance of an item in NutScript, including persistence, networkin
 
 
 ??? realm-shared "<a id=Item:__tostring></a>Item:__tostring ()"
-    ##### Item:__tostring {#item__tostring}
+    ##### sh_Item:__tostring {#item__tostring}
     Converts the item to a string representation.
     <h3>Returns:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>

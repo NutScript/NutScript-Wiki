@@ -5,7 +5,7 @@ Handles multilingual text storage, retrieval, and formatting.
 
 ## Functions
 ??? realm-shared "<a id=nut.lang.loadFromDir></a>nut.lang.loadFromDir (directory)"
-    ##### nut.lang.loadFromDir {#nut.lang.loadfromdir}
+    ##### sh_nut.lang.loadFromDir {#nut.lang.loadfromdir}
     Loads language files from a directory
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>

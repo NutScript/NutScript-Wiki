@@ -4,7 +4,7 @@ Item Module.
 Core system for managing in-game items, their definitions, and instances.
 ## Functions
 ??? realm-server "<a id=nut.item.instance></a>nut.item.instance (index, uniqueID, itemData, x, y, callback)"
-    ##### nut.item.instance {#nut.item.instance}
+    ##### sv_nut.item.instance {#nut.item.instance}
     Creates a new item instance in the database.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -44,7 +44,7 @@ Core system for managing in-game items, their definitions, and instances.
 
 
 ??? realm-server "<a id=nut.item.deleteByID></a>nut.item.deleteByID (id)"
-    ##### nut.item.deleteByID {#nut.item.deletebyid}
+    ##### sv_nut.item.deleteByID {#nut.item.deletebyid}
     Deletes an item from the database by its ID.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -54,7 +54,7 @@ Core system for managing in-game items, their definitions, and instances.
 
 
 ??? realm-server "<a id=nut.item.loadItemByID></a>nut.item.loadItemByID (itemIndex, recipientFilter)"
-    ##### nut.item.loadItemByID {#nut.item.loaditembyid}
+    ##### sv_nut.item.loadItemByID {#nut.item.loaditembyid}
     Loads an item from the database by its ID.
     <h3>Parameters:</h3>
     <span class="types">vararg</span>
@@ -69,7 +69,7 @@ Core system for managing in-game items, their definitions, and instances.
 
 
 ??? realm-server "<a id=nut.item.spawn></a>nut.item.spawn (uniqueID, position, callback, angles, data)"
-    ##### nut.item.spawn {#nut.item.spawn}
+    ##### sv_nut.item.spawn {#nut.item.spawn}
     Instances and spawns a given item type.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -103,7 +103,7 @@ Core system for managing in-game items, their definitions, and instances.
 
 
 ??? realm-shared "<a id=nut.item.get></a>nut.item.get (identifier)"
-    ##### nut.item.get {#nut.item.get}
+    ##### sh_nut.item.get {#nut.item.get}
     Retrieves an item definition table
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -125,7 +125,7 @@ Core system for managing in-game items, their definitions, and instances.
         ```
     </ul>
 ??? realm-shared "<a id=nut.item.load></a>nut.item.load (path, baseID, isBaseItem)"
-    ##### nut.item.load {#nut.item.load}
+    ##### sh_nut.item.load {#nut.item.load}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Loads an item definition from file
@@ -145,7 +145,7 @@ Core system for managing in-game items, their definitions, and instances.
 
 
 ??? realm-shared "<a id=nut.item.isItem></a>nut.item.isItem (object)"
-    ##### nut.item.isItem {#nut.item.isitem}
+    ##### sh_nut.item.isItem {#nut.item.isitem}
     Checks if an object is a valid item instance
     <h3>Parameters:</h3>
     <span class="types">vararg</span>
@@ -167,7 +167,7 @@ Core system for managing in-game items, their definitions, and instances.
         ```
     </ul>
 ??? realm-shared "<a id=nut.item.register></a>nut.item.register (uniqueID, baseID, isBaseItem, path, luaGenerated)"
-    ##### nut.item.register {#nut.item.register}
+    ##### sh_nut.item.register {#nut.item.register}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Registers a new item definition
@@ -200,7 +200,7 @@ Core system for managing in-game items, their definitions, and instances.
 
 
 ??? realm-shared "<a id=nut.item.loadFromDir></a>nut.item.loadFromDir (directory)"
-    ##### nut.item.loadFromDir {#nut.item.loadfromdir}
+    ##### sh_nut.item.loadFromDir {#nut.item.loadfromdir}
     Loads all items from a directory
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -217,7 +217,7 @@ Core system for managing in-game items, their definitions, and instances.
         ```
     </ul>
 ??? realm-shared "<a id=nut.item.new></a>nut.item.new (uniqueID, id)"
-    ##### nut.item.new {#nut.item.new}
+    ##### sh_nut.item.new {#nut.item.new}
     Creates a new item instance
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -244,7 +244,7 @@ Core system for managing in-game items, their definitions, and instances.
     </ul>
 ## Tables
 ??? realm-shared "<a id=ItemDef></a>ItemDef"
-    ##### ItemDef {#itemdef}
+    ##### sh_ItemDef {#itemdef}
     Item Definition Structure
     <h3>Fields:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -286,7 +286,7 @@ Core system for managing in-game items, their definitions, and instances.
 
 
 ??? realm-shared "<a id=ItemInstance></a>ItemInstance"
-    ##### ItemInstance {#iteminstance}
+    ##### sh_ItemInstance {#iteminstance}
     Item Instance Structure
     <h3>Fields:</h3>
     <span class="types"><span class="type">integer</span></span>

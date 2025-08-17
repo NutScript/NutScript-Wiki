@@ -4,7 +4,7 @@ Chat Command module.
 Handles registration, parsing, and execution of chat and console commands.
 ## Functions
 ??? realm-shared "<a id=nut.command.add></a>nut.command.add (command, data)"
-    ##### nut.command.add {#nut.command.add}
+    ##### sh_nut.command.add {#nut.command.add}
     Adds a new command to the list of commands.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -22,7 +22,7 @@ Handles registration, parsing, and execution of chat and console commands.
         <li><a href="../../libraries/nut.command#commanddef">CommandDef</a></li>
     </ul>
 ??? realm-shared "<a id=nut.command.extractArgs></a>nut.command.extractArgs (text)"
-    ##### nut.command.extractArgs {#nut.command.extractargs}
+    ##### sh_nut.command.extractArgs {#nut.command.extractargs}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Gets a table of arguments from a string.
@@ -39,7 +39,7 @@ Handles registration, parsing, and execution of chat and console commands.
 
 
 ??? realm-server "<a id=nut.command.findFaction></a>nut.command.findFaction (client, name)"
-    ##### nut.command.findFaction {#nut.command.findfaction}
+    ##### sv_nut.command.findFaction {#nut.command.findfaction}
     Finds a faction based on the uniqueID, and then the name if no such uniqueID exists.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -58,7 +58,7 @@ Handles registration, parsing, and execution of chat and console commands.
 
 
 ??? realm-server "<a id=nut.command.run></a>nut.command.run (client, command, arguments)"
-    ##### nut.command.run {#nut.command.run}
+    ##### sv_nut.command.run {#nut.command.run}
     Forces a player to run a command.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -76,7 +76,7 @@ Handles registration, parsing, and execution of chat and console commands.
 
 
 ??? realm-server "<a id=nut.command.parse></a>nut.command.parse (client, text, realCommand, arguments)"
-    ##### nut.command.parse {#nut.command.parse}
+    ##### sv_nut.command.parse {#nut.command.parse}
     Add a function to parse a regular chat string.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -105,7 +105,7 @@ Handles registration, parsing, and execution of chat and console commands.
 
 
 ??? realm-client "<a id=nut.command.send></a>nut.command.send (command, ...)"
-    ##### nut.command.send {#nut.command.send}
+    ##### cl_nut.command.send {#nut.command.send}
     Sends a command from client to server
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -120,7 +120,7 @@ Handles registration, parsing, and execution of chat and console commands.
 
 ## Tables
 ??? realm-shared "<a id=CommandDef></a>CommandDef"
-    ##### CommandDef {#commanddef}
+    ##### sh_CommandDef {#commanddef}
     Configuration table for command definitions
     <h3>Fields:</h3>
     <span class="types">vararg</span>

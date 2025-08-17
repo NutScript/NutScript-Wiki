@@ -4,7 +4,7 @@ Designate areas within a map.
 ## Functions
 
 ??? realm-server "<a id=nut.area.getArea></a>nut.area.getArea (areaID)"
-    ##### nut.area.getArea {#nut.area.getarea}
+    ##### sv_nut.area.getArea {#nut.area.getarea}
     ??? info "Plugin function"
         This is defined and used within the [Area](../../plugins/Area) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     get an area's data with its id
@@ -21,7 +21,7 @@ Designate areas within a map.
 
 
 ??? realm-server "<a id=nut.area.getAllArea></a>nut.area.getAllArea ()"
-    ##### nut.area.getAllArea {#nut.area.getallarea}
+    ##### sv_nut.area.getAllArea {#nut.area.getallarea}
     ??? info "Plugin function"
         This is defined and used within the [Area](../../plugins/Area) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     get all areas of the current map
@@ -32,7 +32,7 @@ Designate areas within a map.
 
 
 ??? realm-server "<a id=nut.area.addArea></a>nut.area.addArea (name, vector1, vector2, desc)"
-    ##### nut.area.addArea {#nut.area.addarea}
+    ##### sv_nut.area.addArea {#nut.area.addarea}
     ??? info "Plugin function"
         This is defined and used within the [Area](../../plugins/Area) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     add a new area.
@@ -57,7 +57,7 @@ Designate areas within a map.
 
 
 ??? realm-client "<a id=nut.area.openAreaManager></a>nut.area.openAreaManager ()"
-    ##### nut.area.openAreaManager {#nut.area.openareamanager}
+    ##### cl_nut.area.openAreaManager {#nut.area.openareamanager}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     ??? info "Plugin function"
@@ -67,7 +67,7 @@ Designate areas within a map.
 ## [Client](/developer/classes/Client/) methods
 
 ??? realm-server "<a id=playerMeta:isInArea></a>playerMeta:isInArea (areaID)"
-    ##### playerMeta:isInArea {#playermetaisinarea}
+    ##### sv_playerMeta:isInArea {#playermetaisinarea}
     ??? info "Plugin function"
         This is defined and used within the [Area](../../plugins/Area) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     Check if player is in an area.  This is for single check (ex: area items, checking area in commands)
@@ -94,7 +94,7 @@ Designate areas within a map.
 
 
 ??? realm-server "<a id=playerMeta:getArea></a>playerMeta:getArea ()"
-    ##### playerMeta:getArea {#playermetagetarea}
+    ##### sv_playerMeta:getArea {#playermetagetarea}
     ??? info "Plugin function"
         This is defined and used within the [Area](../../plugins/Area) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     Get the client's current Area.  This is for continous checks (ex: checking gas area whatever.)
@@ -102,13 +102,13 @@ Designate areas within a map.
 ## [Plugin Hooks](/developer/hooks/GM/)
 
 ??? realm-server "<a id=PLUGIN:saveAreas></a>PLUGIN:saveAreas ()"
-    ##### PLUGIN:saveAreas {#pluginsaveareas}
+    ##### sv_PLUGIN:saveAreas {#pluginsaveareas}
     ??? info "Plugin function"
         This is defined and used within the [Area](../../plugins/Area) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     Save the current area information to disk.
 
 ??? realm-server "<a id=PLUGIN:OnPlayerAreaChanged></a>PLUGIN:OnPlayerAreaChanged (client, areaID)"
-    ##### PLUGIN:OnPlayerAreaChanged {#pluginonplayerareachanged}
+    ##### sv_PLUGIN:OnPlayerAreaChanged {#pluginonplayerareachanged}
     ??? info "Plugin function"
         This is defined and used within the [Area](../../plugins/Area) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     If area is changed, display the new area's name to the client's screen.

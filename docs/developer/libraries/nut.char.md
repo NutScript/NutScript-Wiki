@@ -8,7 +8,7 @@ the server and client, enabling features like whitelisting, model selection, fac
 and inventory linking.
 ## Functions
 ??? realm-server "<a id=nut.char.create></a>nut.char.create (data, callback)"
-    ##### nut.char.create {#nut.char.create}
+    ##### sv_nut.char.create {#nut.char.create}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Creates a new character in the database with the given data.
@@ -25,7 +25,7 @@ and inventory linking.
 
 
 ??? realm-server "<a id=nut.char.restore></a>nut.char.restore (client, callback, noCache, id)"
-    ##### nut.char.restore {#nut.char.restore}
+    ##### sv_nut.char.restore {#nut.char.restore}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Restores a player's characters from the database.
@@ -51,7 +51,7 @@ and inventory linking.
 
 
 ??? realm-server "<a id=nut.char.cleanUpForPlayer></a>nut.char.cleanUpForPlayer (client)"
-    ##### nut.char.cleanUpForPlayer {#nut.char.cleanupforplayer}
+    ##### sv_nut.char.cleanUpForPlayer {#nut.char.cleanupforplayer}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Cleans up all character data for a player when they disconnect.
@@ -63,7 +63,7 @@ and inventory linking.
 
 
 ??? realm-server "<a id=nut.char.delete></a>nut.char.delete (id, client)"
-    ##### nut.char.delete {#nut.char.delete}
+    ##### sv_nut.char.delete {#nut.char.delete}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Deletes a character from the database and cleans up related data.
@@ -80,7 +80,7 @@ and inventory linking.
 
 
 ??? realm-shared "<a id=nut.char.new></a>nut.char.new (data, id, client, steamID)"
-    ##### nut.char.new {#nut.char.new}
+    ##### sh_nut.char.new {#nut.char.new}
     Creates a new character object with the given data and metadata.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -108,7 +108,7 @@ and inventory linking.
 
 
 ??? realm-shared "<a id=nut.char.registerVar></a>nut.char.registerVar (key, data)"
-    ##### nut.char.registerVar {#nut.char.registervar}
+    ##### sh_nut.char.registerVar {#nut.char.registervar}
     Sets up a new character variable.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>

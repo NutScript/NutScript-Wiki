@@ -7,7 +7,7 @@ All characters that a player owns are loaded into server memory upon the client 
 
 ## Methods
 ??? realm-server "<a id=Character:save></a>Character:save (callback)"
-    ##### Character:save {#charactersave}
+    ##### sv_Character:save {#charactersave}
     Saves the character to the database and calls the callback if provided.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">function</span></span>
@@ -17,7 +17,7 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 ??? realm-server "<a id=Character:sync></a>Character:sync (receiver)"
-    ##### Character:sync {#charactersync}
+    ##### sv_Character:sync {#charactersync}
     Sends character information to the receiver.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -28,7 +28,7 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 ??? realm-server "<a id=Character:setup></a>Character:setup (noNetworking)"
-    ##### Character:setup {#charactersetup}
+    ##### sv_Character:setup {#charactersetup}
     Sets up the "appearance" related information for the character.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">boolean</span></span>
@@ -38,11 +38,11 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 ??? realm-server "<a id=Character:kick></a>Character:kick ()"
-    ##### Character:kick {#characterkick}
+    ##### sv_Character:kick {#characterkick}
     Forces the player to choose a character.
 
 ??? realm-server "<a id=Character:ban></a>Character:ban (time)"
-    ##### Character:ban {#characterban}
+    ##### sv_Character:ban {#characterban}
     Prevents the use of this character permanently or for a certain amount of time.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">integer</span></span>
@@ -59,17 +59,17 @@ All characters that a player owns are loaded into server memory upon the client 
         ```
     </ul>
 ??? realm-server "<a id=Character:delete></a>Character:delete ()"
-    ##### Character:delete {#characterdelete}
+    ##### sv_Character:delete {#characterdelete}
     Deletes this character from existence along with its associated data.
 
 ??? realm-server "<a id=Character:destroy></a>Character:destroy ()"
-    ##### Character:destroy {#characterdestroy}
+    ##### sv_Character:destroy {#characterdestroy}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Deletes this character from memory.
 
 ??? realm-shared "<a id=Character:getPlayer></a>Character:getPlayer ()"
-    ##### Character:getPlayer {#charactergetplayer}
+    ##### sh_Character:getPlayer {#charactergetplayer}
     Returns which player owns this character.
     <h3>Returns:</h3>
     <span class="types"><span class="type">player</span></span>
@@ -88,7 +88,7 @@ All characters that a player owns are loaded into server memory upon the client 
 ## Class-related methods
 
 ??? realm-shared "<a id=Character:joinClass></a>Character:joinClass (class, isForced)"
-    ##### Character:joinClass {#characterjoinclass}
+    ##### sh_Character:joinClass {#characterjoinclass}
     Makes a character join a class
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -108,13 +108,13 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 ??? realm-shared "<a id=Character:kickClass></a>Character:kickClass ()"
-    ##### Character:kickClass {#characterkickclass}
+    ##### sh_Character:kickClass {#characterkickclass}
     Removes character from current class (joins default)
 
 ## Currency-related methods
 
 ??? realm-shared "<a id=Character:hasMoney></a>Character:hasMoney (amount)"
-    ##### Character:hasMoney {#characterhasmoney}
+    ##### sh_Character:hasMoney {#characterhasmoney}
     Checks if character has sufficient funds
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -129,7 +129,7 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 ??? realm-shared "<a id=Character:giveMoney></a>Character:giveMoney (amount, takingMoney)"
-    ##### Character:giveMoney {#charactergivemoney}
+    ##### sh_Character:giveMoney {#charactergivemoney}
     Gives money to character
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -149,7 +149,7 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 ??? realm-shared "<a id=Character:takeMoney></a>Character:takeMoney (amount)"
-    ##### Character:takeMoney {#charactertakemoney}
+    ##### sh_Character:takeMoney {#charactertakemoney}
     Takes money from character
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -166,7 +166,7 @@ All characters that a player owns are loaded into server memory upon the client 
 ## Flag-related methods
 
 ??? realm-server "<a id=Character:setFlags></a>Character:setFlags (flags)"
-    ##### Character:setFlags {#charactersetflags}
+    ##### sv_Character:setFlags {#charactersetflags}
     Set the flag data to the character, overriding existing flags
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -176,7 +176,7 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 ??? realm-server "<a id=Character:takeFlags></a>Character:takeFlags (flags)"
-    ##### Character:takeFlags {#charactertakeflags}
+    ##### sv_Character:takeFlags {#charactertakeflags}
     Remove the flags from the character.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -186,7 +186,7 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 ??? realm-shared "<a id=Character:getFlags></a>Character:getFlags ()"
-    ##### Character:getFlags {#charactergetflags}
+    ##### sh_Character:getFlags {#charactergetflags}
     Gets character's current flags.
     <h3>Returns:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -195,7 +195,7 @@ All characters that a player owns are loaded into server memory upon the client 
 
 
 ??? realm-shared "<a id=Character:hasFlags></a>Character:hasFlags (flags)"
-    ##### Character:hasFlags {#characterhasflags}
+    ##### sh_Character:hasFlags {#characterhasflags}
     Check if the character contains the flags specified.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>

@@ -5,7 +5,7 @@ Entities are all interactible objects on the server. [Learn more here](https://w
 ## Networking Methods
 
 ??? realm-server "<a id=Entity:sendNetVar></a>Entity:sendNetVar (key, receiver)"
-    ##### Entity:sendNetVar {#entitysendnetvar}
+    ##### sv_Entity:sendNetVar {#entitysendnetvar}
     Sends a network variable from an entity to a specific receiver.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -19,7 +19,7 @@ Entities are all interactible objects on the server. [Learn more here](https://w
 
 
 ??? realm-server "<a id=Entity:clearNetVars></a>Entity:clearNetVars (receiver)"
-    ##### Entity:clearNetVars {#entityclearnetvars}
+    ##### sv_Entity:clearNetVars {#entityclearnetvars}
     Clears all network variables associated with this entity.  Notifies the client(s) to remove them.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -29,7 +29,7 @@ Entities are all interactible objects on the server. [Learn more here](https://w
 
 
 ??? realm-server "<a id=Entity:setNetVar></a>Entity:setNetVar (key, value, receiver)"
-    ##### Entity:setNetVar {#entitysetnetvar}
+    ##### sv_Entity:setNetVar {#entitysetnetvar}
     Sets a network variable on the entity and notifies the receiver.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -48,7 +48,7 @@ Entities are all interactible objects on the server. [Learn more here](https://w
 
 
 ??? realm-shared "<a id=Entity:getNetVar></a>Entity:getNetVar (key, default)"
-    ##### Entity:getNetVar {#entitygetnetvar}
+    ##### sh_Entity:getNetVar {#entitygetnetvar}
     Retrieves a networked variable from the entity.
 	 The clientside version of the function can only return data that was previously networked to the client.
 	 Returns a default value if the variable is not set.
@@ -73,7 +73,7 @@ Entities are all interactible objects on the server. [Learn more here](https://w
 
 Provides utility methods for door detection and logic.
 ??? realm-shared "<a id=Entity:isDoor></a>Entity:isDoor ()"
-    ##### Entity:isDoor {#entityisdoor}
+    ##### sh_Entity:isDoor {#entityisdoor}
     Checks if an entity is a door by comparing its class.
     <h3>Returns:</h3>
     <span class="types"><span class="type">bool</span></span>
@@ -82,7 +82,7 @@ Provides utility methods for door detection and logic.
 
 
 ??? realm-shared "<a id=Entity:getDoorPartner></a>Entity:getDoorPartner ()"
-    ##### Entity:getDoorPartner {#entitygetdoorpartner}
+    ##### sh_Entity:getDoorPartner {#entitygetdoorpartner}
     Returns the door's partner entity (slave or parent).
     <h3>Returns:</h3>
     <span class="types"><a class="type" href="../../classes/entity#">entity</a></span>
@@ -96,7 +96,7 @@ Provides utility methods for door detection and logic.
 
 
 ??? realm-shared "<a id=Entity:isLocked></a>Entity:isLocked ()"
-    ##### Entity:isLocked {#entityislocked}
+    ##### sh_Entity:isLocked {#entityislocked}
     Checks if the door or vehicle is locked.
 	 Reads from the entity's internal save table.
     <h3>Returns:</h3>
@@ -111,7 +111,7 @@ Provides utility methods for door detection and logic.
 
 
 ??? realm-shared "<a id=Entity:getBlocker></a>Entity:getBlocker ()"
-    ##### Entity:getBlocker {#entitygetblocker}
+    ##### sh_Entity:getBlocker {#entitygetblocker}
     Returns the entity that is blocking the door's sequence.
 	 Typically another entity preventing the door from moving.
     <h3>Returns:</h3>
@@ -126,7 +126,7 @@ Provides utility methods for door detection and logic.
 
 
 ??? realm-server "<a id=Entity:blastDoor></a>Entity:blastDoor (velocity, lifeTime, ignorePartner)"
-    ##### Entity:blastDoor {#entityblastdoor}
+    ##### sv_Entity:blastDoor {#entityblastdoor}
     Simulates the door being blasted open by replacing it with a physics dummy.
 	 The original door is hidden and later restored. Optionally applies to a partner door.
     <h3>Parameters:</h3>
@@ -156,7 +156,7 @@ Provides utility methods for door detection and logic.
 
 Provides helper functions to determine whether an entity is considered a chair.
 ??? realm-shared "<a id=Entity:isChair></a>Entity:isChair ()"
-    ##### Entity:isChair {#entityischair}
+    ##### sh_Entity:isChair {#entityischair}
     Whether or not a vehicle is a chair by checking its model with the chair list.
     <h3>Returns:</h3>
     <span class="types"><span class="type">bool</span></span>

@@ -5,7 +5,7 @@ Library functions for nut.menu.
 nut.menu is the interaction menu that appears when interacting with NS entities and characters.
 ## Functions
 ??? realm-client "<a id=nut.menu.add></a>nut.menu.add (options, position, onRemove)"
-    ##### nut.menu.add {#nut.menu.add}
+    ##### cl_nut.menu.add {#nut.menu.add}
     Adds a new menu to the list of drawn menus.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -29,11 +29,11 @@ nut.menu is the interaction menu that appears when interacting with NS entities 
 
 
 ??? realm-client "<a id=nut.menu.drawAll></a>nut.menu.drawAll ()"
-    ##### nut.menu.drawAll {#nut.menu.drawall}
+    ##### cl_nut.menu.drawAll {#nut.menu.drawall}
     Draws all active menus or hides them when needed.
 
 ??? realm-client "<a id=nut.menu.getActiveMenu></a>nut.menu.getActiveMenu ()"
-    ##### nut.menu.getActiveMenu {#nut.menu.getactivemenu}
+    ##### cl_nut.menu.getActiveMenu {#nut.menu.getactivemenu}
     Determines which menu is being looked at.
     <h3>Returns:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -45,7 +45,7 @@ nut.menu is the interaction menu that appears when interacting with NS entities 
 
 
 ??? realm-client "<a id=nut.menu.onButtonPressed></a>nut.menu.onButtonPressed (menu, callback)"
-    ##### nut.menu.onButtonPressed {#nut.menu.onbuttonpressed}
+    ##### cl_nut.menu.onButtonPressed {#nut.menu.onbuttonpressed}
     Handles button press events for menus.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>

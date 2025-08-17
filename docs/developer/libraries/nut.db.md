@@ -4,7 +4,7 @@ Database Module.
 Core system for handling all database operations in NutScript.
 ## Functions
 ??? realm-shared "<a id=nut.db.connect></a>nut.db.connect (callback, reconnect)"
-    ##### nut.db.connect {#nut.db.connect}
+    ##### sh_nut.db.connect {#nut.db.connect}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Connects to the database
@@ -22,7 +22,7 @@ Core system for handling all database operations in NutScript.
 
 
 ??? realm-server "<a id=nut.db.wipeTables></a>nut.db.wipeTables (callback)"
-    ##### nut.db.wipeTables {#nut.db.wipetables}
+    ##### sv_nut.db.wipeTables {#nut.db.wipetables}
     Wipes all NutScript database tables
     <h3>Parameters:</h3>
     <span class="types"><span class="type">function</span></span>
@@ -33,13 +33,13 @@ Core system for handling all database operations in NutScript.
 
 
 ??? realm-shared "<a id=nut.db.loadTables></a>nut.db.loadTables ()"
-    ##### nut.db.loadTables {#nut.db.loadtables}
+    ##### sh_nut.db.loadTables {#nut.db.loadtables}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Loads/creates database tables
 
 ??? realm-shared "<a id=nut.db.waitForTablesToLoad></a>nut.db.waitForTablesToLoad ()"
-    ##### nut.db.waitForTablesToLoad {#nut.db.waitfortablestoload}
+    ##### sh_nut.db.waitForTablesToLoad {#nut.db.waitfortablestoload}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     Waits for tables to finish loading
@@ -50,7 +50,7 @@ Core system for handling all database operations in NutScript.
 
 
 ??? realm-shared "<a id=nut.db.convertDataType></a>nut.db.convertDataType (value, noEscape)"
-    ##### nut.db.convertDataType {#nut.db.convertdatatype}
+    ##### sh_nut.db.convertDataType {#nut.db.convertdatatype}
     Converts Lua data types to SQL format
     <h3>Parameters:</h3>
     <span class="types">vararg</span>
@@ -70,7 +70,7 @@ Core system for handling all database operations in NutScript.
 
 
 ??? realm-shared "<a id=nut.db.insertTable></a>nut.db.insertTable (value, callback, dbTable)"
-    ##### nut.db.insertTable {#nut.db.inserttable}
+    ##### sh_nut.db.insertTable {#nut.db.inserttable}
     Inserts data into a table
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -90,7 +90,7 @@ Core system for handling all database operations in NutScript.
 
 
 ??? realm-shared "<a id=nut.db.updateTable></a>nut.db.updateTable (value, callback, dbTable, condition)"
-    ##### nut.db.updateTable {#nut.db.updatetable}
+    ##### sh_nut.db.updateTable {#nut.db.updatetable}
     Updates data in a table
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -115,7 +115,7 @@ Core system for handling all database operations in NutScript.
 
 
 ??? realm-shared "<a id=nut.db.select></a>nut.db.select (fields, dbTable, condition, limit)"
-    ##### nut.db.select {#nut.db.select}
+    ##### sh_nut.db.select {#nut.db.select}
     Selects data from a table
     <h3>Parameters:</h3>
     <span class="types">vararg</span>
@@ -145,7 +145,7 @@ Core system for handling all database operations in NutScript.
 
 
 ??? realm-shared "<a id=nut.db.upsert></a>nut.db.upsert (value, dbTable)"
-    ##### nut.db.upsert {#nut.db.upsert}
+    ##### sh_nut.db.upsert {#nut.db.upsert}
     Upserts (insert or update) data
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -165,7 +165,7 @@ Core system for handling all database operations in NutScript.
 
 
 ??? realm-shared "<a id=nut.db.delete></a>nut.db.delete (dbTable, condition)"
-    ##### nut.db.delete {#nut.db.delete}
+    ##### sh_nut.db.delete {#nut.db.delete}
     Deletes data from a table
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -186,7 +186,7 @@ Core system for handling all database operations in NutScript.
 
 
 ??? realm-shared "<a id=nut.db.prepare></a>nut.db.prepare (key, query, types)"
-    ##### nut.db.prepare {#nut.db.prepare}
+    ##### sh_nut.db.prepare {#nut.db.prepare}
     Prepares a SQL statement
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -211,7 +211,7 @@ Core system for handling all database operations in NutScript.
         ```
     </ul>
 ??? realm-shared "<a id=nut.db.preparedCall></a>nut.db.preparedCall (key, callback, ...)"
-    ##### nut.db.preparedCall {#nut.db.preparedcall}
+    ##### sh_nut.db.preparedCall {#nut.db.preparedcall}
     Executes a prepared statement
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>

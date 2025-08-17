@@ -4,7 +4,7 @@ Currency System.
 Handles money/currency functionality including display formatting, spawning, and character transactions.
 ## Functions
 ??? realm-shared "<a id=nut.currency.set></a>nut.currency.set (symbol, singular, plural)"
-    ##### nut.currency.set {#nut.currency.set}
+    ##### sh_nut.currency.set {#nut.currency.set}
     Sets the currency display properties
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -22,7 +22,7 @@ Handles money/currency functionality including display formatting, spawning, and
 
 
 ??? realm-shared "<a id=nut.currency.get></a>nut.currency.get (amount)"
-    ##### nut.currency.get {#nut.currency.get}
+    ##### sh_nut.currency.get {#nut.currency.get}
     Formats an amount into a display string
     <h3>Parameters:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -37,7 +37,7 @@ Handles money/currency functionality including display formatting, spawning, and
 
 
 ??? realm-shared "<a id=nut.currency.spawn></a>nut.currency.spawn (pos, amount, angle)"
-    ##### nut.currency.spawn {#nut.currency.spawn}
+    ##### sh_nut.currency.spawn {#nut.currency.spawn}
     Spawns a physical money entity in the world
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Vector</span></span>

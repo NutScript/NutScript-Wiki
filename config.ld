@@ -41,7 +41,6 @@ tparam_alias('character', 'Character')
 tparam_alias('item', 'Item')
 tparam_alias('inv', 'Inventory')
 tparam_alias('panel', 'Panel')
-tparam_alias('inv', 'Inventory')
 tparam_alias('vector', 'Vector')
 tparam_alias('angle', 'Angle')
 tparam_alias('entity', 'Entity')
@@ -51,9 +50,9 @@ kind_names = {
     module = 'Libraries'
 }
 
-new_type("client", "Client", true)
-new_type("plugin", "Plugins", true)
-new_type("hook", "Hooks", true)
-new_type("derma", "Derma", true)
-new_type("metaclass", "Class", true)
-new_type("global", "Globals", true)
+new_type('client', 'Client', true)
+new_type('plugin', 'Plugins', true)
+new_type('hook', 'Hooks', true)
+new_type('derma', 'Derma', true)
+new_type('metaclass', 'Class', true)
+new_type('global', 'Globals', true)

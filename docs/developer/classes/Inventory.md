@@ -5,7 +5,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 ## Methods
 ??? realm-client "<a id=Inventory:show></a>Inventory:show (parent)"
-    ##### Inventory:show {#inventoryshow}
+    ##### cl_Inventory:show {#inventoryshow}
     Displays the inventory in a UI panel.
 	 Delegates to the global `nut.inventory.show` function.
     <h3>Parameters:</h3>
@@ -25,7 +25,7 @@ Typically, each Character has their own inventory, however an inventory can also
         <li><a href="../../libraries/nut.inventory#nut.inventory.show">nut.inventory.show</a></li>
     </ul>
 ??? realm-server "<a id=Inventory:addItem></a>Inventory:addItem (item)"
-    ##### Inventory:addItem {#inventoryadditem}
+    ##### sv_Inventory:addItem {#inventoryadditem}
     Given an item type string, creates an instance of that item type
 	 and adds it to this inventory.  A promise is returned containing
 	 the newly created item after it has been added to the inventory.
@@ -42,7 +42,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:add></a>Inventory:add (item)"
-    ##### Inventory:add {#inventoryadd}
+    ##### sv_Inventory:add {#inventoryadd}
     Sample implementation of Inventory:add - delegates to addItem
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Item</span></span>
@@ -61,7 +61,7 @@ Typically, each Character has their own inventory, however an inventory can also
         <li><a href="../../classes/inventory#inventoryadditem">addItem</a></li>
     </ul>
 ??? realm-server "<a id=Inventory:syncItemAdded></a>Inventory:syncItemAdded (item)"
-    ##### Inventory:syncItemAdded {#inventorysyncitemadded}
+    ##### sv_Inventory:syncItemAdded {#inventorysyncitemadded}
     Syncs a single added item with clients.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Item</span></span>
@@ -71,7 +71,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:initializeStorage></a>Inventory:initializeStorage (initialData)"
-    ##### Inventory:initializeStorage {#inventoryinitializestorage}
+    ##### sv_Inventory:initializeStorage {#inventoryinitializestorage}
     Called to handle the logic for creating the data storage for this inventory.
 	 Returns a promise that is resolved after the storing is done.
     <h3>Parameters:</h3>
@@ -87,7 +87,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:restoreFromStorage></a>Inventory:restoreFromStorage (id)"
-    ##### Inventory:restoreFromStorage {#inventoryrestorefromstorage}
+    ##### sv_Inventory:restoreFromStorage {#inventoryrestorefromstorage}
     Called when some inventory with a certain ID needs to be loaded.
 	 If this type is responsible for loading that inventory ID in particular,
 	 then a promise that resolves to an inventory should be returned.
@@ -100,7 +100,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:removeItem></a>Inventory:removeItem (itemID, preserveItem)"
-    ##### Inventory:removeItem {#inventoryremoveitem}
+    ##### sv_Inventory:removeItem {#inventoryremoveitem}
     Removes an item corresponding to the given item ID if it is in this
 	 inventory.  If the item belongs to this inventory, it is then deleted.
 	 A promise is returned which is resolved after removal from this.
@@ -123,7 +123,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:setData></a>Inventory:setData (key, value)"
-    ##### Inventory:setData {#inventorysetdata}
+    ##### sv_Inventory:setData {#inventorysetdata}
     Stores arbitrary data that can later be looked up using the given key.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -142,7 +142,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:canAccess></a>Inventory:canAccess (action, context)"
-    ##### Inventory:canAccess {#inventorycanaccess}
+    ##### sv_Inventory:canAccess {#inventorycanaccess}
     Whether or not a client can interact with this inventory.
 	 Iterates through registered access rules.
     <h3>Parameters:</h3>
@@ -165,7 +165,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:addAccessRule></a>Inventory:addAccessRule (rule, priority)"
-    ##### Inventory:addAccessRule {#inventoryaddaccessrule}
+    ##### sv_Inventory:addAccessRule {#inventoryaddaccessrule}
     Changes the canAccess method to also return the result of the rule
 	 where the rule of a function of (inventory, player, action) -> boolean.
     <h3>Parameters:</h3>
@@ -186,7 +186,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:removeAccessRule></a>Inventory:removeAccessRule (rule)"
-    ##### Inventory:removeAccessRule {#inventoryremoveaccessrule}
+    ##### sv_Inventory:removeAccessRule {#inventoryremoveaccessrule}
     Removes the first instance of a specific access rule from the inventory.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">function</span></span>
@@ -201,7 +201,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:getRecipients></a>Inventory:getRecipients ()"
-    ##### Inventory:getRecipients {#inventorygetrecipients}
+    ##### sv_Inventory:getRecipients {#inventorygetrecipients}
     Returns a list of players who can interact with this inventory.
     <h3>Returns:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -210,16 +210,16 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:onInstanced></a>Inventory:onInstanced ()"
-    ##### Inventory:onInstanced {#inventoryoninstanced}
+    ##### sv_Inventory:onInstanced {#inventoryoninstanced}
     Called after this inventory has first been created and loaded.
 
 ??? realm-server "<a id=Inventory:onLoaded></a>Inventory:onLoaded ()"
-    ##### Inventory:onLoaded {#inventoryonloaded}
+    ##### sv_Inventory:onLoaded {#inventoryonloaded}
     Called after this inventory has first been loaded, not including right
 	 after it has been created.
 
 ??? realm-server "<a id=Inventory:loadItems></a>Inventory:loadItems ()"
-    ##### Inventory:loadItems {#inventoryloaditems}
+    ##### sv_Inventory:loadItems {#inventoryloaditems}
     Loads the items contained in this inventory.
     <h3>Returns:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -228,7 +228,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:onItemsLoaded></a>Inventory:onItemsLoaded (items)"
-    ##### Inventory:onItemsLoaded {#inventoryonitemsloaded}
+    ##### sv_Inventory:onItemsLoaded {#inventoryonitemsloaded}
     Called after items have been loaded into the inventory.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -238,7 +238,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:instance></a>Inventory:instance (initialData)"
-    ##### Inventory:instance {#inventoryinstance}
+    ##### sv_Inventory:instance {#inventoryinstance}
     Creates an inventory instance via the global inventory system.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
@@ -257,7 +257,7 @@ Typically, each Character has their own inventory, however an inventory can also
         <li><a href="../../libraries/nut.inventory#nut.inventory.instance">nut.inventory.instance</a></li>
     </ul>
 ??? realm-server "<a id=Inventory:syncData></a>Inventory:syncData (key, recipients)"
-    ##### Inventory:syncData {#inventorysyncdata}
+    ##### sv_Inventory:syncData {#inventorysyncdata}
     Sends a key-value pair to all clients who can access this inventory.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -272,7 +272,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:sync></a>Inventory:sync (recipients)"
-    ##### Inventory:sync {#inventorysync}
+    ##### sv_Inventory:sync {#inventorysync}
     Sends the full inventory and all contained items information to clients.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -283,7 +283,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-server "<a id=Inventory:delete></a>Inventory:delete ()"
-    ##### Inventory:delete {#inventorydelete}
+    ##### sv_Inventory:delete {#inventorydelete}
     Deletes the inventory using the global deletion handler.
 
     <h3>See also:</h3>
@@ -291,11 +291,11 @@ Typically, each Character has their own inventory, however an inventory can also
         <li><a href="../../libraries/nut.inventory#nut.inventory.deletebyid">nut.inventory.deleteByID</a></li>
     </ul>
 ??? realm-server "<a id=Inventory:destroy></a>Inventory:destroy ()"
-    ##### Inventory:destroy {#inventorydestroy}
+    ##### sv_Inventory:destroy {#inventorydestroy}
     Destroys all items and removes the inventory instance.
 
 ??? realm-shared "<a id=Inventory:getData></a>Inventory:getData (key, default)"
-    ##### Inventory:getData {#inventorygetdata}
+    ##### sh_Inventory:getData {#inventorygetdata}
     Returns the value of the stored key if it exists, the default otherwise.
 	 If no default is given, then nil is returned.
     <h3>Parameters:</h3>
@@ -315,7 +315,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:extend></a>Inventory:extend (className)"
-    ##### Inventory:extend {#inventoryextend}
+    ##### sh_Inventory:extend {#inventoryextend}
     Creates an inventory object whose base class is the callee.
 	 Use this to create subclasses of a specific inventory type.
 	 A starting point is to extend the nut.Inventory class.
@@ -327,7 +327,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:configure></a>Inventory:configure (config)"
-    ##### Inventory:configure {#inventoryconfigure}
+    ##### sh_Inventory:configure {#inventoryconfigure}
     Called when the inventory can first be configured.
 	 You can call edit the inventory configuration in here.
     <h3>Parameters:</h3>
@@ -338,7 +338,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:addDataProxy></a>Inventory:addDataProxy (key, onChange)"
-    ##### Inventory:addDataProxy {#inventoryadddataproxy}
+    ##### sh_Inventory:addDataProxy {#inventoryadddataproxy}
     Adds a callback function for data changes whose key matches the given one.
 	 This allows you to add additional behavior when data is changed. Note that
 	 this only runs if the default behavior for Inventory:onDataChanged has
@@ -355,7 +355,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:register></a>Inventory:register (typeID)"
-    ##### Inventory:register {#inventoryregister}
+    ##### sh_Inventory:register {#inventoryregister}
     Sets the type ID for this inventory class and registers it as a valid type.
 	 This basically sets up configurations for this inventory and registers
 	 the type.
@@ -371,7 +371,7 @@ Typically, each Character has their own inventory, however an inventory can also
         <li><a href="../../libraries/nut.inventory#nut.inventory.newtype">nut.inventory.newType</a></li>
     </ul>
 ??? realm-shared "<a id=Inventory:new></a>Inventory:new ()"
-    ##### Inventory:new {#inventorynew}
+    ##### sh_Inventory:new {#inventorynew}
     Creates an instance of this inventory type.
     <h3>Returns:</h3>
     An inventory instance
@@ -383,7 +383,7 @@ Typically, each Character has their own inventory, however an inventory can also
         <li><a href="../../libraries/nut.inventory#nut.inventory.new">nut.inventory.new</a></li>
     </ul>
 ??? realm-shared "<a id=Inventory:getType></a>Inventory:getType ()"
-    ##### Inventory:getType {#inventorygettype}
+    ##### sh_Inventory:getType {#inventorygettype}
     Returns the inventory type of this inventory.
     <h3>Returns:</h3>
     An inventory object
@@ -391,7 +391,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:onDataChanged></a>Inventory:onDataChanged (key, oldValue, newValue)"
-    ##### Inventory:onDataChanged {#inventoryondatachanged}
+    ##### sh_Inventory:onDataChanged {#inventoryondatachanged}
     Called when a data value has been changed for this inventory.
 	 You can use this to add different behaviors for certain keys changing.
     <h3>Parameters:</h3>
@@ -410,7 +410,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:getItems></a>Inventory:getItems ()"
-    ##### Inventory:getItems {#inventorygetitems}
+    ##### sh_Inventory:getItems {#inventorygetitems}
     Returns a list of all the items in this inventory
     <h3>Returns:</h3>
     A table containing items
@@ -418,7 +418,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:getItemsOfType></a>Inventory:getItemsOfType (itemType)"
-    ##### Inventory:getItemsOfType {#inventorygetitemsoftype}
+    ##### sh_Inventory:getItemsOfType {#inventorygetitemsoftype}
     Returns a list of items in this inventory with matching item type.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -433,7 +433,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:getFirstItemOfType></a>Inventory:getFirstItemOfType (itemType)"
-    ##### Inventory:getFirstItemOfType {#inventorygetfirstitemoftype}
+    ##### sh_Inventory:getFirstItemOfType {#inventorygetfirstitemoftype}
     Returns an item in this inventory of a specific type, or nil if not found.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -447,7 +447,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:hasItem></a>Inventory:hasItem (itemType)"
-    ##### Inventory:hasItem {#inventoryhasitem}
+    ##### sh_Inventory:hasItem {#inventoryhasitem}
     Returns whether or not this inventory contains at least one item of the given type.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -462,7 +462,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:getItemCount></a>Inventory:getItemCount (itemType)"
-    ##### Inventory:getItemCount {#inventorygetitemcount}
+    ##### sh_Inventory:getItemCount {#inventorygetitemcount}
     Returns the amount of items of a given type are in the inventory.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -477,7 +477,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:getID></a>Inventory:getID ()"
-    ##### Inventory:getID {#inventorygetid}
+    ##### sh_Inventory:getID {#inventorygetid}
     Returns the inventory's ID.
     <h3>Returns:</h3>
     <span class="types"><span class="type">number</span></span>
@@ -487,7 +487,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 ## Metamethods
 ??? realm-shared "<a id=Inventory:__tostring></a>Inventory:__tostring ()"
-    ##### Inventory:__tostring {#inventory__tostring}
+    ##### sh_Inventory:__tostring {#inventory__tostring}
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.
     A string representation of this inventory.
@@ -498,7 +498,7 @@ Typically, each Character has their own inventory, however an inventory can also
 
 
 ??? realm-shared "<a id=Inventory:__eq></a>Inventory:__eq (other)"
-    ##### Inventory:__eq {#inventory__eq}
+    ##### sh_Inventory:__eq {#inventory__eq}
     Check whether the inventory is the same as another
     <h3>Parameters:</h3>
     <span class="types"><span class="type">inv</span></span>

@@ -5,7 +5,7 @@ Some functions exist in the global realm ([_G](https://www.lua.org/pil/14.html))
 ## Networking global functions
 
 ??? realm-server "<a id=setNetVar></a>setNetVar (key, value, receiver)"
-    ##### setNetVar {#setnetvar}
+    ##### sv_setNetVar {#setnetvar}
     Sets a global network variable.
 	 Broadcasts the variable to specified receivers.
     <h3>Parameters:</h3>
@@ -25,7 +25,7 @@ Some functions exist in the global realm ([_G](https://www.lua.org/pil/14.html))
 
 
 ??? realm-shared "<a id=getNetVar></a>getNetVar (key, default)"
-    ##### getNetVar {#getnetvar}
+    ##### sh_getNetVar {#getnetvar}
     Gets a global network variable.  Returns default value if key does not exist.
 	 The clientside version of the function can only return data that was previously networked to the client.
     <h3>Parameters:</h3>
@@ -47,7 +47,7 @@ Some functions exist in the global realm ([_G](https://www.lua.org/pil/14.html))
 ## Language functions
 
 ??? realm-server "<a id=L></a>L (key, client, ...)"
-    ##### L {#l}
+    ##### sv_L {#l}
     Gets localized string with formatting (server version)
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -82,7 +82,7 @@ Some functions exist in the global realm ([_G](https://www.lua.org/pil/14.html))
         ```
     </ul>
 ??? realm-server "<a id=L2></a>L2 (key, client, ...)"
-    ##### L2 {#l2}
+    ##### sv_L2 {#l2}
     Gets localized string only if exists (server version)
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -110,7 +110,7 @@ Some functions exist in the global realm ([_G](https://www.lua.org/pil/14.html))
 
 
 ??? realm-server "<a id=L3></a>L3 (key, langKey, ...)"
-    ##### L3 {#l3}
+    ##### sv_L3 {#l3}
     Gets localized string with explicit language (server version)
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -138,7 +138,7 @@ Some functions exist in the global realm ([_G](https://www.lua.org/pil/14.html))
 
 
 ??? realm-client "<a id=L></a>L (key, ...)"
-    ##### L {#l}
+    ##### cl_L {#l}
     Gets localized string with formatting (client version)
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -169,7 +169,7 @@ Some functions exist in the global realm ([_G](https://www.lua.org/pil/14.html))
         ```
     </ul>
 ??? realm-client "<a id=L2></a>L2 (key, ...)"
-    ##### L2 {#l2}
+    ##### cl_L2 {#l2}
     Gets localized string only if exists (client version)
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -193,7 +193,7 @@ Some functions exist in the global realm ([_G](https://www.lua.org/pil/14.html))
 
 
 ??? realm-shared "<a id=LangFileStruct></a>LangFileStruct"
-    ##### LangFileStruct {#langfilestruct}
+    ##### sh_LangFileStruct {#langfilestruct}
     Language File Structure:
 	 Each language file should return:
     <h3>Fields:</h3>

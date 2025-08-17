@@ -7,7 +7,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Character-related hooks
 
 ??? realm-server "<a id=PLUGIN:CharacterLoaded></a>PLUGIN:CharacterLoaded (id)"
-    ##### PLUGIN:CharacterLoaded {#plugincharacterloaded}
+    ##### sv_PLUGIN:CharacterLoaded {#plugincharacterloaded}
     Called when a character is fully loaded.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">integer</span></span>
@@ -17,7 +17,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:CharacterPreSave></a>PLUGIN:CharacterPreSave (character)"
-    ##### PLUGIN:CharacterPreSave {#plugincharacterpresave}
+    ##### sv_PLUGIN:CharacterPreSave {#plugincharacterpresave}
     Called right before a character is saved.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Character</span></span>
@@ -27,7 +27,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:CanPlayerUseChar></a>PLUGIN:CanPlayerUseChar (client, char)"
-    ##### PLUGIN:CanPlayerUseChar {#plugincanplayerusechar}
+    ##### sh_PLUGIN:CanPlayerUseChar {#plugincanplayerusechar}
     Checks whether a player can play as a specific character.
 	 Return false and a string to prevent a character from being selected.
     <h3>Parameters:</h3>
@@ -52,7 +52,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:GetDefaultCharDesc></a>PLUGIN:GetDefaultCharDesc (client, faction)"
-    ##### PLUGIN:GetDefaultCharDesc {#plugingetdefaultchardesc}
+    ##### sh_PLUGIN:GetDefaultCharDesc {#plugingetdefaultchardesc}
     Returns the default character description used during creation.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -66,7 +66,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:GetDefaultCharName></a>PLUGIN:GetDefaultCharName (client, faction)"
-    ##### PLUGIN:GetDefaultCharName {#plugingetdefaultcharname}
+    ##### sh_PLUGIN:GetDefaultCharName {#plugingetdefaultcharname}
     Returns the default character name used during creation.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -80,7 +80,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:CheckFactionLimitReached></a>PLUGIN:CheckFactionLimitReached (faction, character, client)"
-    ##### PLUGIN:CheckFactionLimitReached {#plugincheckfactionlimitreached}
+    ##### sh_PLUGIN:CheckFactionLimitReached {#plugincheckfactionlimitreached}
     Whether or not more players are allowed to load a character of a specific faction.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">faction</span></span>
@@ -105,7 +105,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:PlayerLoadedChar></a>PLUGIN:PlayerLoadedChar (client, character, lastChar)"
-    ##### PLUGIN:PlayerLoadedChar {#pluginplayerloadedchar}
+    ##### sv_PLUGIN:PlayerLoadedChar {#pluginplayerloadedchar}
     Runs after a player loads a character.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -123,7 +123,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:PrePlayerLoadedChar></a>PLUGIN:PrePlayerLoadedChar (client, character, lastChar)"
-    ##### PLUGIN:PrePlayerLoadedChar {#pluginpreplayerloadedchar}
+    ##### sv_PLUGIN:PrePlayerLoadedChar {#pluginpreplayerloadedchar}
     Runs before a player loads a character.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -141,7 +141,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:OnCharVarChanged></a>PLUGIN:OnCharVarChanged (char, varName, oldVar, newVar)"
-    ##### PLUGIN:OnCharVarChanged {#pluginoncharvarchanged}
+    ##### sh_PLUGIN:OnCharVarChanged {#pluginoncharvarchanged}
     Triggers whenever a character's var is changed.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Character</span></span>
@@ -165,7 +165,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Inventory management hooks
 
 ??? realm-shared "<a id=PLUGIN:CanItemBeTransfered></a>PLUGIN:CanItemBeTransfered (itemObject, curInv, inventory)"
-    ##### PLUGIN:CanItemBeTransfered {#plugincanitembetransfered}
+    ##### sh_PLUGIN:CanItemBeTransfered {#plugincanitembetransfered}
     Check whether an item can be transferred between inventories.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Item</span></span>
@@ -188,7 +188,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:CanPlayerDropItem></a>PLUGIN:CanPlayerDropItem (client, item)"
-    ##### PLUGIN:CanPlayerDropItem {#plugincanplayerdropitem}
+    ##### sv_PLUGIN:CanPlayerDropItem {#plugincanplayerdropitem}
     Check if a player can drop an item.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -207,7 +207,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:CanPlayerInteractItem></a>PLUGIN:CanPlayerInteractItem (client, action, item)"
-    ##### PLUGIN:CanPlayerInteractItem {#plugincanplayerinteractitem}
+    ##### sv_PLUGIN:CanPlayerInteractItem {#plugincanplayerinteractitem}
     Check if a player can interact with an item.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -230,7 +230,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:CanPlayerTakeItem></a>PLUGIN:CanPlayerTakeItem (client, item)"
-    ##### PLUGIN:CanPlayerTakeItem {#plugincanplayertakeitem}
+    ##### sv_PLUGIN:CanPlayerTakeItem {#plugincanplayertakeitem}
     Check if a player can take an item.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -249,7 +249,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:CreateDefaultInventory></a>PLUGIN:CreateDefaultInventory (character)"
-    ##### PLUGIN:CreateDefaultInventory {#plugincreatedefaultinventory}
+    ##### sv_PLUGIN:CreateDefaultInventory {#plugincreatedefaultinventory}
     Creates a default inventory for a character.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Character</span></span>
@@ -263,7 +263,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:CreateInventoryPanel></a>PLUGIN:CreateInventoryPanel (inventory, parent)"
-    ##### PLUGIN:CreateInventoryPanel {#plugincreateinventorypanel}
+    ##### sv_PLUGIN:CreateInventoryPanel {#plugincreateinventorypanel}
     Creates the inventory UI panel.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Inventory</span></span>
@@ -281,7 +281,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:GetDefaultInventoryType></a>PLUGIN:GetDefaultInventoryType (character)"
-    ##### PLUGIN:GetDefaultInventoryType {#plugingetdefaultinventorytype}
+    ##### sv_PLUGIN:GetDefaultInventoryType {#plugingetdefaultinventorytype}
     Determines the inventory type for a character.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Character</span></span>
@@ -295,7 +295,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:OnInventoryCreated></a>PLUGIN:OnInventoryCreated (inventory)"
-    ##### PLUGIN:OnInventoryCreated {#pluginoninventorycreated}
+    ##### sh_PLUGIN:OnInventoryCreated {#pluginoninventorycreated}
     Called when an inventory is created.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="../../classes/inventory#">inventory</a></span>
@@ -305,7 +305,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:OnInventoryDeleted></a>PLUGIN:OnInventoryDeleted (id)"
-    ##### PLUGIN:OnInventoryDeleted {#pluginoninventorydeleted}
+    ##### sh_PLUGIN:OnInventoryDeleted {#pluginoninventorydeleted}
     Called when an inventory is deleted.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">integer</span></span>
@@ -315,7 +315,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:OnInventoryLoaded></a>PLUGIN:OnInventoryLoaded (inventory)"
-    ##### PLUGIN:OnInventoryLoaded {#pluginoninventoryloaded}
+    ##### sh_PLUGIN:OnInventoryLoaded {#pluginoninventoryloaded}
     Called when an inventory is loaded.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="../../classes/inventory#">inventory</a></span>
@@ -327,7 +327,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Item lifecycle hooks
 
 ??? realm-client "<a id=PLUGIN:ItemShowEntityMenu></a>PLUGIN:ItemShowEntityMenu (entity)"
-    ##### PLUGIN:ItemShowEntityMenu {#pluginitemshowentitymenu}
+    ##### cl_PLUGIN:ItemShowEntityMenu {#pluginitemshowentitymenu}
     Shows the item entity menu.
     <h3>Parameters:</h3>
     <span class="types">vararg</span>
@@ -339,7 +339,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:OnItemCreated></a>PLUGIN:OnItemCreated (item)"
-    ##### PLUGIN:OnItemCreated {#pluginonitemcreated}
+    ##### sh_PLUGIN:OnItemCreated {#pluginonitemcreated}
     Called when an item is created.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Item</span></span>
@@ -349,7 +349,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:OnItemRegistered></a>PLUGIN:OnItemRegistered (item)"
-    ##### PLUGIN:OnItemRegistered {#pluginonitemregistered}
+    ##### sh_PLUGIN:OnItemRegistered {#pluginonitemregistered}
     Called after an item is registered.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Item</span></span>
@@ -361,7 +361,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Salary/Money Hooks
 
 ??? realm-server "<a id=PLUGIN:CreateSalaryTimer></a>PLUGIN:CreateSalaryTimer (client)"
-    ##### PLUGIN:CreateSalaryTimer {#plugincreatesalarytimer}
+    ##### sv_PLUGIN:CreateSalaryTimer {#plugincreatesalarytimer}
     Creates a salary timer for a player.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -371,7 +371,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:GetSalaryAmount></a>PLUGIN:GetSalaryAmount (client, faction, class)"
-    ##### PLUGIN:GetSalaryAmount {#plugingetsalaryamount}
+    ##### sv_PLUGIN:GetSalaryAmount {#plugingetsalaryamount}
     Gets the salary amount for a player.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -394,7 +394,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:GetSalaryInterval></a>PLUGIN:GetSalaryInterval (client, faction)"
-    ##### PLUGIN:GetSalaryInterval {#plugingetsalaryinterval}
+    ##### sv_PLUGIN:GetSalaryInterval {#plugingetsalaryinterval}
     Gets the salary interval.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -413,7 +413,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:GetSalaryLimit></a>PLUGIN:GetSalaryLimit (client, faction, class)"
-    ##### PLUGIN:GetSalaryLimit {#plugingetsalarylimit}
+    ##### sv_PLUGIN:GetSalaryLimit {#plugingetsalarylimit}
     Gets the salary cap.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -435,7 +435,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:OnPickupMoney></a>PLUGIN:OnPickupMoney (client, moneyEntity)"
-    ##### PLUGIN:OnPickupMoney {#pluginonpickupmoney}
+    ##### sh_PLUGIN:OnPickupMoney {#pluginonpickupmoney}
     Called when a player picks up money
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -451,7 +451,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Plugin system
 
 ??? realm-shared "<a id=PLUGIN:DoPluginIncludes></a>PLUGIN:DoPluginIncludes (path, PLUGIN)"
-    ##### PLUGIN:DoPluginIncludes {#plugindopluginincludes}
+    ##### sh_PLUGIN:DoPluginIncludes {#plugindopluginincludes}
     Loads extra plugin files.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -465,23 +465,23 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:InitializedItems></a>PLUGIN:InitializedItems ()"
-    ##### PLUGIN:InitializedItems {#plugininitializeditems}
+    ##### sh_PLUGIN:InitializedItems {#plugininitializeditems}
     Called after all items have loaded.
 
 ??? realm-shared "<a id=PLUGIN:InitializedPlugins></a>PLUGIN:InitializedPlugins ()"
-    ##### PLUGIN:InitializedPlugins {#plugininitializedplugins}
+    ##### sh_PLUGIN:InitializedPlugins {#plugininitializedplugins}
     Called after plugins are initialized.
 
 ??? realm-shared "<a id=PLUGIN:InitializedSchema></a>PLUGIN:InitializedSchema ()"
-    ##### PLUGIN:InitializedSchema {#plugininitializedschema}
+    ##### sh_PLUGIN:InitializedSchema {#plugininitializedschema}
     Called after schema is initialized.
 
 ??? realm-shared "<a id=PLUGIN:OnMySQLOOConnected></a>PLUGIN:OnMySQLOOConnected ()"
-    ##### PLUGIN:OnMySQLOOConnected {#pluginonmysqlooconnected}
+    ##### sh_PLUGIN:OnMySQLOOConnected {#pluginonmysqlooconnected}
     Called when MySQLOO connects.
 
 ??? realm-shared "<a id=PLUGIN:PluginLoaded></a>PLUGIN:PluginLoaded (uniqueID, PLUGIN)"
-    ##### PLUGIN:PluginLoaded {#pluginpluginloaded}
+    ##### sh_PLUGIN:PluginLoaded {#pluginpluginloaded}
     Called after plugin is loaded.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -495,7 +495,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:PluginShouldLoad></a>PLUGIN:PluginShouldLoad (uniqueID)"
-    ##### PLUGIN:PluginShouldLoad {#pluginpluginshouldload}
+    ##### sh_PLUGIN:PluginShouldLoad {#pluginpluginshouldload}
     Decides whether plugin should load.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -510,29 +510,29 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-shared "<a id=PLUGIN:RegisterPreparedStatements></a>PLUGIN:RegisterPreparedStatements ()"
-    ##### PLUGIN:RegisterPreparedStatements {#pluginregisterpreparedstatements}
+    ##### sh_PLUGIN:RegisterPreparedStatements {#pluginregisterpreparedstatements}
     Called when prepared statements should be registered.
 
 ??? realm-shared "<a id=PLUGIN:OnLoadTables></a>PLUGIN:OnLoadTables ()"
-    ##### PLUGIN:OnLoadTables {#pluginonloadtables}
+    ##### sh_PLUGIN:OnLoadTables {#pluginonloadtables}
     Called when DB tables are loading.
 
 ??? realm-shared "<a id=PLUGIN:NutScriptTablesLoaded></a>PLUGIN:NutScriptTablesLoaded ()"
-    ##### PLUGIN:NutScriptTablesLoaded {#pluginnutscripttablesloaded}
+    ##### sh_PLUGIN:NutScriptTablesLoaded {#pluginnutscripttablesloaded}
     Called when DB tables are loaded.
 
 ??? realm-server "<a id=PLUGIN:OnWipeTables></a>PLUGIN:OnWipeTables ()"
-    ##### PLUGIN:OnWipeTables {#pluginonwipetables}
+    ##### sv_PLUGIN:OnWipeTables {#pluginonwipetables}
     Called when DB tables are being wiped.
 
 ??? realm-shared "<a id=PLUGIN:SetupDatabase></a>PLUGIN:SetupDatabase ()"
-    ##### PLUGIN:SetupDatabase {#pluginsetupdatabase}
+    ##### sh_PLUGIN:SetupDatabase {#pluginsetupdatabase}
     Sets up DB config.
 
 ## Client-side UI
 
 ??? realm-client "<a id=PLUGIN:ScreenResolutionChanged></a>PLUGIN:ScreenResolutionChanged (oldW, oldH)"
-    ##### PLUGIN:ScreenResolutionChanged {#pluginscreenresolutionchanged}
+    ##### cl_PLUGIN:ScreenResolutionChanged {#pluginscreenresolutionchanged}
     Called when the screen resolution changes.
 	 This is triggered by a timer that checks resolution every second.
     <h3>Parameters:</h3>
@@ -547,15 +547,15 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-client "<a id=PLUGIN:CharacterListLoaded></a>PLUGIN:CharacterListLoaded ()"
-    ##### PLUGIN:CharacterListLoaded {#plugincharacterlistloaded}
+    ##### cl_PLUGIN:CharacterListLoaded {#plugincharacterlistloaded}
     Shows character list loaded.
 
 ??? realm-client "<a id=PLUGIN:CreateLoadingScreen></a>PLUGIN:CreateLoadingScreen ()"
-    ##### PLUGIN:CreateLoadingScreen {#plugincreateloadingscreen}
+    ##### cl_PLUGIN:CreateLoadingScreen {#plugincreateloadingscreen}
     Creates loading screen.
 
 ??? realm-client "<a id=PLUGIN:LoadNutFonts></a>PLUGIN:LoadNutFonts (font, genericFont, configFont)"
-    ##### PLUGIN:LoadNutFonts {#pluginloadnutfonts}
+    ##### cl_PLUGIN:LoadNutFonts {#pluginloadnutfonts}
     Loads fonts.
     <h3>Parameters:</h3>
     <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
@@ -573,11 +573,11 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-client "<a id=PLUGIN:NutScriptLoaded></a>PLUGIN:NutScriptLoaded ()"
-    ##### PLUGIN:NutScriptLoaded {#pluginnutscriptloaded}
+    ##### cl_PLUGIN:NutScriptLoaded {#pluginnutscriptloaded}
     Framework loaded.
 
 ??? realm-client "<a id=PLUGIN:ShouldDrawEntityInfo></a>PLUGIN:ShouldDrawEntityInfo (entity)"
-    ##### PLUGIN:ShouldDrawEntityInfo {#pluginshoulddrawentityinfo}
+    ##### cl_PLUGIN:ShouldDrawEntityInfo {#pluginshoulddrawentityinfo}
     Checks if info should draw.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Entity</span></span>
@@ -591,11 +591,11 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-client "<a id=PLUGIN:ShouldCreateLoadingScreen></a>PLUGIN:ShouldCreateLoadingScreen ()"
-    ##### PLUGIN:ShouldCreateLoadingScreen {#pluginshouldcreateloadingscreen}
+    ##### cl_PLUGIN:ShouldCreateLoadingScreen {#pluginshouldcreateloadingscreen}
     Checks if loading screen should appear.
 
 ??? realm-client "<a id=PLUGIN:SetupQuickMenu></a>PLUGIN:SetupQuickMenu (menu)"
-    ##### PLUGIN:SetupQuickMenu {#pluginsetupquickmenu}
+    ##### cl_PLUGIN:SetupQuickMenu {#pluginsetupquickmenu}
     Sets up quick menu.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Derma</span></span>
@@ -605,7 +605,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-client "<a id=PLUGIN:DrawNutModelView></a>PLUGIN:DrawNutModelView (panel, ent)"
-    ##### PLUGIN:DrawNutModelView {#plugindrawnutmodelview}
+    ##### cl_PLUGIN:DrawNutModelView {#plugindrawnutmodelview}
     Draws model view in panel.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Derma</span></span>
@@ -621,7 +621,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Logging
 
 ??? realm-server "<a id=PLUGIN:OnServerLog></a>PLUGIN:OnServerLog (client, logType, ...)"
-    ##### PLUGIN:OnServerLog {#pluginonserverlog}
+    ##### sv_PLUGIN:OnServerLog {#pluginonserverlog}
     Server log output.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -641,7 +641,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Bot hooks
 
 ??? realm-server "<a id=PLUGIN:SetupBotCharacter></a>PLUGIN:SetupBotCharacter (client)"
-    ##### PLUGIN:SetupBotCharacter {#pluginsetupbotcharacter}
+    ##### sv_PLUGIN:SetupBotCharacter {#pluginsetupbotcharacter}
     Sets up bot character.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -651,7 +651,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 ??? realm-server "<a id=PLUGIN:SetupBotInventory></a>PLUGIN:SetupBotInventory (client, character)"
-    ##### PLUGIN:SetupBotInventory {#pluginsetupbotinventory}
+    ##### sv_PLUGIN:SetupBotInventory {#pluginsetupbotinventory}
     Sets up bot inventory.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -667,7 +667,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Combat system
 
 ??? realm-server "<a id=PLUGIN:PlayerGetFistDamage></a>PLUGIN:PlayerGetFistDamage (client, damage, context)"
-    ##### PLUGIN:PlayerGetFistDamage {#pluginplayergetfistdamage}
+    ##### sv_PLUGIN:PlayerGetFistDamage {#pluginplayergetfistdamage}
     Gets damage for fist SWEP.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -687,7 +687,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Attribute system
 
 ??? realm-shared "<a id=PLUGIN:OnCharAttribBoosted></a>PLUGIN:OnCharAttribBoosted (client, character, attribID, boostID, boostAmount)"
-    ##### PLUGIN:OnCharAttribBoosted {#pluginoncharattribboosted}
+    ##### sh_PLUGIN:OnCharAttribBoosted {#pluginoncharattribboosted}
     Called on attribute boost.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -715,7 +715,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Fallover
 
 ??? realm-shared "<a id=PLUGIN:OnCharFallover></a>PLUGIN:OnCharFallover (client, ragdoll, fellover)"
-    ##### PLUGIN:OnCharFallover {#pluginoncharfallover}
+    ##### sh_PLUGIN:OnCharFallover {#pluginoncharfallover}
     Called when fallover state changes.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -735,7 +735,7 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 ## Class hooks
 
 ??? realm-shared "<a id=PLUGIN:OnPlayerJoinClass></a>PLUGIN:OnPlayerJoinClass (client, class, oldClass)"
-    ##### PLUGIN:OnPlayerJoinClass {#pluginonplayerjoinclass}
+    ##### sh_PLUGIN:OnPlayerJoinClass {#pluginonplayerjoinclass}
     Called when a player changes classes.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
