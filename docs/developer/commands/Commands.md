@@ -5,6 +5,8 @@ NutScript Command Documentation.
 
 Built-in and bundled-plugin commands registered through `nut.command.add`.
 Commands are executed server-side by a player and receive the issuing player plus parsed command arguments.
+
+See also: [Command library](../../libraries/nut.command)
 ## Roleplay commands
 
 ??? realm-shared "<a id=roll></a>roll (maximum)"

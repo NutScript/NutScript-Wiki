@@ -3,6 +3,8 @@ Extended Chatbox Module.
 
 
 The NutScript chatbox is a custom implementation, rather than using the default GMOD chatbox. This allows the chatbox to contain additional features, such as multiple different chat types and categories.
+
+See also: [List of Chat Commands](../../commands/Chat)
 ## Functions
 ??? realm-shared "<a id=nut.chat.timestamp></a>nut.chat.timestamp (ooc)"
     ##### sh_nut.chat.timestamp {#nut.chat.timestamp}

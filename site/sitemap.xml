@@ -2,162 +2,166 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nutscript.github.io/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/classes/character/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/classes/client/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/classes/entity/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/classes/inventory/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/classes/item/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://nutscript.github.io/developer/commands/Chat/</loc>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/commands/Commands/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/derma/Derma/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/globals/Globals/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/hooks/PLUGIN/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.anim/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.char/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.chat/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.class/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.command/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.config/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.currency/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.data/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.date/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.db/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.faction/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.flag/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.inventory/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.item/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.lang/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.menu/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.playerInteract/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.plugin/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/libraries/nut.util/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/plugins/Area/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/developer/plugins/Attributes/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/guides/development/developing_plugins/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/guides/development/developing_schema/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/guides/development/factions/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/guides/development/plugin_example/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/guides/installation/getting_started/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/guides/installation/installing_framework/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/wiki_contribution/documentation_guidelines/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://nutscript.github.io/wiki_contribution/reference_sheet/</loc>
-         <lastmod>2026-09-13</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
 </urlset>

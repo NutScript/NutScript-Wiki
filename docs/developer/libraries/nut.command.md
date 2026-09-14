@@ -2,6 +2,8 @@
 Chat Command module.
 
 Handles registration, parsing, and execution of chat and console commands.
+
+See also: [List of Commands](../../commands/Commands)
 ## Functions
 ??? realm-shared "<a id=nut.command.add></a>nut.command.add (command, data)"
     ##### sh_nut.command.add {#nut.command.add}

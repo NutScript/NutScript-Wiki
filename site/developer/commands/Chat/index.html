@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://nutscript.github.io/developer/libraries/nut.chat/">
+        <link rel="canonical" href="https://nutscript.github.io/developer/commands/Chat/">
       
       
-        <link rel="prev" href="../nut.char/">
+        <link rel="prev" href="../../">
       
       
-        <link rel="next" href="../nut.data/">
+        <link rel="next" href="../Commands/">
       
       
       <link rel="icon" href="../../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>nut.chat - NutScript Wiki</title>
+        <title>Chat - NutScript Wiki</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nutchat" class="md-skip">
+        <a href="#chat" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              nut.chat
+              Chat
             
           </span>
         </div>
@@ -424,6 +424,8 @@
                 
   
   
+    
+  
   
   
     
@@ -434,11 +436,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -454,7 +456,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Commands
@@ -465,10 +467,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../commands/Chat/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Chat
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -479,6 +503,226 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#talking-chat-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Talking chat commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Talking chat commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#ic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      ic
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#me" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      me
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      it
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      w
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      w
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-messaging-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Private messaging commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Private messaging commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#commandspm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      Commands:pm
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#commandsreply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      Commands:reply
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#commandssetvoicemail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      Commands:setvoicemail
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#out-of-character-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Out of Character chat
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Out of Character chat">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#ooc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      ooc
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#looc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      looc
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Event chat
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Event chat">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      event
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -491,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../commands/Commands/" class="md-nav__link">
+      <a href="../Commands/" class="md-nav__link">
         
   
   
@@ -591,8 +835,6 @@
                 
   
   
-    
-  
   
   
     
@@ -603,11 +845,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
@@ -623,7 +865,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             Libraries
@@ -637,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.anim/" class="md-nav__link">
+      <a href="../../libraries/nut.anim/" class="md-nav__link">
         
   
   
@@ -660,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.char/" class="md-nav__link">
+      <a href="../../libraries/nut.char/" class="md-nav__link">
         
   
   
@@ -680,32 +922,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    nut.chat
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.chat/" class="md-nav__link">
         
   
   
@@ -716,120 +936,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-      Functions
-      
-    </span>
-  </a>
-  
-  <nav class="md-nav" aria-label="Functions">
-    <ul class="md-nav__list">
-      
-      <li class="md-nav__item">
-  <a href="#nut.chat.timestamp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-      <span class="icon_shared"></span>
-      nut.chat.timestamp
-      
-    </span>
-  </a>
-  
-</li>
-      
-      <li class="md-nav__item">
-  <a href="#nut.chat.register" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-      <span class="icon_shared"></span>
-      nut.chat.register
-      
-    </span>
-  </a>
-  
-</li>
-      
-      <li class="md-nav__item">
-  <a href="#nut.chat.parse" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-      <span class="icon_shared"></span>
-      nut.chat.parse
-      
-    </span>
-  </a>
-  
-</li>
-      
-      <li class="md-nav__item">
-  <a href="#nut.chat.send" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-      <span class="icon_server"></span>
-      nut.chat.send
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-      Tables
-      
-    </span>
-  </a>
-  
-  <nav class="md-nav" aria-label="Tables">
-    <ul class="md-nav__list">
-      
-      <li class="md-nav__item">
-  <a href="#chattype" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-      <span class="icon_shared"></span>
-      ChatType
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -842,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.data/" class="md-nav__link">
+      <a href="../../libraries/nut.data/" class="md-nav__link">
         
   
   
@@ -865,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.date/" class="md-nav__link">
+      <a href="../../libraries/nut.date/" class="md-nav__link">
         
   
   
@@ -888,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.db/" class="md-nav__link">
+      <a href="../../libraries/nut.db/" class="md-nav__link">
         
   
   
@@ -911,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.flag/" class="md-nav__link">
+      <a href="../../libraries/nut.flag/" class="md-nav__link">
         
   
   
@@ -934,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.item/" class="md-nav__link">
+      <a href="../../libraries/nut.item/" class="md-nav__link">
         
   
   
@@ -957,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.lang/" class="md-nav__link">
+      <a href="../../libraries/nut.lang/" class="md-nav__link">
         
   
   
@@ -980,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.menu/" class="md-nav__link">
+      <a href="../../libraries/nut.menu/" class="md-nav__link">
         
   
   
@@ -1003,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.util/" class="md-nav__link">
+      <a href="../../libraries/nut.util/" class="md-nav__link">
         
   
   
@@ -1026,7 +1132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.class/" class="md-nav__link">
+      <a href="../../libraries/nut.class/" class="md-nav__link">
         
   
   
@@ -1049,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.command/" class="md-nav__link">
+      <a href="../../libraries/nut.command/" class="md-nav__link">
         
   
   
@@ -1072,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.config/" class="md-nav__link">
+      <a href="../../libraries/nut.config/" class="md-nav__link">
         
   
   
@@ -1095,7 +1201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.currency/" class="md-nav__link">
+      <a href="../../libraries/nut.currency/" class="md-nav__link">
         
   
   
@@ -1118,7 +1224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.faction/" class="md-nav__link">
+      <a href="../../libraries/nut.faction/" class="md-nav__link">
         
   
   
@@ -1141,7 +1247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.inventory/" class="md-nav__link">
+      <a href="../../libraries/nut.inventory/" class="md-nav__link">
         
   
   
@@ -1164,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.playerInteract/" class="md-nav__link">
+      <a href="../../libraries/nut.playerInteract/" class="md-nav__link">
         
   
   
@@ -1187,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nut.plugin/" class="md-nav__link">
+      <a href="../../libraries/nut.plugin/" class="md-nav__link">
         
   
   
@@ -1943,174 +2049,229 @@
 
 
 
-<h1 id="nutchat">nut.chat</h1>
-<p>Extended Chatbox Module.</p>
-<p>The NutScript chatbox is a custom implementation, rather than using the default GMOD chatbox. This allows the chatbox to contain additional features, such as multiple different chat types and categories.</p>
-<h2 id="functions">Functions</h2>
+<h1 id="chat">Chat</h1>
+<p>NutScript Chat Command Documentation.</p>
+<p>Built-in and bundled-plugin chat commands registered through <code>nut.chat.register</code>.
+Commands are executed server-side by a player and receive the issuing player plus parsed command arguments.</p>
+<h2 id="talking-chat-commands">Talking chat commands</h2>
 <details class="realm-shared">
-<summary><a id=nut.chat.timestamp></a>nut.chat.timestamp (ooc)</summary>
-<h5 id="nut.chat.timestamp">sh_nut.chat.timestamp</h5>
-<p>Returns a formatted timestamp for chat messages.
-<h3>Parameters:</h3>
-<span class="types"><span class="type">boolean</span></span>
-<span class="parameter">ooc</span>
- Whether timestamp is for OOC chat</p>
-<p><h3>Returns:</h3>
-<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-The formatted timestamp</p>
-</details>
-<details class="realm-shared">
-<summary><a id=nut.chat.register></a>nut.chat.register (chatType, data)</summary>
-<h5 id="nut.chat.register">sh_nut.chat.register</h5>
-<p>Registers a new chat type with the information provided.
+<summary><a id=ic></a>ic (message)</summary>
+<h5 id="ic">sh_ic</h5>
+<p>In-character chat, as if your character says something out loud.  Triggers by default when no command is present. Text said by characters being looked at will be coloured green.
 <h3>Parameters:</h3>
 <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-<span class="parameter">chatType</span>
- Unique identifier for the chat type</p>
-<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
-<span class="parameter">data</span>
- Configuration table for the chat type</p>
-<p><h3>See also:</h3>
-<ul>
-    <li><a href="../../libraries/nut.chat#chattype">ChatType</a></li>
-</ul>
-<h3>Usage:</h3>
+<span class="parameter">message</span>
+ The message to send</p>
+<p><h3>Usage:</h3>
 <ul>
     <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nv">nut</span><span class="p">.</span><span class="py">chat</span><span class="p">.</span><span class="nf">register</span><span class="p">(</span><span class="s2">&quot;ic&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="nv">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;%s says </span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="nv">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">function</span><span class="p">()</span><span class="w"> </span><span class="kr">return</span><span class="w"> </span><span class="mi">280</span><span class="w"> </span><span class="kr">end</span><span class="p">,</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="nv">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">})</span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nv">What</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">you</span><span class="w"> </span><span class="nv">waiting</span><span class="w"> </span><span class="kr">for</span><span class="p">,</span><span class="w"> </span><span class="nv">get</span><span class="w"> </span><span class="nv">NutScript</span><span class="w"> </span><span class="nv">today</span><span class="err">!</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="w"> </span><span class="nv">says</span><span class="w"> </span><span class="s2">&quot;What are you waiting for, get NutScript today!&quot;</span>
 </span></code></pre></div></td></tr></table></div>
 </ul></p>
 </details>
 <details class="realm-shared">
-<summary><a id=nut.chat.parse></a>nut.chat.parse (client, message, noSend)</summary>
-<h5 id="nut.chat.parse">sh_nut.chat.parse</h5>
-<p>Parses a chat message to determine its type and processes it.
+<summary><a id=me></a>me (message)</summary>
+<h5 id="me">sh_me</h5>
+<p>Message that represents an action, as if the character is performing.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">message</span>
+ The message to simulate an action</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="o">/</span><span class="nv">me</span><span class="w"> </span><span class="nv">laughs</span><span class="w"> </span><span class="nv">at</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">funny</span><span class="w"> </span><span class="nv">reference</span><span class="p">.</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="py">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="err">**</span><span class="py">Chestnut</span><span class="w"> </span><span class="nv">laughs</span><span class="w"> </span><span class="nv">at</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">funny</span><span class="w"> </span><span class="nv">reference</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=it></a>it (message)</summary>
+<h5 id="it">sh_it</h5>
+<p>Message that represents an action disconnected from the character.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">message</span>
+ The message to simulate an action</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="o">/</span><span class="nv">it</span><span class="w"> </span><span class="nv">A</span><span class="w"> </span><span class="nv">skeleton</span><span class="w"> </span><span class="nv">runs</span><span class="w"> </span><span class="nv">past</span><span class="p">.</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="py">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="err">**</span><span class="py">A</span><span class="w"> </span><span class="nv">skeleton</span><span class="w"> </span><span class="nv">runs</span><span class="w"> </span><span class="nv">past</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=w></a>w (message)</summary>
+<h5 id="w">sh_w</h5>
+<p>In-character chat, as if your character whispers something.  Hearing radius is reduced.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">message</span>
+ The message to send</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="o">/</span><span class="nv">w</span><span class="w"> </span><span class="nv">What</span><span class="w"> </span><span class="nv">was</span><span class="w"> </span><span class="nv">that</span><span class="err">?</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="w"> </span><span class="nv">whispers</span><span class="w"> </span><span class="s2">&quot;What was that?&quot;</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=w></a>w (message)</summary>
+<h5 id="w">sh_w</h5>
+<p>In-character chat, as if your character yells something.  Hearing radius is increased.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">message</span>
+ The message to send</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="o">/</span><span class="nv">w</span><span class="w"> </span><span class="nv">WOAH</span><span class="w"> </span><span class="nv">DID</span><span class="w"> </span><span class="nv">ANYONE</span><span class="w"> </span><span class="nv">JUST</span><span class="w"> </span><span class="nv">SEE</span><span class="w"> </span><span class="nv">THAT</span><span class="err">?</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="w"> </span><span class="nv">yells</span><span class="w"> </span><span class="s2">&quot;WOAH DID ANYONE JUST SEE THAT?&quot;</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="private-messaging-commands">Private messaging commands</h2>
+<details class="realm-shared">
+<summary><a id=Commands:pm></a>Commands:pm (target, message)</summary>
+<h5 id="commandspm">sh_Commands:pm</h5>
+<p>Sends a private message to another player.
 <h3>Parameters:</h3>
 <span class="types"><span class="type">Client</span></span>
-<span class="parameter">client</span>
- The player sending the message</p>
+<span class="parameter">target</span>
+ The player receiving the private message</p>
 <p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
 <span class="parameter">message</span>
- The chat message content</p>
-<p><span class="types"><span class="type">boolean</span></span>
-<span class="parameter">noSend</span>
-<em><ins><code>optional. default</code>: <code>false</code></ins></em>
- Whether to skip sending the message</p>
-<p><h3>Returns:</h3>
-<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-The chat type used</p>
-<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-The processed message</p>
-<p><span class="types"><span class="type">bool</span></span>
-Whether the sender is anonymous</p>
+ The message to send</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="o">/</span><span class="nv">pm</span><span class="w"> </span><span class="nv">Rebel1324</span><span class="w"> </span><span class="nv">Meet</span><span class="w"> </span><span class="nv">me</span><span class="w"> </span><span class="nv">outside</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">apartment</span><span class="p">.</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="py">Chat</span><span class="w"> </span><span class="nf">output</span><span class="w"> </span><span class="p">(</span><span class="nv">Sender</span><span class="p">):</span><span class="w"> </span><span class="p">[</span><span class="nv">PM</span><span class="p">]</span><span class="w"> </span><span class="nv">Chestnut</span><span class="p">:</span><span class="w"> </span><span class="py">Meet</span><span class="w"> </span><span class="nv">me</span><span class="w"> </span><span class="nv">outside</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">apartment</span><span class="p">.</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="py">Chat</span><span class="w"> </span><span class="nf">output</span><span class="w"> </span><span class="p">(</span><span class="nv">Receiver</span><span class="p">):</span><span class="w"> </span><span class="p">[</span><span class="nv">PM</span><span class="p">]</span><span class="w"> </span><span class="nv">Chestnut</span><span class="p">:</span><span class="w"> </span><span class="py">Meet</span><span class="w"> </span><span class="nv">me</span><span class="w"> </span><span class="nv">outside</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">apartment</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
 </details>
-<details class="realm-server">
-<summary><a id=nut.chat.send></a>nut.chat.send (speaker, chatType, text, anonymous, receivers)</summary>
-<h5 id="nut.chat.send">sv_nut.chat.send</h5>
-<p>Send a chat message using the specified chat type.
-<h3>Parameters:</h3>
-<span class="types"><span class="type">Client</span></span>
-<span class="parameter">speaker</span>
- The player sending the message</p>
-<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-<span class="parameter">chatType</span>
- The type of chat message</p>
-<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-<span class="parameter">text</span>
- The message content</p>
-<p><span class="types"><span class="type">boolean</span></span>
-<span class="parameter">anonymous</span>
-<em><ins><code>optional. default</code>: <code>false</code></ins></em>
- Whether sender should be anonymous</p>
-<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
-<span class="parameter">receivers</span>
-<em><ins><code>optional</code></ins></em>
- Optional list of specific receivers</p>
-</details>
-<h2 id="tables">Tables</h2>
 <details class="realm-shared">
-<summary><a id=ChatType></a>ChatType</summary>
-<h5 id="chattype">sh_ChatType</h5>
-<p>Configuration table for registering a new chat type
-<h3>Fields:</h3>
-<span class="types">vararg</span>
-<span class="parameter">radius</span>
- Maximum hearing distance. If number, fixed distance from speaker in HU. Otherwise Function()</p>
-<p><span class="types">vararg</span>
-<span class="parameter">prefix</span>
- Command prefix(es) (string or table of strings)</p>
-<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-<span class="parameter">format</span>
- The message format string (uses %s for name/text)</p>
-<p><span class="types"><span class="type">Color</span></span>
-<span class="parameter">color</span>
- Default color for this chat type</p>
-<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-<span class="parameter">font</span>
- Custom font to use</p>
-<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
-<span class="parameter">filter</span>
- The chat filter category ("ic", "ooc", etc.)</p>
-<p><span class="types"><span class="type">boolean</span></span>
-<span class="parameter">deadCanChat</span>
- Whether dead players can use this chat</p>
-<p><span class="types"><span class="type">boolean</span></span>
-<span class="parameter">noSpaceAfter</span>
- If true, no space required after prefix (For instance with // "ooc", //text would be valid without the need to separate // from the message with a space)</p>
-<p><span class="types"><span class="type">function</span></span>
-<span class="parameter">onCanSay</span>
- Function(speaker, text) - checks if player can speak</p>
-<p><span class="types"><span class="type">function</span></span>
-<span class="parameter">onCanHear</span>
- Function(speaker, listener) - checks if listener can hear</p>
-<p><span class="types"><span class="type">function</span></span>
-<span class="parameter">onChatAdd</span>
- Function(speaker, text, anonymous) - custom display handler</p>
-<p><span class="types"><span class="type">function</span></span>
-<span class="parameter">onGetColor</span>
- Function(speaker, text) - dynamic color handler</p>
-<p><h3>See also:</h3>
+<summary><a id=Commands:reply></a>Commands:reply (message)</summary>
+<h5 id="commandsreply">sh_Commands:reply</h5>
+<p>Sends a private message to the most recent player who messaged the caller.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">message</span>
+ The message to send</p>
+<p><h3>Usage:</h3>
 <ul>
-    <li><a href="../../libraries/nut.chat#nut.chat.register">nut.chat.register</a></li>
-</ul>
-<h3>Usage:</h3>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="o">/</span><span class="nv">reply</span><span class="w"> </span><span class="nv">I</span><span class="w"> </span><span class="nv">will</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">there</span><span class="w"> </span><span class="nv">shortly</span><span class="p">.</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="py">Chat</span><span class="w"> </span><span class="nf">output</span><span class="w"> </span><span class="p">(</span><span class="nv">Sender</span><span class="p">):</span><span class="w"> </span><span class="p">[</span><span class="nv">PM</span><span class="p">]</span><span class="w"> </span><span class="nv">Rebel1324</span><span class="p">:</span><span class="w"> </span><span class="py">I</span><span class="w"> </span><span class="nv">will</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">there</span><span class="w"> </span><span class="nv">shortly</span><span class="p">.</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="py">Chat</span><span class="w"> </span><span class="nf">output</span><span class="w"> </span><span class="p">(</span><span class="nv">Receiver</span><span class="p">):</span><span class="w"> </span><span class="p">[</span><span class="nv">PM</span><span class="p">]</span><span class="w"> </span><span class="nv">Rebel1324</span><span class="p">:</span><span class="w"> </span><span class="py">I</span><span class="w"> </span><span class="nv">will</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">there</span><span class="w"> </span><span class="nv">shortly</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=Commands:setvoicemail></a>Commands:setvoicemail (message)</summary>
+<h5 id="commandssetvoicemail">sh_Commands:setvoicemail</h5>
+<p>Sets or clears the caller's voicemail message.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">message</span>
+<em><ins><code>optional</code></ins></em>
+ The voicemail message to save; omit it to clear the current message</p>
+<p><h3>Usage:</h3>
 <ul>
-    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="nv">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;%s says </span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">,</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nv">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">),</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="nv">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">280</span><span class="p">,</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="nv">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;/me&quot;</span><span class="p">,</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="nv">font</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;nutChatFontItalics&quot;</span><span class="p">,</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="nv">filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;actions&quot;</span><span class="p">,</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="nv">deadCanChat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="nv">onCanSay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="nv">speaker</span><span class="p">,</span><span class="w"> </span><span class="nv">text</span><span class="p">)</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">        </span><span class="kr">return</span><span class="w"> </span><span class="nv">speaker</span><span class="p">:</span><span class="nf">Alive</span><span class="p">()</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="kr">end</span><span class="p">,</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="nv">onGetColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="nv">speaker</span><span class="p">)</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">        </span><span class="kr">return</span><span class="w"> </span><span class="nv">team</span><span class="p">.</span><span class="nf">GetColor</span><span class="p">(</span><span class="nv">speaker</span><span class="p">:</span><span class="nf">Team</span><span class="p">())</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="kr">end</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="p">}</span>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="o">/</span><span class="nv">setvoicemail</span><span class="w"> </span><span class="nv">Leave</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">message</span><span class="w"> </span><span class="nv">after</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">tone</span><span class="p">.</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="py">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">set</span><span class="w"> </span><span class="nv">your</span><span class="w"> </span><span class="nv">voicemail</span><span class="p">.</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="err">/</span><span class="py">setvoicemail</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">removed</span><span class="w"> </span><span class="nv">your</span><span class="w"> </span><span class="nv">voicemail</span><span class="o">..</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="out-of-character-chat">Out of Character chat</h2>
+<details class="realm-shared">
+<summary><a id=ooc></a>ooc (message)</summary>
+<h5 id="ooc">sh_ooc</h5>
+<p>Out-of-character global message.  The message is perceived as non-rp meta chat.
+ Alternatively '//' also works
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">message</span>
+ The message to send</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="o">//</span><span class="w"> </span><span class="nv">Is</span><span class="w"> </span><span class="nv">there</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">skeleton</span><span class="w"> </span><span class="nv">prank</span><span class="w"> </span><span class="nv">happening</span><span class="err">?</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="err">[</span><span class="py">OOC</span><span class="p">]</span><span class="w"> </span><span class="nv">Chestnut</span><span class="p">:</span><span class="w"> </span><span class="py">Is</span><span class="w"> </span><span class="nv">there</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">skeleton</span><span class="w"> </span><span class="nv">prank</span><span class="w"> </span><span class="nv">happening</span><span class="err">?</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=looc></a>looc (message)</summary>
+<h5 id="looc">sh_looc</h5>
+<p>Out-of-character local message.  The message is perceived as non-rp meta chat. This will only be heard in the character's viscinity.
+ Alternatively './/' and '[[' also works
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">message</span>
+ The message to send</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="p">.</span><span class="o">//</span><span class="w"> </span><span class="nv">Dude</span><span class="w"> </span><span class="nv">don</span><span class="s1">&#39;t ruin the prank to other players.</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="s1">Chat output: [LOOC] Rebel1324: Dude don&#39;</span><span class="nv">t</span><span class="w"> </span><span class="nv">ruin</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">prank</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">other</span><span class="w"> </span><span class="nv">players</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="event-chat">Event chat</h2>
+<details class="realm-server">
+<summary><a id=event></a>event (message)</summary>
+<h5 id="event">sv_event</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Event chat.  Used by admins to make global server announcements.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">message</span>
+ The message to send</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="o">/</span><span class="nv">event</span><span class="w"> </span><span class="nv">The</span><span class="w"> </span><span class="nv">skeleton</span><span class="w"> </span><span class="nv">ran</span><span class="w"> </span><span class="nv">away</span><span class="p">,</span><span class="w"> </span><span class="nv">nobody</span><span class="w"> </span><span class="nv">saw</span><span class="w"> </span><span class="nv">that</span><span class="p">.</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="py">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">The</span><span class="w"> </span><span class="nv">skeleton</span><span class="w"> </span><span class="nv">ran</span><span class="w"> </span><span class="nv">away</span><span class="p">,</span><span class="w"> </span><span class="nv">nobody</span><span class="w"> </span><span class="nv">saw</span><span class="w"> </span><span class="nv">that</span><span class="p">.</span>
 </span></code></pre></div></td></tr></table></div>
 </ul></p>
 </details>
@@ -2143,7 +2304,7 @@ Whether the sender is anonymous</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../nut.char/" class="md-footer__link md-footer__link--prev" aria-label="Previous: nut.char">
+          <a href="../../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2153,20 +2314,20 @@ Whether the sender is anonymous</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                nut.char
+                Index
               </div>
             </div>
           </a>
         
         
           
-          <a href="../nut.data/" class="md-footer__link md-footer__link--next" aria-label="Next: nut.data">
+          <a href="../Commands/" class="md-footer__link md-footer__link--next" aria-label="Next: Commands">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                nut.data
+                Commands
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -5,6 +5,8 @@ NutScript Chat Command Documentation.
 
 Built-in and bundled-plugin chat commands registered through `nut.chat.register`.
 Commands are executed server-side by a player and receive the issuing player plus parsed command arguments.
+
+See also: [Chat library](../../libraries/nut.chat)
 ## Talking chat commands
 
 ??? realm-shared "<a id=ic></a>ic (message)"
