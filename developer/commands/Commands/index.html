@@ -1,0 +1,3807 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://nutscript.github.io/developer/commands/Commands/">
+      
+      
+        <link rel="prev" href="../Chat/">
+      
+      
+        <link rel="next" href="../../globals/Globals/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Commands - NutScript Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arimo";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#commands" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="NutScript Wiki" class="md-header__button md-logo" aria-label="NutScript Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NutScript Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Commands
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-purple"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  NutScript Developer Wiki
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Developer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../guides/installation/getting_started/" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../wiki_contribution/documentation_guidelines/" class="md-tabs__link">
+          
+  
+  
+  Wiki contribution
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="NutScript Wiki" class="md-nav__button md-logo" aria-label="NutScript Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    NutScript Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NutScript Developer Wiki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commands
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#roleplay-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Roleplay commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Roleplay commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#roll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      roll
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#fallover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      fallover
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#chargetup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      chargetup
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      content
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roleplay-act-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Roleplay act commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Roleplay act commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#actsit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      actsit
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#actsitwall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      actsitwall
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#actinjured" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      actinjured
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#actarrest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      actarrest
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#actcheer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      actcheer
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#acthere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      acthere
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#actstand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      actstand
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Character commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Character commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#chardesc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      chardesc
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#charsetmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      charsetmodel
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#charsetskin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      charsetskin
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#charsetbodygroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      charsetbodygroup
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#charsetname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      charsetname
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#charkick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      charkick
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#charban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      charban
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#charunban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      charunban
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-permissions-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Character permissions commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Character permissions commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#flaggive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      flaggive
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#flagtake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      flagtake
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#plywhitelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      plywhitelist
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#plyunwhitelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      plyunwhitelist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faction-and-class-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Faction and class commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Faction and class commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#plytransfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      plytransfer
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#charsetfaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      charsetfaction
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#beclass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      beclass
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inventory-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Inventory commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Inventory commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#chargiveitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      chargiveitem
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#clearinv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      clearinv
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#economy-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Economy commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Economy commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#givemoney" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      givemoney
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#charsetmoney" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      charsetmoney
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#dropmoney" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_shared"></span>
+      dropmoney
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-panel-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      3D panel commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="3D panel commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#paneladd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      paneladd
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#panelremove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      panelremove
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-text-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      3D text commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="3D text commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#textadd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      textadd
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#textremove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      textremove
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map-scene-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      Map scene commands
+      
+    </span>
+  </a>
+  
+  <nav class="md-nav" aria-label="Map scene commands">
+    <ul class="md-nav__list">
+      
+      <li class="md-nav__item">
+  <a href="#mapsceneadd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      mapsceneadd
+      
+    </span>
+  </a>
+  
+</li>
+      
+      <li class="md-nav__item">
+  <a href="#mapsceneremove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+      <span class="icon_server"></span>
+      mapsceneremove
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Globals
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Globals
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../globals/Globals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Globals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libraries
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Libraries
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.anim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.anim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.char/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.char
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.chat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.chat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.date/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.date
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.db/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.db
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.flag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.flag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.item/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.item
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.lang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.lang
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.menu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.menu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.util/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.util
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.class/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.class
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.command/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.command
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.currency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.currency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.faction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.faction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.inventory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.playerInteract/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.playerInteract
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/nut.plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nut.plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Classes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classes/Character/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Character
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classes/Client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Client
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classes/entity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classes/Inventory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classes/item/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hooks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hooks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/Plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PLUGIN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/Area/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Area
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/Attributes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Installation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/installation/getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/installation/installing_framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installing the Framework and Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/development/developing_schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developing the Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/development/developing_plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developing Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/development/plugin_example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Example
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/development/factions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Factions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wiki contribution
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Wiki contribution
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wiki_contribution/documentation_guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wiki_contribution/reference_sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="commands">Commands</h1>
+<p>NutScript Command Documentation.</p>
+<p>Built-in and bundled-plugin commands registered through <code>nut.command.add</code>.
+Commands are executed server-side by a player and receive the issuing player plus parsed command arguments.</p>
+<p>See also: <a href="../../libraries/nut.command">Command library</a></p>
+<h2 id="roleplay-commands">Roleplay commands</h2>
+<details class="realm-shared">
+<summary><a id=roll></a>roll (maximum)</summary>
+<h5 id="roll">sh_roll</h5>
+<p>Rolls a random number and broadcasts the result through the roll chat class.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">integer</span></span>
+<span class="parameter">maximum</span>
+<em><ins><code>optional. default</code>: <code>100</code></ins></em>
+ The highest possible roll, capped at 100</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="o">/</span><span class="nv">roll</span><span class="w"> </span><span class="mi">20</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="w"> </span><span class="nv">has</span><span class="w"> </span><span class="nv">rolled</span><span class="w"> </span><span class="mf">14.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=fallover></a>fallover (time)</summary>
+<h5 id="fallover">sh_fallover</h5>
+<p>Ragdolls the caller for a specified duration.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">number</span></span>
+<span class="parameter">time</span>
+<em><ins><code>optional. default</code>: <code>5</code></ins></em>
+ The ragdoll duration in seconds, clamped between 1 and 60; use a non-positive value for no duration</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="o">/</span><span class="nv">fallover</span><span class="w"> </span><span class="mi">10</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Your</span><span class="w"> </span><span class="nv">character</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">ragdolled</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="nv">seconds</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=chargetup></a>chargetup ()</summary>
+<h5 id="chargetup">sh_chargetup</h5>
+<p>Lets the caller stand up from their ragdoll after its grace period.</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="o">/</span><span class="nv">chargetup</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">now</span><span class="w"> </span><span class="nv">getting</span><span class="w"> </span><span class="nv">up</span><span class="o">..</span><span class="p">.</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Your</span><span class="w"> </span><span class="nv">ragdoll</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">removed</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="nv">you</span><span class="w"> </span><span class="nv">regain</span><span class="w"> </span><span class="nv">control</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">your</span><span class="w"> </span><span class="nv">character</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=content></a>content ()</summary>
+<h5 id="content">sh_content</h5>
+<p>Opens the configured NutScript content URL for the caller.</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="o">/</span><span class="nv">content</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">The</span><span class="w"> </span><span class="nv">configured</span><span class="w"> </span><span class="nv">content</span><span class="w"> </span><span class="nv">website</span><span class="w"> </span><span class="nv">opens</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">Steam</span><span class="w"> </span><span class="nv">overlay</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="nv">browser</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="roleplay-act-commands">Roleplay act commands</h2>
+<details class="realm-shared">
+<summary><a id=actsit></a>actsit (type)</summary>
+<h5 id="actsit">sh_actsit</h5>
+<p>Character plays a sitting animation.  This animation loops until interrupted.</p>
+<p>Valid model types: citizen_male, citizen_female
+<h3>Parameters:</h3>
+<span class="types"><span class="type">integer</span></span>
+<span class="parameter">type</span>
+<em><ins><code>optional. default</code>: <code>1</code></ins></em>
+ Sequence type. Up to 3</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="o">/</span><span class="nv">actsit</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Character</span><span class="w"> </span><span class="nv">sits</span><span class="w"> </span><span class="nv">down</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=actsitwall></a>actsitwall (type)</summary>
+<h5 id="actsitwall">sh_actsitwall</h5>
+<p>Character plays a sitting animation against a wall.  This animation loops until interrupted. Requires the character to have a wall against their back.</p>
+<p>Valid model types: citizen_male, citizen_female
+<h3>Parameters:</h3>
+<span class="types"><span class="type">integer</span></span>
+<span class="parameter">type</span>
+<em><ins><code>optional. default</code>: <code>1</code></ins></em>
+ Sequence type. Up to 3</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="o">/</span><span class="nv">actsitwall</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Character</span><span class="w"> </span><span class="nv">sits</span><span class="w"> </span><span class="nv">down</span><span class="w"> </span><span class="nv">against</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">wall</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=actinjured></a>actinjured (type)</summary>
+<h5 id="actinjured">sh_actinjured</h5>
+<p>Character plays an injured lying animation.  This animation loops until interrupted.</p>
+<p>Valid model types: citizen_male, citizen_female
+<h3>Parameters:</h3>
+<span class="types"><span class="type">integer</span></span>
+<span class="parameter">type</span>
+<em><ins><code>optional. default</code>: <code>1</code></ins></em>
+ Sequence type. Up to 3</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="o">/</span><span class="nv">actinjured</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Character</span><span class="w"> </span><span class="nv">lies</span><span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">floor</span><span class="w"> </span><span class="nv">injured</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=actarrest></a>actarrest ()</summary>
+<h5 id="actarrest">sh_actarrest</h5>
+<p>Character plays an arrested animation.  This animation loops until interrupted. Requires the character to face a wall.</p>
+<p>Valid model types: citizen_male</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="o">/</span><span class="nv">actarrest</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Character</span><span class="w"> </span><span class="nv">faces</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">wall</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="nv">hands</span><span class="w"> </span><span class="nv">up</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=actcheer></a>actcheer (type)</summary>
+<h5 id="actcheer">sh_actcheer</h5>
+<p>Character plays a cheering animation.</p>
+<p>Valid model types: citizen_male, citizen_female
+<h3>Parameters:</h3>
+<span class="types"><span class="type">integer</span></span>
+<span class="parameter">type</span>
+<em><ins><code>optional. default</code>: <code>1</code></ins></em>
+ Sequence type. Up to 3</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="o">/</span><span class="nv">actcheer</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Character</span><span class="w"> </span><span class="nv">cheers</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=acthere></a>acthere (type)</summary>
+<h5 id="acthere">sh_acthere</h5>
+<p>Character plays a beconing animation.</p>
+<p>Valid model types: citizen_male, citizen_female
+<h3>Parameters:</h3>
+<span class="types"><span class="type">integer</span></span>
+<span class="parameter">type</span>
+<em><ins><code>optional. default</code>: <code>1</code></ins></em>
+ Sequence type. Up to 2</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="o">/</span><span class="nv">acthere</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Character</span><span class="w"> </span><span class="nv">waves</span><span class="w"> </span><span class="nv">towards</span><span class="w"> </span><span class="nv">them</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=actstand></a>actstand (type)</summary>
+<h5 id="actstand">sh_actstand</h5>
+<p>Character plays a sitting animation.  This animation loops until interrupted.</p>
+<p>Valid model types: citizen_male, citizen_female, metrocop
+<h3>Parameters:</h3>
+<span class="types"><span class="type">integer</span></span>
+<span class="parameter">type</span>
+<em><ins><code>optional. default</code>: <code>1</code></ins></em>
+ Sequence type. Up to 4</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="o">/</span><span class="nv">actstand</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Character</span><span class="w"> </span><span class="nv">stands</span><span class="w"> </span><span class="nv">idly</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="character-commands">Character commands</h2>
+<details class="realm-shared">
+<summary><a id=chardesc></a>chardesc (description)</summary>
+<h5 id="chardesc">sh_chardesc</h5>
+<p>Changes the caller's character description.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">description</span>
+<em><ins><code>optional</code></ins></em>
+ The new character description; omit it to open a description prompt</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="o">/</span><span class="nv">chardesc</span><span class="w"> </span><span class="nv">A</span><span class="w"> </span><span class="nv">tired</span><span class="w"> </span><span class="nv">detective</span><span class="w"> </span><span class="nv">wearing</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">weathered</span><span class="w"> </span><span class="nv">coat</span><span class="p">.</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="py">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">changed</span><span class="w"> </span><span class="nv">your</span><span class="w"> </span><span class="nv">character</span><span class="s1">'s description.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=charsetmodel></a>charsetmodel (target, model)</summary>
+<h5 id="charsetmodel">sv_charsetmodel</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Changes the model of a target player's character.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose character model to change</p>
+<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">model</span>
+ The model path to assign</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="o">/</span><span class="nv">charsetmodel</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">models</span><span class="o">/</span><span class="nv">Humans</span><span class="o">/</span><span class="nv">Group01</span><span class="o">/</span><span class="nv">Female_01</span><span class="p">.</span><span class="py">mdl</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">changed</span><span class="w"> </span><span class="nv">Chestnut</span><span class="s1">'s model to models/Humans/Group01/Female_01.mdl.</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="s1">In-game output: Chestnut'</span><span class="nv">s</span><span class="w"> </span><span class="nv">character</span><span class="w"> </span><span class="nv">model</span><span class="w"> </span><span class="nv">updates</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=charsetskin></a>charsetskin (target, skin)</summary>
+<h5 id="charsetskin">sv_charsetskin</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Changes the skin of a target player's character model.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose character skin is changed</p>
+<p><span class="types"><span class="type">integer</span></span>
+<span class="parameter">skin</span>
+ The model skin index to assign</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="o">/</span><span class="nv">charsetskin</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">changed</span><span class="w"> </span><span class="nv">Chestnut</span><span class="s1">'s skin to 1.</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="s1">In-game output: Chestnut'</span><span class="nv">s</span><span class="w"> </span><span class="nv">character</span><span class="w"> </span><span class="nv">model</span><span class="w"> </span><span class="nv">skin</span><span class="w"> </span><span class="nv">updates</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=charsetbodygroup></a>charsetbodygroup (target, bodygroup, value)</summary>
+<h5 id="charsetbodygroup">sv_charsetbodygroup</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Changes or clears a named bodygroup on a target player's character.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose bodygroup is changed</p>
+<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">bodygroup</span>
+ The name of the bodygroup to change</p>
+<p><span class="types"><span class="type">integer</span></span>
+<span class="parameter">value</span>
+<em><ins><code>optional</code></ins></em>
+ The bodygroup value; values below 1 clear the stored value</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span>
+<span class="normal"><a href="#__codelineno-14-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="o">/</span><span class="nv">charsetbodygroup</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">headgear</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">changed</span><span class="w"> </span><span class="nv">Chestnut</span><span class="s1">'s headgear bodygroup to 1.</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="s1">In-game output: Chestnut'</span><span class="nv">s</span><span class="w"> </span><span class="nv">character</span><span class="w"> </span><span class="nv">model</span><span class="w"> </span><span class="nv">updates</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=charsetname></a>charsetname (target, newName)</summary>
+<h5 id="charsetname">sv_charsetname</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Changes a target player's character name.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose character name is changed</p>
+<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">newName</span>
+<em><ins><code>optional</code></ins></em>
+ The new character name; omit it to open a name prompt</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="o">/</span><span class="nv">charsetname</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">Cheesenut</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">changed</span><span class="w"> </span><span class="nv">Chestnut</span><span class="s1">'s name to Cheesenut.</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="s1">In-game output: Chestnut'</span><span class="nv">s</span><span class="w"> </span><span class="nv">displayed</span><span class="w"> </span><span class="nv">character</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="nv">updates</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">Cheesenut</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=charkick></a>charkick (target)</summary>
+<h5 id="charkick">sv_charkick</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Kicks a target player's currently loaded character.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose character is kicked</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span>
+<span class="normal"><a href="#__codelineno-16-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="o">/</span><span class="nv">charkick</span><span class="w"> </span><span class="nv">Chestnut</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">kicked</span><span class="w"> </span><span class="nv">char</span><span class="w"> </span><span class="nv">Chestnut</span><span class="p">.</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="w"> </span><span class="nv">returns</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">character</span><span class="o">-</span><span class="nv">selection</span><span class="w"> </span><span class="nv">screen</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=charban></a>charban (target)</summary>
+<h5 id="charban">sv_charban</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Bans a target player's currently loaded character.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose character is banned</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span>
+<span class="normal"><a href="#__codelineno-17-3">3</a></span>
+<span class="normal"><a href="#__codelineno-17-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="o">/</span><span class="nv">charban</span><span class="w"> </span><span class="nv">Chestnut</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">banned</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">character</span><span class="w"> </span><span class="nv">Chestnut</span><span class="p">.</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="w"> </span><span class="nv">can</span><span class="w"> </span><span class="nv">no</span><span class="w"> </span><span class="nv">longer</span><span class="w"> </span><span class="nb">load</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">banned</span><span class="w"> </span><span class="nv">character</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=charunban></a>charunban (name)</summary>
+<h5 id="charunban">sv_charunban</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Removes a character ban by character name.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">name</span>
+ The name or partial name of the character to unban</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span>
+<span class="normal"><a href="#__codelineno-18-3">3</a></span>
+<span class="normal"><a href="#__codelineno-18-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="o">/</span><span class="nv">charunban</span><span class="w"> </span><span class="nv">Chestnut</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2"></a>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">has</span><span class="w"> </span><span class="nv">unbanned</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">character</span><span class="w"> </span><span class="nv">Chestnut</span><span class="p">.</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="w"> </span><span class="nv">can</span><span class="w"> </span><span class="nb">load</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">character</span><span class="w"> </span><span class="nv">again</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="character-permissions-commands">Character permissions commands</h2>
+<details class="realm-server">
+<summary><a id=flaggive></a>flaggive (target, flags)</summary>
+<h5 id="flaggive">sv_flaggive</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Gives character flags to a target player.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose character receives the flags</p>
+<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">flags</span>
+<em><ins><code>optional</code></ins></em>
+ The flags to give; omit them to open a selection prompt</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="o">/</span><span class="nv">flaggive</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">pet</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2"></a>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">has</span><span class="w"> </span><span class="nv">given</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">pet</span><span class="w"> </span><span class="nv">flags</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=flagtake></a>flagtake (target, flags)</summary>
+<h5 id="flagtake">sv_flagtake</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Removes character flags from a target player.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose character loses the flags</p>
+<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">flags</span>
+<em><ins><code>optional</code></ins></em>
+ The flags to remove; omit them to open a selection prompt</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="o">/</span><span class="nv">flagtake</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">p</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">has</span><span class="w"> </span><span class="nv">taken</span><span class="w"> </span><span class="nv">p</span><span class="w"> </span><span class="nv">flags</span><span class="w"> </span><span class="nv">from</span><span class="w"> </span><span class="nv">Chestnut</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=plywhitelist></a>plywhitelist (target, faction)</summary>
+<h5 id="plywhitelist">sv_plywhitelist</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Whitelists a player for a faction.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player to whitelist</p>
+<p><span class="types"><span class="type">Faction</span></span>
+<span class="parameter">faction</span>
+ The faction to whitelist the player for</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="o">/</span><span class="nv">plywhitelist</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">Citizen</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">has</span><span class="w"> </span><span class="nv">whitelisted</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">Citizen</span><span class="w"> </span><span class="nv">faction</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=plyunwhitelist></a>plyunwhitelist (target, faction)</summary>
+<h5 id="plyunwhitelist">sv_plyunwhitelist</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Removes a player's whitelist for a faction.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player to remove from the faction whitelist</p>
+<p><span class="types"><span class="type">Faction</span></span>
+<span class="parameter">faction</span>
+ The faction to remove</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span>
+<span class="normal"><a href="#__codelineno-22-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="o">/</span><span class="nv">plyunwhitelist</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">Citizen</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2"></a>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">has</span><span class="w"> </span><span class="nv">unwhitelisted</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">from</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">Citizen</span><span class="w"> </span><span class="nv">faction</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="faction-and-class-commands">Faction and class commands</h2>
+<details class="realm-server">
+<summary><a id=plytransfer></a>plytransfer (target, faction)</summary>
+<h5 id="plytransfer">sv_plytransfer</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Transfers a target player's character to another faction.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose character is transferred</p>
+<p><span class="types"><span class="type">Faction</span></span>
+<span class="parameter">faction</span>
+ The destination faction</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span>
+<span class="normal"><a href="#__codelineno-23-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="o">/</span><span class="nv">plytransfer</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">Citizen</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">has</span><span class="w"> </span><span class="nv">transfered</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">Citizen</span><span class="w"> </span><span class="nv">faction</span><span class="p">.</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="s1">'s faction data updates.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=charsetfaction></a>charsetfaction (target, faction)</summary>
+<h5 id="charsetfaction">sv_charsetfaction</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Alias of plytransfer that transfers a target character to another faction.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose character is transferred</p>
+<p><span class="types"><span class="type">Faction</span></span>
+<span class="parameter">faction</span>
+ The destination faction</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span>
+<span class="normal"><a href="#__codelineno-24-3">3</a></span>
+<span class="normal"><a href="#__codelineno-24-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="o">/</span><span class="nv">charsetfaction</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">Citizen</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Rebel1324</span><span class="w"> </span><span class="nv">has</span><span class="w"> </span><span class="nv">transfered</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">Citizen</span><span class="w"> </span><span class="nv">faction</span><span class="p">.</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="s1">'s faction data updates.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=beclass></a>beclass (class)</summary>
+<h5 id="beclass">sh_beclass</h5>
+<p>Attempts to change the caller's character to a class.
+<h3>Parameters:</h3>
+<span class="types">vararg</span>
+<span class="parameter">class</span>
+ The class ID, unique ID, or localized name</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span>
+<span class="normal"><a href="#__codelineno-25-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="o">/</span><span class="nv">beclass</span><span class="w"> </span><span class="nv">medic</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2"></a>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">become</span><span class="w"> </span><span class="nv">Medic</span><span class="p">.</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Your</span><span class="w"> </span><span class="nv">character</span><span class="w"> </span><span class="nv">class</span><span class="w"> </span><span class="nv">data</span><span class="w"> </span><span class="nv">updates</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="inventory-commands">Inventory commands</h2>
+<details class="realm-server">
+<summary><a id=chargiveitem></a>chargiveitem (target, item, amount)</summary>
+<h5 id="chargiveitem">sv_chargiveitem</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Adds an item to a target player's character inventory.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose inventory receives the item</p>
+<p><span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">item</span>
+ The item unique ID or matching item name</p>
+<p><span class="types"><span class="type">integer</span></span>
+<span class="parameter">amount</span>
+<em><ins><code>optional. default</code>: <code>1</code></ins></em>
+ The number of items to add</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span>
+<span class="normal"><a href="#__codelineno-26-3">3</a></span>
+<span class="normal"><a href="#__codelineno-26-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="o">/</span><span class="nv">chargiveitem</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="nv">water</span><span class="w"> </span><span class="mi">2</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2"></a>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Item</span><span class="w"> </span><span class="nv">successfully</span><span class="w"> </span><span class="nv">created</span><span class="p">.</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Two</span><span class="w"> </span><span class="nv">water</span><span class="w"> </span><span class="nv">items</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">added</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">Chestnut</span><span class="s1">'s inventory.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=clearinv></a>clearinv (target)</summary>
+<h5 id="clearinv">sv_clearinv</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Removes every item from a target player's character inventory.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose inventory is cleared</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span>
+<span class="normal"><a href="#__codelineno-27-3">3</a></span>
+<span class="normal"><a href="#__codelineno-27-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="o">/</span><span class="nv">clearinv</span><span class="w"> </span><span class="nv">Chestnut</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2"></a>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Chestnut</span><span class="s1">'s inventory was reset.</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="s1">In-game output: All items are removed from Chestnut'</span><span class="nv">s</span><span class="w"> </span><span class="nv">inventory</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="economy-commands">Economy commands</h2>
+<details class="realm-shared">
+<summary><a id=givemoney></a>givemoney (amount)</summary>
+<h5 id="givemoney">sh_givemoney</h5>
+<p>Gives money to the player directly in front of the caller.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">number</span></span>
+<span class="parameter">amount</span>
+ The amount of money to give</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span>
+<span class="normal"><a href="#__codelineno-28-3">3</a></span>
+<span class="normal"><a href="#__codelineno-28-4">4</a></span>
+<span class="normal"><a href="#__codelineno-28-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="o">/</span><span class="nv">givemoney</span><span class="w"> </span><span class="mi">50</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2"></a>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">gave</span><span class="w"> </span><span class="err">$</span><span class="mi">50</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">Chestnut</span><span class="p">.</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="py">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">found</span><span class="w"> </span><span class="err">$</span><span class="mf">50.</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">The</span><span class="w"> </span><span class="nv">caller</span><span class="s1">'s and target'</span><span class="nv">s</span><span class="w"> </span><span class="nv">money</span><span class="w"> </span><span class="nv">balances</span><span class="w"> </span><span class="nv">update</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=charsetmoney></a>charsetmoney (target, amount)</summary>
+<h5 id="charsetmoney">sv_charsetmoney</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<p>Sets a target player's character money balance.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">Client</span></span>
+<span class="parameter">target</span>
+ The player whose money is changed</p>
+<p><span class="types"><span class="type">number</span></span>
+<span class="parameter">amount</span>
+ The non-negative money amount to set</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
+<span class="normal"><a href="#__codelineno-29-2">2</a></span>
+<span class="normal"><a href="#__codelineno-29-3">3</a></span>
+<span class="normal"><a href="#__codelineno-29-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="o">/</span><span class="nv">charsetmoney</span><span class="w"> </span><span class="nv">Chestnut</span><span class="w"> </span><span class="mi">500</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2"></a>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">set</span><span class="w"> </span><span class="nv">Chestnut</span><span class="s1">'s money to $500.</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4"></a><span class="s1">In-game output: Chestnut'</span><span class="nv">s</span><span class="w"> </span><span class="nv">money</span><span class="w"> </span><span class="nv">balance</span><span class="w"> </span><span class="nv">updates</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-shared">
+<summary><a id=dropmoney></a>dropmoney (amount)</summary>
+<h5 id="dropmoney">sh_dropmoney</h5>
+<p>Drops money from the caller as a physical money entity.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">number</span></span>
+<span class="parameter">amount</span>
+ The amount of money to drop</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span>
+<span class="normal"><a href="#__codelineno-30-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="o">/</span><span class="nv">dropmoney</span><span class="w"> </span><span class="mi">25</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2"></a>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3"></a><span class="nv">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">A</span><span class="w"> </span><span class="err">$</span><span class="mi">25</span><span class="w"> </span><span class="nv">money</span><span class="w"> </span><span class="nv">entity</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">dropped</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nv">front</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">you</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="3d-panel-commands">3D panel commands</h2>
+<details class="realm-server">
+<summary><a id=paneladd></a>paneladd (url, w, h, scale)</summary>
+<h5 id="paneladd">sv_paneladd</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<details class="info">
+<summary>Plugin function</summary>
+<p>This is defined and used within the <a href="../../plugins/3DPanel">3DPanel</a> plugin. As such, its functionality might differ in different schemas, or be unavailable.</p>
+</details>
+<p>Adds a 3D web panel at the position the admin is looking at.
+ The panel faces the surface hit by the admin's eye trace.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">url</span>
+ The URL displayed by the panel</p>
+<p><span class="types"><span class="type">number</span></span>
+<span class="parameter">w</span>
+<em><ins><code>optional</code></ins></em>
+ The panel width</p>
+<p><span class="types"><span class="type">number</span></span>
+<span class="parameter">h</span>
+<em><ins><code>optional</code></ins></em>
+ The panel height</p>
+<p><span class="types"><span class="type">number</span></span>
+<span class="parameter">scale</span>
+<em><ins><code>optional</code></ins></em>
+ The panel display scale</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<span class="normal"><a href="#__codelineno-31-2">2</a></span>
+<span class="normal"><a href="#__codelineno-31-3">3</a></span>
+<span class="normal"><a href="#__codelineno-31-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="o">/</span><span class="nv">paneladd</span><span class="w"> </span><span class="nv">https</span><span class="p">:</span><span class="err">//</span><span class="py">github</span><span class="p">.</span><span class="py">com</span><span class="o">/</span><span class="nv">NutScript</span><span class="o">/</span><span class="nv">NutScript</span><span class="o">-</span><span class="nv">Wiki</span><span class="o">/</span><span class="nv">blob</span><span class="o">/</span><span class="nv">main</span><span class="o">/</span><span class="nv">docs</span><span class="o">/</span><span class="nv">assets</span><span class="o">/</span><span class="nv">Nutscript</span><span class="p">.</span><span class="py">png</span><span class="w"> </span><span class="mi">512</span><span class="w"> </span><span class="mi">256</span><span class="w"> </span><span class="mf">0.1</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2"></a>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">added</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="mi">3</span><span class="nv">D</span><span class="w"> </span><span class="nv">panel</span><span class="p">.</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">A</span><span class="w"> </span><span class="mi">3</span><span class="nv">D</span><span class="w"> </span><span class="nv">web</span><span class="w"> </span><span class="nv">panel</span><span class="w"> </span><span class="nv">displaying</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">NutScript</span><span class="w"> </span><span class="nv">logo</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">placed</span><span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">surface</span><span class="w"> </span><span class="nv">you</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">looking</span><span class="w"> </span><span class="nv">at</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=panelremove></a>panelremove (radius)</summary>
+<h5 id="panelremove">sv_panelremove</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<details class="info">
+<summary>Plugin function</summary>
+<p>This is defined and used within the <a href="../../plugins/3DPanel">3DPanel</a> plugin. As such, its functionality might differ in different schemas, or be unavailable.</p>
+</details>
+<p>Removes 3D panels near the position the admin is looking at.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">number</span></span>
+<span class="parameter">radius</span>
+<em><ins><code>optional</code></ins></em>
+ The radius around the aimed position in which to remove panels</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span>
+<span class="normal"><a href="#__codelineno-32-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="o">/</span><span class="nv">panelremove</span><span class="w"> </span><span class="mi">128</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2"></a>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">removed</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">3</span><span class="nv">D</span><span class="w"> </span><span class="nv">panels</span><span class="p">.</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">All</span><span class="w"> </span><span class="mi">3</span><span class="nv">D</span><span class="w"> </span><span class="nv">panels</span><span class="w"> </span><span class="nv">within</span><span class="w"> </span><span class="mi">128</span><span class="w"> </span><span class="nv">units</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">aimed</span><span class="w"> </span><span class="nv">position</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">removed</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="3d-text-commands">3D text commands</h2>
+<details class="realm-server">
+<summary><a id=textadd></a>textadd (text, scale)</summary>
+<h5 id="textadd">sv_textadd</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<details class="info">
+<summary>Plugin function</summary>
+<p>This is defined and used within the <a href="../../plugins/3DText">3DText</a> plugin. As such, its functionality might differ in different schemas, or be unavailable.</p>
+</details>
+<p>Adds 3D text at the surface the admin is looking at.
+ The text faces the surface hit by the admin's eye trace.
+<h3>Parameters:</h3>
+<span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+<span class="parameter">text</span>
+ The text to display</p>
+<p><span class="types"><span class="type">number</span></span>
+<span class="parameter">scale</span>
+<em><ins><code>optional</code></ins></em>
+ The display scale of the text</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span>
+<span class="normal"><a href="#__codelineno-33-3">3</a></span>
+<span class="normal"><a href="#__codelineno-33-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="o">/</span><span class="nv">textadd</span><span class="w"> </span><span class="nv">Welcome</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">City</span><span class="w"> </span><span class="mf">0.1</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2"></a>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">added</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">text</span><span class="p">.</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">The</span><span class="w"> </span><span class="nv">text</span><span class="w"> </span><span class="s2">"Welcome to City"</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">placed</span><span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">surface</span><span class="w"> </span><span class="nv">you</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">looking</span><span class="w"> </span><span class="nv">at</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=textremove></a>textremove (radius)</summary>
+<h5 id="textremove">sv_textremove</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<details class="info">
+<summary>Plugin function</summary>
+<p>This is defined and used within the <a href="../../plugins/3DText">3DText</a> plugin. As such, its functionality might differ in different schemas, or be unavailable.</p>
+</details>
+<p>Removes 3D text near the surface the admin is looking at.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">number</span></span>
+<span class="parameter">radius</span>
+<em><ins><code>optional</code></ins></em>
+ The radius around the aimed position in which to remove text</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
+<span class="normal"><a href="#__codelineno-34-2">2</a></span>
+<span class="normal"><a href="#__codelineno-34-3">3</a></span>
+<span class="normal"><a href="#__codelineno-34-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="o">/</span><span class="nv">textremove</span><span class="w"> </span><span class="mi">128</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2"></a>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">removed</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">texts</span><span class="p">.</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">All</span><span class="w"> </span><span class="mi">3</span><span class="nv">D</span><span class="w"> </span><span class="nv">text</span><span class="w"> </span><span class="nv">within</span><span class="w"> </span><span class="mi">128</span><span class="w"> </span><span class="nv">units</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">aimed</span><span class="w"> </span><span class="nv">position</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">removed</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<h2 id="map-scene-commands">Map scene commands</h2>
+<details class="realm-server">
+<summary><a id=mapsceneadd></a>mapsceneadd (isPair)</summary>
+<h5 id="mapsceneadd">sv_mapsceneadd</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<details class="info">
+<summary>Plugin function</summary>
+<p>This is defined and used within the <a href="../../plugins/MapScene">MapScene</a> plugin. As such, its functionality might differ in different schemas, or be unavailable.</p>
+</details>
+<p>Adds a static or paired map scene at the admin's current position and viewing angles.
+ Run the command once with <code>true</code> to save the first endpoint of a moving paired scene, then run it again to create the scene using the admin's current position and angles as the second endpoint.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">boolean</span></span>
+<span class="parameter">isPair</span>
+<em><ins><code>optional</code></ins></em>
+ Whether to begin a paired moving scene</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span>
+<span class="normal"><a href="#__codelineno-35-3">3</a></span>
+<span class="normal"><a href="#__codelineno-35-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="o">/</span><span class="nv">mapsceneadd</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2"></a>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">added</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">map</span><span class="w"> </span><span class="nv">scene</span><span class="p">.</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">A</span><span class="w"> </span><span class="nv">static</span><span class="w"> </span><span class="nv">map</span><span class="w"> </span><span class="nv">scene</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">added</span><span class="w"> </span><span class="nv">at</span><span class="w"> </span><span class="nv">your</span><span class="w"> </span><span class="nv">current</span><span class="w"> </span><span class="nv">position</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="nv">viewing</span><span class="w"> </span><span class="nv">direction</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+<details class="realm-server">
+<summary><a id=mapsceneremove></a>mapsceneremove (radius)</summary>
+<h5 id="mapsceneremove">sv_mapsceneremove</h5>
+<div class="admonition danger">
+<p class="admonition-title">Admin Only</p>
+<p>This command is available to admins only!</p>
+</div>
+<details class="info">
+<summary>Plugin function</summary>
+<p>This is defined and used within the <a href="../../plugins/MapScene">MapScene</a> plugin. As such, its functionality might differ in different schemas, or be unavailable.</p>
+</details>
+<p>Removes map scenes near the admin's current position.
+<h3>Parameters:</h3>
+<span class="types"><span class="type">number</span></span>
+<span class="parameter">radius</span>
+<em><ins><code>optional. default</code>: <code>280</code></ins></em>
+ The radius around the admin in which to remove map scenes</p>
+<p><h3>Usage:</h3>
+<ul>
+    <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
+<span class="normal"><a href="#__codelineno-36-2">2</a></span>
+<span class="normal"><a href="#__codelineno-36-3">3</a></span>
+<span class="normal"><a href="#__codelineno-36-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="o">/</span><span class="nv">mapsceneremove</span><span class="w"> </span><span class="mi">500</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2"></a>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3"></a><span class="nv">Chat</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">You</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">removed</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">map</span><span class="w"> </span><span class="nv">scenes</span><span class="p">.</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4"></a><span class="py">In</span><span class="o">-</span><span class="nv">game</span><span class="w"> </span><span class="nv">output</span><span class="p">:</span><span class="w"> </span><span class="py">Map</span><span class="w"> </span><span class="nv">scenes</span><span class="w"> </span><span class="nv">within</span><span class="w"> </span><span class="mi">500</span><span class="w"> </span><span class="nv">units</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">your</span><span class="w"> </span><span class="nv">current</span><span class="w"> </span><span class="nv">position</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">removed</span><span class="p">.</span>
+</span></code></pre></div></td></tr></table></div>
+</ul></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Chat/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chat">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Chat
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../globals/Globals/" class="md-footer__link md-footer__link--next" aria-label="Next: Globals">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Globals
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/NutScript/NutScript" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/tXptGwzBSP" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.317 4.37a19.8 19.8 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.3 18.3 0 0 0-5.487 0 13 13 0 0 0-.617-1.25.08.08 0 0 0-.079-.037A19.7 19.7 0 0 0 3.677 4.37a.1.1 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.08.08 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.08.08 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13 13 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10 10 0 0 0 .372-.292.07.07 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.07.07 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.08.08 0 0 0 .084.028 19.8 19.8 0 0 0 6.002-3.03.08.08 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03M8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418m7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
