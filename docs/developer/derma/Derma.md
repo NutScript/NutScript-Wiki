@@ -1,4 +1,10 @@
 <h2>List of Constructs</h2>
+<h3>Commands</h3>
+| Name | Summary |
+|-------|------|
+|[Chat](commands/Chat.md)|NutScript Chat Command Documentation.|
+|[Commands](commands/Commands.md)|NutScript Command Documentation.|
+
 <h3>Globals</h3>
 | Name | Summary |
 |-------|------|

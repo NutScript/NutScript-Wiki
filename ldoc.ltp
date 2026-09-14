@@ -6,7 +6,7 @@
 >local abbc, abbsh, abbs = "??? realm-client", "??? realm-shared", "??? realm-server"
 >local realms= {client = abbc, shared = abbsh, server = abbs}
 >local hiddenanchor = function(text, realm) return "##### "..ldoc.realm_anchor_format(text, realm) end
->local indexorder = {"Globals", "Libraries", "Classes", "Hooks", "Plugins"}
+>local indexorder = {"Commands", "Globals", "Libraries", "Classes", "Hooks", "Plugins"}
 >local show_return = not ldoc.no_return_or_parms
 >local show_parms = show_return
 >local no_spaces = ldoc.no_spaces
@@ -27,6 +27,10 @@ $(ldoc.descript(kitem))
 > end -- if
 $(realmtype) $("\"<a id="..item.name.."></a>"..ldoc.display_name(item).."\"")
     $(hiddenanchor(item.name, realmtype))
+>   if item.tags and item.tags.adminonly then
+    !!! danger "Admin Only"
+        This command is available to admins only!
+>   end -- if adminonly
 >   if item.tags and item.tags.internal then
     !!! warning "Internal"
         This is used internally - although you're able to use it you probably shouldn't.

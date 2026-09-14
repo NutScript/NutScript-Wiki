@@ -33,6 +33,10 @@ custom_tags = {
     {
         'pluginwarning',
         hidden = true
+    },
+        {
+        'adminonly',
+        hidden = true
     }
 }
 
@@ -56,3 +60,4 @@ new_type('hook', 'Hooks', true)
 new_type('derma', 'Derma', true)
 new_type('metaclass', 'Class', true)
 new_type('global', 'Globals', true)
+new_type('commands', 'Commands', true)

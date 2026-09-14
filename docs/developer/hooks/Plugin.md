@@ -664,30 +664,12 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
 
 
 
-## Combat system
-
-??? realm-server "<a id=PLUGIN:PlayerGetFistDamage></a>PLUGIN:PlayerGetFistDamage (client, damage, context)"
-    ##### sv_PLUGIN:PlayerGetFistDamage {#pluginplayergetfistdamage}
-    Gets damage for fist SWEP.
-    <h3>Parameters:</h3>
-    <span class="types"><span class="type">Client</span></span>
-    <span class="parameter">client</span>
-     The attacker
-
-    <span class="types"><span class="type">integer</span></span>
-    <span class="parameter">damage</span>
-     Default damage
-
-    <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
-    <span class="parameter">context</span>
-     Damage context
-
-
-
 ## Attribute system
 
 ??? realm-shared "<a id=PLUGIN:OnCharAttribBoosted></a>PLUGIN:OnCharAttribBoosted (client, character, attribID, boostID, boostAmount)"
     ##### sh_PLUGIN:OnCharAttribBoosted {#pluginoncharattribboosted}
+    ??? info "Plugin function"
+        This is defined and used within the [Attributes](../../plugins/Attributes) plugin. As such, its functionality might differ in different schemas, or be unavailable.
     Called on attribute boost.
     <h3>Parameters:</h3>
     <span class="types"><span class="type">Client</span></span>
@@ -709,6 +691,53 @@ See: <https://wiki.facepunch.com/gmod/Hook_Library_Usage> and [Why use PLUGIN?](
     <span class="types"><span class="type">number</span></span>
     <span class="parameter">boostAmount</span>
      Boost value
+
+
+
+??? realm-server "<a id=PLUGIN:PlayerGetFistDamage></a>PLUGIN:PlayerGetFistDamage (client, damage, context)"
+    ##### sv_PLUGIN:PlayerGetFistDamage {#pluginplayergetfistdamage}
+    Gets damage for fist SWEP.
+    <h3>Parameters:</h3>
+    <span class="types"><span class="type">Client</span></span>
+    <span class="parameter">client</span>
+     The attacker
+
+    <span class="types"><span class="type">integer</span></span>
+    <span class="parameter">damage</span>
+     Default damage
+
+    <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+    <span class="parameter">context</span>
+     Damage context
+
+
+
+??? realm-shared "<a id=PLUGIN:PlayerThrowPunch></a>PLUGIN:PlayerThrowPunch (client, hit)"
+    ##### sh_PLUGIN:PlayerThrowPunch {#pluginplayerthrowpunch}
+    Called every time a player punches with the fist SWEP.
+    <h3>Parameters:</h3>
+    <span class="types"><span class="type">Client</span></span>
+    <span class="parameter">client</span>
+     The attacker
+
+    <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+    <span class="parameter">hit</span>
+     Trace result of attack
+
+
+
+??? realm-shared "<a id=PLUGIN:CanPlayerThrowPunch></a>PLUGIN:CanPlayerThrowPunch (client)"
+    ##### sh_PLUGIN:CanPlayerThrowPunch {#plugincanplayerthrowpunch}
+    Checks if a player is allowed to perform a fist punch attack.
+    <h3>Parameters:</h3>
+    <span class="types"><span class="type">Client</span></span>
+    <span class="parameter">client</span>
+     the attacker
+
+
+    <h3>Returns:</h3>
+    <span class="types"><span class="type">bool</span></span>
+    False to prevent the attack
 
 
 
